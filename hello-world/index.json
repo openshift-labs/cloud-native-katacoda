@@ -1,0 +1,26 @@
+{
+    "pathwayTitle": "OpenShift Roadshow",
+    "icon": "fa-openshift",
+    "title": "OpenShift Roadshow",
+    "description": "",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1: Get Nodes",
+                "courseData": "courseBase.sh",
+                "text": "step1.md"
+            }
+        ]
+    },
+    "environment": {
+        "uilayout": "terminal-iframe",
+        "uisettings": "javascript",
+        "showdashboard": true,
+        "dashboard": "Dashboard",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "openshift-roadshow",
+        "port": 8443
+    }
+}
