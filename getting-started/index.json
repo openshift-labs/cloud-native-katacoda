@@ -9,29 +9,27 @@
         "steps": [
             {
                 "title": "Explore OpenShift with OpenShift CLI",
-                "courseData": "lab-base.sh",
                 "text": "01-oc-login.md"
             },
             {
                 "title": "Create an OpenShift Project",
-                "courseData": "lab-base.sh",
                 "text": "02-create-project.md"
             },
             {
                 "title": "Explore Maven Projects",
-                "courseData": "lab-base.sh",
                 "text": "03-maven-projects.md"
             }
         ],
         "intro": {
-            "courseData": "lab-init.sh",
+            "courseData": "run-init.sh",
             "text": "00-intro.md"
-        },
+        }
     },
     "environment": {
         "uilayout": "terminal-iframe",
         "uisettings": "javascript",
         "showdashboard": true,
+        "hideintro": false,
         "dashboard": "Dashboard",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
     },

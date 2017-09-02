@@ -1,1 +1,0 @@
-ssh root@host01 "curl -sL -o projects.zip https://github.com/openshift-roadshow/cloud-native-labs/archive/master.zip && tar xvfz projects.zip --strip-components 1 && rm -f projects.zip"

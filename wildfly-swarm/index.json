@@ -1,0 +1,45 @@
+{
+    "pathwayTitle": "OpenShift Cloud-Native Roadshow",
+    "icon": "fa-openshift",
+    "title": "Enterprise Microservices with WildFly Swarm",
+    "description": "",
+    "difficulty": "intermediate",
+    "time": "10-20 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Explore WildFly Swarm Maven Project",
+                "text": "01-maven-project.md"
+            },
+            {
+                "title": "Create a Domain Model",
+                "text": "02-create-domain.md"
+            },
+            {
+                "title": "Create a RESTful Service",
+                "text": "03-create-rest.md"
+            },
+            {
+                "title": "Deploy WildFly Swarm on OpenShift",
+                "text": "04-deploy.md"
+            }
+        ]
+    },
+    "intro": {
+        "courseData": "run-init.sh",
+        "code": "run-prep-lab.sh",
+        "text": "00-intro.md"
+    },
+    "environment": {
+        "uilayout": "editor-terminal",
+        "hideintro": false,
+        "uisettings": "javascript",
+        "showdashboard": true,
+        "dashboard": "Dashboard",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "openshift-roadshow",
+        "port": 8443
+    }
+}
