@@ -1,0 +1,16 @@
+{
+  "title": "OpenShift Cloud-Native Roadshow",
+  "description": "",
+  "paid": false,
+  "courses": [
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/hello-world",
+      "course_id": "hello-world",
+      "title": "Sample Hello World Scenario"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/getting-started",
+      "course_id": "getting-started",
+      "title": "Getting Started with OpenShift"
+    }]
+}
