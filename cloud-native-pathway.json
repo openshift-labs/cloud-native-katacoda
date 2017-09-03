@@ -4,13 +4,49 @@
   "paid": false,
   "courses": [
     {
-      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/hello-world",
-      "course_id": "hello-world",
-      "title": "Sample Hello World Scenario"
-    },
-    {
       "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/getting-started",
       "course_id": "getting-started",
       "title": "Getting Started with OpenShift"
-    }]
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/microservice-wildfly-swarm",
+      "course_id": "microservice-wildfly-swarm",
+      "title": "Enterprise Microservices with WildFly Swarm"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/microservice-spring-boot",
+      "course_id": "microservice-spring-boot",
+      "title": "Microservices with Spring Boot"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/microservice-vertx",
+      "course_id": "microservice-vertx",
+      "title": "Reactive Microservices with Eclipse Vert.x"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/microservice-nodejs",
+      "course_id": "microservice-nodejs",
+      "title": "Web UI with Node.js and AngularJS"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/monitor-health",
+      "course_id": "monitor-health",
+      "title": "Monitoring Application Health"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/manage-config",
+      "course_id": "manage-config",
+      "title": "Managing Application Configuration"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/continuous-delivery",
+      "course_id": "continuous-delivery",
+      "title": "Continuous Delivery"
+    },
+    {
+      "external_link": "https://host02.katacoda.com/courses/openshift-roadshow/debug-app",
+      "course_id": "debug-app",
+      "title": "Debugging Applications"
+    }
+  ]
 }
