@@ -20,8 +20,12 @@
                 "text": "03-create-rest.md"
             },
             {
+                "title": "Test Inventory Service Locally",
+                "text": "04-test-local.md"
+            },
+            {
                 "title": "Deploy WildFly Swarm on OpenShift",
-                "text": "04-deploy.md"
+                "text": "05-deploy.md"
             }
         ]
     },
