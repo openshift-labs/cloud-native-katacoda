@@ -1,0 +1,52 @@
+{
+    "pathwayTitle": "OpenShift Cloud-Native Roadshow",
+    "icon": "fa-openshift",
+    "title": "Monitoring Application Health",
+    "description": "",
+    "difficulty": "intermediate",
+    "time": "10-15 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Explore Health REST Endpoints",
+                "text": "01-explore-health-endpoints.md"
+            },
+            {
+                "title": "Monitoring Catalog Service Health",
+                "text": "02-add-probe-catalog.md"
+            },
+            {
+                "title": "Monitoring Inventory Service Health",
+                "text": "03-add-probe-inventory.md"
+            },
+            {
+                "title": "Monitoring API Gateway Health",
+                "text": "04-add-probe-gateway.md"
+            },
+            {
+                "title": "Monitoring Web UI Health",
+                "text": "05-add-probe-web.md"
+            },
+            {
+                "title": "Monitoring Metrics",
+                "text": "06-explore-metrics.md"
+            }
+        ]
+    },
+    "intro": {
+        "courseData": "run-init.sh",
+        "text": "00-intro.md"
+    },
+    "environment": {
+        "uilayout": "editor-terminal",
+        "hideintro": false,
+        "uisettings": "javascript",
+        "showdashboard": true,
+        "dashboard": "Dashboard",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "openshift-roadshow",
+        "port": 8443
+    }
+}
