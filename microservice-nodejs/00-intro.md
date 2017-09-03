@@ -4,7 +4,7 @@ in previous labs.
 
 ![API Gateway Pattern](../assets/coolstore-arch.png)
 
-#### What is Node.js?
+## What is Node.js?
 
 Node.js is an open source, cross-platform runtime environment for developing server-side 
 applications using JavaScript. Node.js has an event-driven architecture capable of 
