@@ -1,0 +1,53 @@
+{
+    "pathwayTitle": "OpenShift Cloud-Native Roadshow",
+    "icon": "fa-openshift",
+    "title": "Microservices with Spring Boot",
+    "description": "",
+    "difficulty": "intermediate",
+    "time": "10-20 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Explore Spring Boot Maven Project",
+                "text": "01-maven-project.md"
+            },
+            {
+                "title": "Create a Domain Model",
+                "text": "02-create-domain.md"
+            },
+            {
+                "title": "Create a Data Repository",
+                "text": "03-create-data-repository.md"
+            },
+            {
+                "title": "Create a RESTful Service",
+                "text": "04-create-rest.md"
+            },
+            {
+                "title": "Test Catalog Service Locally",
+                "text": "05-test-local.md"
+            },
+            {
+                "title": "Deploy Spring Boot on OpenShift",
+                "text": "06-deploy.md"
+            }
+        ]
+    },
+    "intro": {
+        "courseData": "run-init.sh",
+        "code": "run-prep-lab.sh",
+        "text": "00-intro.md"
+    },
+    "environment": {
+        "uilayout": "editor-terminal",
+        "hideintro": false,
+        "uisettings": "javascript",
+        "showdashboard": true,
+        "dashboard": "Dashboard",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "openshift-roadshow",
+        "port": 8443
+    }
+}
