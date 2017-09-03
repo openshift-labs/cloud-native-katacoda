@@ -25,7 +25,7 @@ should get a `BUILD SUCCESS` message in the logs, otherwise the build has failed
 
 You should see a `BUILD SUCCESS` in the logs.
 
-Once built, the resulting *jar* is located in the `target/` directory:
+Once built, the resulting *jar* is located in the `target` directory:
 
 `ls target/*.jar`{{execute}}
 

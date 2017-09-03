@@ -55,7 +55,7 @@ in OpenShift.
 Point your browser at the Web UI route url. You should be able to see the CoolStore with all 
 products and their inventory status.
 
-![CoolStore Shop](../assets/coolstore-web.png)
+![CoolStore Shop](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-web.png)
 
 Currently the `fabric8-maven-plugin` has a 
 [bug](https://github.com/fabric8io/fabric8-maven-plugin/issues/742)
@@ -65,6 +65,6 @@ together in the OpenShift Web Console
 
 `oc label dc app=coolstore --all --overwrite`{{execute}}
 
-![CoolStore Pods](../assets/coolstore-pods-nodb.png)
+![CoolStore Pods](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-pods-nodb.png)
 
 Well done! You are ready to move on to the next lab.

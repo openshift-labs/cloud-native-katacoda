@@ -1,13 +1,8 @@
 The `gateway-vertx` project has the following structure which shows the components of 
-the Vert.x project laid out in different subdirectories according to Maven best practices:
+the Vert.x project laid out in different subdirectories according to Maven best 
+practices. Run the following command to examine the Maven project structure.
 
-```
-├── pom.xml               # The Maven project file
-└── src
-    └── main
-        └── java          # The source code to the project
-        └── resources     # The static resource files and configurations
-```
+`tree`{{execute}}
 
 This is a minimal Vert.x project with support for RESTful services. This project currently contains no code
 other than the main class, `GatewayVerticle.java` which is there to bootstrap the Vert.x application. Verticles
@@ -16,31 +11,11 @@ via the built-in event bus in Vert.x. Verticles get deployed and run by Vert.x i
 is important that the code in a Verticle does not block. This asynchronous architecture allows Vert.x applications 
 to easily scale and handle large amounts of throughput with few threads.All API calls in Vert.x by default are non-blocking and support this concurrency model.
 
-![Vert.x Event Loop](../assets/vertx-event-loop.jpg)
+![Vert.x Event Loop](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/vertx-event-loop.jpg)
 
 Although you can have multiple, there is currently only one Verticle created in the `gateway-vertx` project. 
 
-Examine `gateway-vertx/src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java`
-
-```java
-import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Future;
-import io.vertx.ext.web.Router;
-
-public class GatewayVerticle extends AbstractVerticle {
-    @Override
-    public void start(Future<Void> future) {
-        Router router = Router.router(vertx);
-
-        router.get("/*").handler(rc >> {
-            rc.response().end("{\"message\": \"Hello World\"}");
-        });
-
-        vertx.createHttpServer().requestHandler(router::accept)
-            .listen(Integer.getInteger("http.port", 8080));
-    }
-}
-```
+Examine `GatewayVerticle.java`
 
 Here is what happens in the above code:
 
@@ -49,8 +24,7 @@ Here is what happens in the above code:
 3. A REST endpoint is created for `/*` to return a static JSON response `{"message": "Hello World"}`
 3. An HTTP Server is created which listens on port 8080
 
-You can use Maven to make sure the skeleton project builds successfully. You should get a `BUILD SUCCESS` message 
-in the logs, otherwise the build has failed.
+You can use Maven to make sure the skeleton project builds successfully. 
 
 > Make sure to run the `package` Maven goal and not `install`. The latter would 
 > download a lot more dependencies and do things you don't need yet!
@@ -59,22 +33,11 @@ in the logs, otherwise the build has failed.
 
 You should see a `BUILD SUCCESS` in the logs.
 
-```
-...
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.769 s
-[INFO] Finished at: 2017-07-28T11:44:11+07:00
-[INFO] Final Memory: 20M/308M
-[INFO] ------------------------------------------------------------------------
-```
-
 Once built, the resulting *jar* is located in the `target/` directory:
 
 `ls target/*.jar`{{execute}}
 
-The listed jar archive, `target/gateway-1.0-SNAPSHOT.jar`, is an uber-jar with all the dependencies required packaged in the *jar* to enable running the 
+The listed jar archive, `gateway-1.0-SNAPSHOT.jar`, is an uber-jar with all the dependencies required packaged in the *jar* to enable running the 
 application with `java -jar`.
 
 You can run the Vert.x application using `java -jar` or conveniently using `vertx:run` goal from 
@@ -87,7 +50,6 @@ Verify the application is working using `curl` in a new terminal window:
 `curl http://localhost:8080`{{execute}}
 
 You should see a `{"message": "Hello World"}` JSON response.
-```
 
 Note that while the application is running using `mvn vertx:run`, you can make changes in the code
 and they would immediately be compiled and updated in the running application to provide the fast

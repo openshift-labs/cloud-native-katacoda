@@ -30,7 +30,7 @@ Copy the Generic webhook url which you will need in the next steps.
 Go to Gogs and your **inventory-wildfly-swarm** Git repository, then click on **Settings**:
 <https://gogs-[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
 
-![Repository Settings](../assets/cd-gogs-settings-link.png)
+![Repository Settings](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-gogs-settings-link.png)
 
 On the left menu, click on **Webhooks** and then on **Add Webhook** button and then **Gogs**. 
 
@@ -41,7 +41,7 @@ Create a webhook with the following details:
 
 Click on **Add Webhook**. 
 
-![Repository Webhook](../assets/cd-gogs-webhook-add.png)
+![Repository Webhook](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-gogs-webhook-add.png)
 
 All done. You can click on the newly defined webhook to see the list of *Recent Delivery*. 
 Clicking on the **Test Delivery** button allows you to manually trigger the webhook for 

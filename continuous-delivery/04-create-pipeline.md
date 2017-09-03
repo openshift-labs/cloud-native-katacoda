@@ -15,7 +15,7 @@ the certified Jenkins image that is available in OpenShift image registry.
 Go OpenShift Web Console inside the **coolstore** project and from the left sidebar 
 click on **Builds >> Pipelines**
 
-![OpenShift Pipeline](../assets/cd-pipeline-inprogress.png)
+![OpenShift Pipeline](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-pipeline-inprogress.png)
 
 Pipeline syntax allows creating complex deployment scenarios with the possibility of defining 
 checkpoint for manual interaction and approval process using 

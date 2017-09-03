@@ -56,6 +56,6 @@ When the pipeline completes successfully, point your browser at the Web route an
 that the inventory status is visible for all products. The suspect product should show 
 the inventory status as _Not in Stock_.
 
-![Inventory Status Bug Fixed](../assets/debug-coolstore-bug-fixed.png)
+![Inventory Status Bug Fixed](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/debug-coolstore-bug-fixed.png)
 
 Well done and congratulations for completing all the labs.

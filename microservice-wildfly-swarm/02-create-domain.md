@@ -1,8 +1,7 @@
 Create a new Java class named `Inventory.java` in 
-`com.redhat.cloudnative.inventory` package with the below code and 
-following fields: `itemId` and `quantity`
+`com.redhat.cloudnative.inventory` package with the following code.
 
-<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/inventory/Inventory.java" data-target="replace">
+<pre class="file" data-filename="./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/Inventory.java" data-target="replace">
 package com.redhat.cloudnative.inventory;
 
 import javax.persistence.Entity;
@@ -55,9 +54,9 @@ get out of the way and developers can be productive with their code rather than 
 configuration snippets. As an example, configuration database access with JPA is composed of 
 the following steps:
 
-. Add the `org.wildfly.swarm:jpa` dependency to `pom.xml` 
-. Add the database driver (e.g. `org.postgresql:postgresql`) to `pom.xml`
-. Add database connection details in `src/main/resources/project-stages.yml`
+1. Add the `org.wildfly.swarm:jpa` dependency to `pom.xml` 
+2. Add the database driver (e.g. `org.postgresql:postgresql`) to `pom.xml`
+3. Add database connection details in `src/main/resources/project-stages.yml`
 
 Examine `pom.xml` and note the `org.wildfly.swarm:jpa` that is already added to enable JPA:
 

@@ -84,11 +84,11 @@ on the deployment config) to cope with the load.
 > the Web UI might scale to fewer than 5 pods to handle the extra load. You can increase 
 > the load by specifying a higher number of requests (e.g. 80K) using `ab -n` flag.
 
-![Web UI Automatically Scaled](../assets/fault-autoscale-web.png)
+![Web UI Automatically Scaled](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-autoscale-web.png)
 
 You can see the aggregated cpu metrics graph of all 5 Web UI pods by going to the OpenShift Web Console and clicking on **Monitoring** and then the arrow (**>**) on the left side of **web-n** under **Deployments**.
 
-![Web UI Aggregated CPU Metrics](../assets/fault-autoscale-metrics.png)
+![Web UI Aggregated CPU Metrics](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-autoscale-metrics.png)
 
 When the load on Web UI disappears, after a while OpenShift scales the Web UI pods down to the minimum 
 or whatever this needed to cope with the load at that point.

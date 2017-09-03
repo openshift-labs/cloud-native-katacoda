@@ -29,7 +29,7 @@ Now point your browser at the Web UI route url.
 > You can find the Web UI route url in the OpenShift Web Console above the `web` pod or 
 > using the `oc get routes` command.
 
-![CoolStore Without Circuit Breaker](../assets/fault-coolstore-no-cb.png)
+![CoolStore Without Circuit Breaker](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-coolstore-no-cb.png)
 
 Although only the Inventory service is down, there are no products displayed in the online store because 
 the Inventory service call failure propagates and causes the entire API Gateway to blow up! 

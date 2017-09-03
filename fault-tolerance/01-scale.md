@@ -8,7 +8,7 @@ more cpu and memory (vertical scaling). Cloud-native apps however are stateless 
 easily scaled up by spinning up more application instances and load-balancing requests 
 between those instances (horizontal scaling).
 
-![Scaling Up vs Scaling Out](../assets/fault-scale-up-vs-out.png)
+![Scaling Up vs Scaling Out](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-scale-up-vs-out.png)
 
 In previous labs, you learned how to build container images from your application code and 
 deploy them on OpenShift. Container images on OpenShift follow the 
@@ -39,7 +39,7 @@ The `--replicas` option specified the number of Web UI pods that should be runni
 at the OpenShift Web Console, you can see a new pod is being started for the Web UI and as soon 
 as the health probes pass, it will be automatically added to the load-balancer.
 
-![Scaling Up Pods](../assets/fault-scale-up.png){:width="740px"}
+![Scaling Up Pods](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-scale-up.png){:width="740px"}
 
 You can verify that the new pod is added to the load balancer by checking the details of the 
 Web UI service object:

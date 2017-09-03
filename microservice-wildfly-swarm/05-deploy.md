@@ -17,7 +17,7 @@ allowing to build a project, deploy it and finally launch a docker process as a 
 
 To build and deploy the Inventory service on OpenShift using the `fabric8` maven plugin, run the following Maven command:
 
-`mvn fabric8:deploy`{{execute}
+`mvn fabric8:deploy`{{execute}}
 
 This will cause the following to happen:
 
@@ -63,19 +63,13 @@ OpenShift CLI:
 
 `oc get routes`{{execute}}
 
-You would see the list of routes and their URLs:
-```
-NAME        HOST/PORT                                        PATH       SERVICES  PORT  TERMINATION   
-inventory   inventory-coolstore.roadshow.openshiftapps.com   inventory  8080            None
-```
-
 Copy the route url for the Inventory service and verify the API Gateway service works using `curl`:
 
-> The route urls in your project would be different from the ones in this lab guide! Use the one from yor project.
+`curl http://INVENTORY-ROUTE-HOST/api/inventory/329299`
+
+You should see a JSON response like:
 
 ```
-curl http://INVENTORY-ROUTE-HOST/api/inventory/329299
-
 {"itemId":"329299","quantity":35}
 ```
 
