@@ -28,7 +28,7 @@
                 "text": "05-test-local.md"
             },
             {
-                "title": "Deploy Spring Boot on OpenShift",
+                "title": "Deploy Catalog Service on OpenShift",
                 "text": "06-deploy.md"
             }
         ]

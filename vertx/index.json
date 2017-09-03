@@ -1,31 +1,27 @@
 {
     "pathwayTitle": "OpenShift Cloud-Native Roadshow",
     "icon": "fa-openshift",
-    "title": "Enterprise Microservices with WildFly Swarm",
+    "title": "Reactive Microservices with Eclipse Vert.x",
     "description": "",
     "difficulty": "intermediate",
     "time": "10-20 minutes",
     "details": {
         "steps": [
             {
-                "title": "Explore WildFly Swarm Maven Project",
+                "title": "Explore Vert.x Maven Project",
                 "text": "01-maven-project.md"
             },
             {
-                "title": "Create a Domain Model",
-                "text": "02-create-domain.md"
+                "title": "Create an API Gateway",
+                "text": "02-create-verticle.md"
             },
             {
-                "title": "Create a RESTful Service",
-                "text": "03-create-rest.md"
+                "title": "Test API Gateway Locally",
+                "text": "03-test-local.md"
             },
             {
-                "title": "Test Inventory Service Locally",
-                "text": "04-test-local.md"
-            },
-            {
-                "title": "Deploy Inventory Service on OpenShift",
-                "text": "05-deploy.md"
+                "title": "Deploy API Gateway on OpenShift",
+                "text": "04-deploy.md"
             }
         ]
     },
