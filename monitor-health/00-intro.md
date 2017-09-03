@@ -16,7 +16,7 @@ Furthermore, there are of course a category of issues that can't be resolved by 
 In those scenarios, OpenShift would remove the faulty container from the built-in load-balancer and send traffic 
 only to the healthy container remained.
 
-There are two type of health probes available in OpenShift: [liveness probes and readiness probes]({{OPENSHIFT_DOCS_BASE}}/dev_guide/application_health.html#container-health-checks-using-probes). 
+There are two type of health probes available in OpenShift: [liveness probes and readiness probes](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes). 
 *Liveness probes* are to know when to restart a container and *readiness probes* to know when a 
 Container is ready to start accepting traffic.
 
@@ -25,7 +25,7 @@ order to remove downtime during deployments. A readiness health probe would sign
 traffic from the old version of the container to the new version so that the users don't get affected during 
 deployments.
 
-There are [three ways to define a health probe]({{OPENSHIFT_DOCS_BASE}}/dev_guide/application_health.html#container-health-checks-using-probes) for a container:
+There are [three ways to define a health probe](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes) for a container:
 
 * **HTTP Checks:** healthiness of the container is determined based on the response code of an HTTP 
 endpoint. Anything between 200 and 399 is considered success. A HTTP check is ideal for applications 

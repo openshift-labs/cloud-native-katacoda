@@ -3,7 +3,7 @@ are **coolstore** project is the active project in OpenShift:
 
 `oc project coolstore`{{execute}}
 
-OpenShift [Source-to-Image (S2I)]({{OPENSHIFT_DOCS_BASE}}/architecture/core_concepts/builds_and_image_streams.html#source-build) 
+OpenShift [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature can be used to build a container image from your project. OpenShift 
 S2I uses the supported OpenJDK container image to build the final container image of the 
 Inventory service by uploading the WildFly Swam uber-jar from the `target` folder to 

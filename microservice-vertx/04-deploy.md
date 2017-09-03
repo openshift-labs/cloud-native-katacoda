@@ -8,14 +8,14 @@ in OpenShift comes first and therefore accessing the OpenShift REST API requires
 system (Vert.x in this case) to have sufficient permissions to do so. All containers in 
 OpenShift run with a `serviceaccount` (by default, the project `default` service account) which can 
 be used to grant permissions for operations like accessing the OpenShift REST API. You can read 
-more about service accounts in the [OpenShift Documentation]({{OPENSHIFT_DOCS_BASE}}/dev_guide/service_accounts.html) and this 
+more about service accounts in the [OpenShift Documentation](https://docs.openshift.com/container-platform/3.6/dev_guide/service_accounts.html) and this 
 [blog post](https://blog.openshift.com/understanding-service-accounts-sccs/#_service_accounts)
 
 Grant permission to the API Gateway to be able to access OpenShift REST API and discover services.
 
 `oc policy add-role-to-user view -n coolstore -z default`{{execute}}
 
-OpenShift [Source-to-Image (S2I)]({{OPENSHIFT_DOCS_BASE}}/architecture/core_concepts/builds_and_image_streams.html#source-build) 
+OpenShift [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature can be used to build a container image from your project. OpenShift 
 S2I uses the supported OpenJDK container image to build the final container 
 image of the API Gateway service by uploading the Vert.x uber-jar from 

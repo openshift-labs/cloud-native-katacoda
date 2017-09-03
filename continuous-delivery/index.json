@@ -1,31 +1,31 @@
 {
     "pathwayTitle": "OpenShift Cloud-Native Roadshow",
     "icon": "fa-openshift",
-    "title": "Service Resilience and Fault Tolerance",
+    "title": "Automating Deployments Using Pipelines",
     "description": "",
-    "difficulty": "beginner",
-    "time": "10-15 minutes",
+    "difficulty": "intermediate",
+    "time": "20-30 minutes",
     "details": {
         "steps": [
             {
-                "title": "Scaling Up Applications",
-                "text": "01-scale.md"
+                "title": "Create a Git Repository for Inventory",
+                "text": "01-create-repo.md"
             },
             {
-                "title": "Scaling Applications on Auto-pilot",
-                "text": "02-autoscale.md"
+                "title": "Push Inventory Code to the Git Repository",
+                "text": "02-init-repo.md"
             },
             {
-                "title": "Self-healing Failed Application Pods",
-                "text": "03-self-healing.md"
+                "title": "Define the Deployment Pipeline",
+                "text": "03-define-pipeline.md"
             },
             {
-                "title": "Preventing Cascading Failures with Circuit Breakers",
-                "text": "04-circuit-breaker.md"
+                "title": "Create an OpenShift Pipeline",
+                "text": "04-create-pipeline.md"
             },
             {
-                "title": "Deploy the API Gateway Circuit Breaker",
-                "text": "05-deploy-gateway.md"
+                "title": "Run the Pipeline on Every Code Change",
+                "text": "05-webhooks.md"
             }
         ]
     },

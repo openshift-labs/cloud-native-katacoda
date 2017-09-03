@@ -2,7 +2,7 @@ It’s time to build and deploy our service on OpenShift. First, make sure you a
 
 `oc project coolstore`{{execute}}
 
-OpenShift [Source-to-Image (S2I)]({{OPENSHIFT_DOCS_BASE}}/architecture/core_concepts/builds_and_image_streams.html#source-build) 
+OpenShift [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature can be used to build a container image from your project. OpenShift 
 S2I uses the supported OpenJDK container image to build the final container image 
 of the Catalog service by uploading the Spring Boot uber-jar from the `target` 

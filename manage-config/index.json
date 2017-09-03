@@ -1,37 +1,32 @@
 {
     "pathwayTitle": "OpenShift Cloud-Native Roadshow",
     "icon": "fa-openshift",
-    "title": "Service Resilience and Fault Tolerance",
+    "title": "Managing Application Configurations",
     "description": "",
-    "difficulty": "beginner",
-    "time": "10-15 minutes",
+    "difficulty": "intermediate",
+    "time": "15-20 minutes",
     "details": {
         "steps": [
             {
-                "title": "Scaling Up Applications",
-                "text": "01-scale.md"
+                "title": "Create PostgreSQL Databases for Inventory and Catalog",
+                "text": "01-create-db.md"
             },
             {
-                "title": "Scaling Applications on Auto-pilot",
-                "text": "02-autoscale.md"
+                "title": "Externalize WildFly Swarm (Inventory) Configuration",
+                "text": "02-inventory-config.md"
             },
             {
-                "title": "Self-healing Failed Application Pods",
-                "text": "03-self-healing.md"
+                "title": "Externalize Spring Boot (Catalog) Configuration",
+                "text": "03-catalog-config.md"
             },
             {
-                "title": "Preventing Cascading Failures with Circuit Breakers",
-                "text": "04-circuit-breaker.md"
-            },
-            {
-                "title": "Deploy the API Gateway Circuit Breaker",
-                "text": "05-deploy-gateway.md"
+                "title": "Sensitive Configuration Data",
+                "text": "04-secrets.md"
             }
         ]
     },
     "intro": {
         "courseData": "run-init.sh",
-        "code": "run-prep-lab.sh",
         "text": "00-intro.md"
     },
     "environment": {

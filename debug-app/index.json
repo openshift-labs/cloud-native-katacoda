@@ -1,31 +1,27 @@
 {
     "pathwayTitle": "OpenShift Cloud-Native Roadshow",
     "icon": "fa-openshift",
-    "title": "Service Resilience and Fault Tolerance",
+    "title": "Debugging Applications",
     "description": "",
-    "difficulty": "beginner",
+    "difficulty": "intermediate",
     "time": "10-15 minutes",
     "details": {
         "steps": [
             {
-                "title": "Scaling Up Applications",
-                "text": "01-scale.md"
+                "title": "Investigate The Bug",
+                "text": "01-investigate.md"
             },
             {
-                "title": "Scaling Applications on Auto-pilot",
-                "text": "02-autoscale.md"
+                "title": "Enable Remote Debugging",
+                "text": "02-enable-remote-debug.md"
             },
             {
-                "title": "Self-healing Failed Application Pods",
-                "text": "03-self-healing.md"
+                "title": "Debug Remotely Using JDB (Java Debugger)",
+                "text": "03-debug.md"
             },
             {
-                "title": "Preventing Cascading Failures with Circuit Breakers",
-                "text": "04-circuit-breaker.md"
-            },
-            {
-                "title": "Deploy the API Gateway Circuit Breaker",
-                "text": "05-deploy-gateway.md"
+                "title": "Fix the Inventory Bug",
+                "text": "04-fix-code.md"
             }
         ]
     },

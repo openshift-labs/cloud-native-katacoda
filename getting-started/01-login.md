@@ -31,4 +31,4 @@ OpenShift master includes a built-in OAuth server. Developers and administrators
 obtain OAuth access tokens to authenticate themselves to the API. By default
 your authorization token will last for 24 hours. There is more information about
 the login command and its configuration in the 
-[OpenShift Documentation](https://{{DOCS_URL}}/cli_reference/get_started_cli.html#basic-setup-and-login).
+[OpenShift Documentation](https://docs.openshift.com/container-platform/3.6/cli_reference/get_started_cli.html#basic-setup-and-login).

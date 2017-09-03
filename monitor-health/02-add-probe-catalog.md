@@ -23,7 +23,7 @@ Add a liveness probe on the catalog deployment config using `oc set probe`:
 `oc set probe dc/catalog --liveness --get-url=http://:8080/health`{{execute}}
 
 > OpenShift automates deployments using 
-> [deployment triggers]({{OPENSHIFT_DOCS_BASE}}/dev_guide/deployments/basic_deployment_operations.html#triggers) 
+> [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
 > that react to changes to the container image or configuration. 
 > Therefore, as soon as you define the probe, OpenShift automatically redeploys the 
 > Catalog pod using the new configuration including the liveness probe. 
@@ -45,7 +45,7 @@ the liveness probe.
 
 `oc set probe dc/catalog --readiness --get-url=http://:8080/health`{{execute}}
 
-Viola! OpenShift automatically [restarts]({{OPENSHIFT_DOCS_BASE}}/dev_guide/deployments/basic_deployment_operations.html#triggers) 
+Viola! OpenShift automatically [restarts](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
 the Catalog pod and as soon as the health probes succeed, it is ready to receive traffic. 
 
 > Fabric8 Maven Plugin can also be configured to automatically set the health probes when running `fabric8:deploy` 
