@@ -10,7 +10,7 @@ Create a new Java interface named `ProductRepository.java` in `com.redhat.cloudn
 and extend `CrudRepository` interface in order to indicate to Spring that you want to expose a 
 complete set of methods to manipulate the entity.
 
-<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/catalog/ProductRepository.java" data-target="replace">
+<pre class="file" data-filename="./catalog-spring-boot/src/main/java/com/redhat/cloudnative/catalog/ProductRepository.java" data-target="replace">
 package com.redhat.cloudnative.catalog;
 
 import org.springframework.data.repository.CrudRepository;

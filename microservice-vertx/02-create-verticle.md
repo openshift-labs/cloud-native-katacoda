@@ -8,7 +8,7 @@ architecture.
 
 Replace the content of `src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java` class with the following:
 
-<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java" data-target="replace">
+<pre class="file" data-filename="./gateway-vertx/src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java" data-target="replace">
 package com.redhat.cloudnative.gateway;
 
 import io.vertx.core.http.HttpMethod;
