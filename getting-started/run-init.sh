@@ -3,4 +3,4 @@ ssh root@host01 "sed -i 's/masterPublicURL.*/masterPublicURL: https:\/\/[[HOST_S
 
 
 # Download Maven Projects
-ssh root@host01 "curl -sL -o projects.zip https://github.com/openshift-roadshow/cloud-native-labs/archive/master.zip && tar xvfz projects.zip --strip-components 1 && rm -f projects.zip"
+curl -sL -o projects.zip https://github.com/openshift-roadshow/cloud-native-labs/archive/master.zip && unzip -q projects.zip && mv cloud-native-labs-master/*/ . && rm -rf cloud-native-labs-master && rm -f projects.zip 
