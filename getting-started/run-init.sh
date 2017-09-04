@@ -2,5 +2,4 @@ ssh root@host01 "echo '[[HOST_IP]] master' >> /etc/hosts; sed -i s/10\.0\.2\.15/
 ssh root@host01 "sed -i 's/masterPublicURL.*/masterPublicURL: https:\/\/[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:443/g'  /etc/origin/master/master-config.yaml && sed -i 's/assetPublicURL.*/assetPublicURL: https:\\/\\/[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:443\\/console\\//g'  /etc/origin/master/master-config.yaml && sed -i 's/publicURL.*/publicURL: https:\\/\\/[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:443\\/console\\//g'  /etc/origin/master/master-config.yaml && sed -i 's/DenyAllPasswordIdentityProvider/AllowAllPasswordIdentityProvider/g'  /etc/origin/master/master-config.yaml  && sed -i 's/deny_all/allow_all/g'  /etc/origin/master/master-config.yaml && systemctl restart atomic-openshift-master.service"
 
 
-# Download Maven Projects
-curl -sL -o projects.zip https://github.com/openshift-roadshow/cloud-native-labs/archive/master.zip && unzip -q projects.zip && mv cloud-native-labs-master/*/ . && rm -rf cloud-native-labs-master && rm -f projects.zip 
+ssh root@host01 "curl -sL -o projects.zip https://github.com/openshift-roadshow/cloud-native-labs/archive/master.zip && unzip -q projects.zip && mv cloud-native-labs-master/*/ . && rm -rf cloud-native-labs-master && rm -f projects.zip"
