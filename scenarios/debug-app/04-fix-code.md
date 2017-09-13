@@ -50,7 +50,7 @@ Commit the changes to the Git repository.
 As soon as you commit the changes to the Git repository, the **inventory-pipeline** gets 
 triggered to build and deploy a new Inventory container with the fix. Go to the 
 OpenShift Web Console and inside the **coolstore** project. On the sidebar 
-menu, Click on **Builds >> Pipelines** to see its progress.
+menu, Click on **Builds &rarr; Pipelines** to see its progress.
 
 When the pipeline completes successfully, point your browser at the Web route and verify 
 that the inventory status is visible for all products. The suspect product should show 

@@ -13,7 +13,7 @@ pipeline is created, OpenShift auto-provisions a Jenkins server in your project,
 the certified Jenkins image that is available in OpenShift image registry.
 
 Go OpenShift Web Console inside the **coolstore** project and from the left sidebar 
-click on **Builds >> Pipelines**
+click on **Builds &rarr; Pipelines**
 
 ![OpenShift Pipeline](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-pipeline-inprogress.png)
 

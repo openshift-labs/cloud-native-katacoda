@@ -45,7 +45,7 @@ Set resource containers on the Web UI pod using **oc set resource** to the follo
 
 `$ oc set resources dc/web --limits=cpu=400m,memory=512Mi --requests=cpu=200m,memory=256Mi`{{execute}}
 
-> You can also use the OpenShift Web Console by clicking on **Applications** >> **Deployments** within 
+> You can also use the OpenShift Web Console by clicking on **Applications** &rarr; **Deployments** within 
 > the **coolstore** project. Click then on **web** and from the **Actions** menu on 
 > the top-right, choose **Edit Resource Limits**.
 
@@ -54,7 +54,7 @@ autoscaler using **oc autoscale** command to scale the Web UI pods up to 5 insta
 the CPU consumption passes 50% utilization:
 
 > You can configure an autoscaler using OpenShift Web Console by clicking 
-> on **Applications** >> **Deployments** within 
+> on **Applications** &rarr; **Deployments** within 
 > the **coolstore** project. Click then on **web** and from the **Actions** menu on 
 > the top-right, choose **Edit Autoscaler**.
 

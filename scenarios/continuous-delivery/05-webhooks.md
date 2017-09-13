@@ -22,7 +22,7 @@ Webhook Generic:
 ....
 ```
 
-> You can also see the webhooks in the OpenShift Web Console by going to **Build >> Pipelines** , 
+> You can also see the webhooks in the OpenShift Web Console by going to **Build &rarr; Pipelines** , 
 > click on the pipeline and go to the **Configurations** tab.
 
 Copy the Generic webhook url which you will need in the next steps.

@@ -34,7 +34,7 @@ packaged in the Inventory JAR archive:
 `oc create configmap inventory --from-file=./project-stages.yml`{{execute}}
 
 > If you don't like bash commands, Go to the **coolstore** 
-> project in OpenShift Web Console and then on the left sidebar, **Resources >> Config Maps**. Click 
+> project in OpenShift Web Console and then on the left sidebar, **Resources &rarr; Config Maps**. Click 
 > on **Create Config Map** button to create a config map with the following info:
 > 
 > * Name: `inventory`

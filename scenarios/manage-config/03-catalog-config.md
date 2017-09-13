@@ -24,7 +24,7 @@ exposed by OpenShift and accessible to containers running on OpenShift.
 
 `oc create configmap catalog --from-file=./application.properties`{{execute}}
 
-> You can use the OpenShift Web Console to create config maps by clicking on **Resources >> Config Maps** 
+> You can use the OpenShift Web Console to create config maps by clicking on **Resources &rarr; Config Maps** 
 > on the left sidebar inside the your project. Click on **Create Config Map** button to create a config map 
 > with the following info:
 > 
