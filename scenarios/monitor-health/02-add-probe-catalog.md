@@ -6,21 +6,15 @@ deployment configs in the project.
 
 `oc get dc`{{execute}}
 
-You would see a result like:
-
-```
-NAME        REVISION   DESIRED   CURRENT   TRIGGERED BY
-catalog     1          1         1         config,image(catalog:latest)
-gateway     1          1         1         config,image(gateway:latest)
-inventory   1          1         1         config,image(inventory:latest)
-web         1          1         1         config,image(web:latest)
-```
-
 > **dc** stands for deployment config
 
 Add a liveness probe on the catalog deployment config using **oc set probe**
 
-`oc set probe dc/catalog --liveness --get-url=http://:8080/health`{{execute}}
+```
+oc set probe dc/catalog \
+      --liveness \
+      --get-url=http://:8080/health
+```{{execute}}
 
 > OpenShift automates deployments using 
 > [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
@@ -32,7 +26,7 @@ The **--get-url** defines the HTTP endpoint to use for check the liveness of the
 syntax is a convenient way to define the endpoint without having to worry about the hostname for the running 
 container. 
 
-> It is possible to customize to probes even further using for example **--initial-delay-seconds**
+> It is possible to customize the probes even further using for example **--initial-delay-seconds**
 > to specify how long to wait after the container starts and before to begin checking the probes. 
 > Run **oc set probe --help** to get a list of all available options.
 
@@ -43,10 +37,14 @@ the liveness probe.
 > to restart the container and when to leave it alone and remove it from the load-balancer so 
 > that an administrator would  manually investigate the issue. 
 
-`oc set probe dc/catalog --readiness --get-url=http://:8080/health`{{execute}}
+```
+oc set probe dc/catalog \
+    --readiness \
+    --get-url=http://:8080/health
+```{{execute}}
 
-Viola! OpenShift automatically [restarts](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
-the Catalog pod and as soon as the health probes succeed, it is ready to receive traffic. 
+Viola! OpenShift automatically restarts the Catalog pod and as soon as the health 
+probes succeed, it is ready to receive traffic. 
 
 > Fabric8 Maven Plugin can also be configured to automatically set the health probes when running **fabric8:deploy**
 > goal. Read more on [Fabric8 docs](https://maven.fabric8.io/#enrichers) under 

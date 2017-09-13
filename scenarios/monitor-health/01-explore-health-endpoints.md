@@ -17,7 +17,7 @@ with the Catalog route url:
 
 You should see a response like:
 ```
-{"status":"UP","diskSpace":{"status":"UP","total":3209691136,"free":2667175936,"threshold":10485760},"db":{"status":"UP","database":"H2","hello":1}}
+{"status":"UP", ...}
 ```
 
 [WildFly Swarm health endpoints](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/advanced/monitoring.html) function in a similar fashion and are enabled by adding **org.wildfly.swarm:monitor**
@@ -31,14 +31,13 @@ with the Catalog route url:
 
 `curl http://INVENTORY-ROUTE-HOST/node`
 
+You should see a response like:
+
 ```
 {
-    "name" : "localhost",
+    ...
     "server-state" : "running",
-    "suspend-state" : "RUNNING",
-    "running-mode" : "NORMAL",
-    "uuid" : "79b3ffc5-d98c-4b8e-ae5c-9756ed13944a",
-    "swarm-version" : "2017.8.1"
+    ...
 }
 ```
 
@@ -51,6 +50,8 @@ with the API Gateway route url:
 > Yup! You can use **oc get route gateway** to get the API Gateway route url 
 
 `curl http://API-GATEWAY-ROUTE-HOST/health`
+
+You should see a response like:
 
 ```
 {"status":"UP"}

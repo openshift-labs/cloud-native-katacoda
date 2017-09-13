@@ -2,7 +2,7 @@ Although you can add the liveness and health probes to the Web UI using a single
 give the OpenShift Web Console a try this time.
 
 Go the OpenShift Web Console in your browser and in the **coolstore** project. Click on 
-**Applications >> Deployments** on the left-side bar. Click on **web** and then the **Configuration** 
+**Applications &rarr; Deployments** on the left-side bar. Click on **web** and then the **Configuration** 
 tab. You will see the warning about health checks, with a link to
 click in order to add them. Click **Add health checks** now. 
 
@@ -16,15 +16,15 @@ then fill them out as follows:
 
 *Readiness Probe*
 
-* Path: `/`
-* Initial Delay: `10`
-* Timeout: `1`
+* Path: **/**
+* Initial Delay: **10**
+* Timeout: **1**
 
 *Liveness Probe*
 
-* Path: `/`
-* Initial Delay: `180`
-* Timeout: `1`
+* Path: **/**
+* Initial Delay: **180**
+* Timeout: **1**
 
 ![Readiness Probe](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-readiness.png)
 
