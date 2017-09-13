@@ -5,7 +5,7 @@ checking product inventory status.
 
 ## What is WildFly Swarm?
 
-Java EE applications are traditionally created as an **ear**or **war**archive including all 
+Java EE applications are traditionally created as an **ear** or **war** archive including all 
 dependencies and deployed in an application server. Multiple Java EE applications can and 
 were typically deployed in the same application server. This model is well understood in 
 the development teams and has been used over the past several years.

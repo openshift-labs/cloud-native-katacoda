@@ -12,7 +12,7 @@ container image of it.
 The source code for the the Node.js Web front-end is available in this Git repository: 
 <https://github.com/openshift-roadshow/cloud-native-labs/tree/master/web-nodejs>
 
-First, make sure you are on the **coolstore**project:
+First, make sure you are on the **coolstore** project:
 
 `oc project coolstore`{{execute}}
 
@@ -31,8 +31,8 @@ oc new-app nodejs~https://github.com/openshift-roadshow/cloud-native-labs.git \
         --labels=app=coolstore,microservice=web
 ```{{execute}}
 
-The **--context-dir**option specifies the sub-directly of the Git repository which contains 
-the source code for the application to be built and deployed. The **--labels**allows 
+The **--context-dir** option specifies the sub-directly of the Git repository which contains 
+the source code for the application to be built and deployed. The **--labels** allows 
 assigining arbitrary key-value labels to the application objects in order to make it easier to 
 find them later on when you have many applications in the same project.
 
@@ -41,7 +41,7 @@ logs using OpenShift Web Console or OpenShift CLI:
 
 `oc logs -f bc/web`{{execute}}
 
-The **-f**option is to follow the logs as the build progresses. After the building the Node.s Web UI 
+The **-f** option is to follow the logs as the build progresses. After the building the Node.s Web UI 
 completes, it gets pushed into the internal image registry in OpenShift and then deployed within 
 your project.
 
@@ -50,6 +50,7 @@ balancer. Run the following command to add the Web UI service to the built-in HA
 in OpenShift.
 
 `oc expose svc/web`{{execute}}
+
 `oc get route web`{{execute}}
 
 Point your browser at the Web UI route url. You should be able to see the CoolStore with all 
@@ -57,10 +58,10 @@ products and their inventory status.
 
 ![CoolStore Shop](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-web.png)
 
-Currently the **fabric8-maven-plugin**has a 
+Currently the **fabric8-maven-plugin** has a 
 [bug](https://github.com/fabric8io/fabric8-maven-plugin/issues/742)
 that prevents grouping the pods properly. Run the following 
-tweak to assign an **app**label to deployment configs and group them 
+tweak to assign an **app** label to deployment configs and group them 
 together in the OpenShift Web Console
 
 `oc label dc app=coolstore --all --overwrite`{{execute}}

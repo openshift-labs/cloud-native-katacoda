@@ -2,8 +2,8 @@ Using Spring Boot maven plugin, you can conveniently run the application locally
 
 `mvn spring-boot:run`{{execute}}
 
-When you see **Started CatalogApplication in 4.609 seconds**in the logs, you can access the 
-Catalog REST API. Let’s test it out using **curl**in a new terminal window:
+When you see **Started CatalogApplication in 4.609 seconds** in the logs, you can access the 
+Catalog REST API. Let’s test it out using **curl** in a new terminal window:
 
 `curl http://localhost:9000/api/catalog`{{execute}}
 
@@ -15,4 +15,4 @@ You should see a result like:
 
 The REST API returned a JSON object representing the product list. Congratulations!
 
-Stop the service by pressing **CTRL-C**in the terminal window.
+Stop the service by pressing **CTRL-C** in the terminal window.

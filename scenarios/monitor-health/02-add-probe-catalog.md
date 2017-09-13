@@ -16,7 +16,7 @@ inventory   1          1         1         config,image(inventory:latest)
 web         1          1         1         config,image(web:latest)
 ```
 
-> **dc**stands for deployment config
+> **dc** stands for deployment config
 
 Add a liveness probe on the catalog deployment config using **oc set probe**
 
@@ -28,15 +28,15 @@ Add a liveness probe on the catalog deployment config using **oc set probe**
 > Therefore, as soon as you define the probe, OpenShift automatically redeploys the 
 > Catalog pod using the new configuration including the liveness probe. 
 
-The **--get-url**defines the HTTP endpoint to use for check the liveness of the container. The **\http://:8080**
+The **--get-url** defines the HTTP endpoint to use for check the liveness of the container. The **\http://:8080**
 syntax is a convenient way to define the endpoint without having to worry about the hostname for the running 
 container. 
 
 > It is possible to customize to probes even further using for example **--initial-delay-seconds**
 > to specify how long to wait after the container starts and before to begin checking the probes. 
-> Run **oc set probe --help**to get a list of all available options.
+> Run **oc set probe --help** to get a list of all available options.
 
-Add a readiness probe on the catalog deployment config using the same **/health**endpoint that you used for 
+Add a readiness probe on the catalog deployment config using the same **/health** endpoint that you used for 
 the liveness probe.
 
 > It's recommended to have separate endpoints for readiness and liveness to indicate to OpenShift when 

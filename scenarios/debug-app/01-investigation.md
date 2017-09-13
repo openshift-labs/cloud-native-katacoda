@@ -28,19 +28,19 @@ information about this bug:
 
 `oc logs dc/inventory | grep ERROR`{{execute}}
 
-There doesn't seem to be anything relevant to the **invalid response**error that the 
+There doesn't seem to be anything relevant to the **invalid response** error that the 
 API Gateway received either! 
 
-Invoke the Inventory API using **curl**for the suspect product id to see what actually 
+Invoke the Inventory API using **curl** for the suspect product id to see what actually 
 happens when API Gateway makes this call:
 
 > You can find out the Inventory route url using **oc get route inventory** Replace 
-> **INVENTORY-ROUTE-HOST**with the Inventory route url from your project.
+> **INVENTORY-ROUTE-HOST** with the Inventory route url from your project.
 
 `curl http://INVENTORY-ROUTE-HOST/api/inventory/444436`
 
-> You can use **curl -v**to see all the headers sent and received. You would received 
-> a **HTTP/1.1 204 No Content**response for the above request.
+> You can use **curl -v** to see all the headers sent and received. You would received 
+> a **HTTP/1.1 204 No Content** response for the above request.
 
 No response came back and that seems to be the reason the inventory status is not displayed 
 on the web interface.

@@ -29,7 +29,7 @@ Once built, the resulting *jar* is located in the **target** directory:
 
 `ls target/*.jar`{{execute}}
 
-The listed jar archive, **inventory-1.0-SNAPSHOT-swarm.jar**, is an uber-jar with 
+The listed jar archive, **inventory-1.0-SNAPSHOT-swarm.jar** , is an uber-jar with 
 all the dependencies required packaged in the *jar* to enable running the 
 application with **java -jar**. WildFly Swarm also creates a *war* packaging as a standard Java EE web app 
 that could be deployed to any Java EE app server (for example, JBoss EAP, or its upstream WildFly project). 

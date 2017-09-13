@@ -18,7 +18,7 @@ deploying instances a repeatable practice. Immutable server pattern simplifies s
 application instances to starting a new instance which is guaranteed to be identical to the 
 existing instances and adding it to the load-balancer.
 
-Now, let's use the **oc scale**command to scale up the Web UI pod in the CoolStore retail 
+Now, let's use the **oc scale** command to scale up the Web UI pod in the CoolStore retail 
 application to 2 instances. In OpenShift, deployment config is responsible for starting the 
 application pods and ensuring the specified number of instances for each application pod 
 is running. Therefore the number of pods you want to scale to should be defined on the 
@@ -31,11 +31,11 @@ First, get list of deployment configs available in the project.
 
 `oc get dc`{{execute}}
 
-And then, scale the **web**deployment config to 2 pods:
+And then, scale the **web** deployment config to 2 pods:
 
 `$ oc scale dc/web --replicas=2`{{execute}}
 
-The **--replicas**option specified the number of Web UI pods that should be running. If you look 
+The **--replicas** option specified the number of Web UI pods that should be running. If you look 
 at the OpenShift Web Console, you can see a new pod is being started for the Web UI and as soon 
 as the health probes pass, it will be automatically added to the load-balancer.
 
@@ -46,7 +46,7 @@ Web UI service object:
 
 `$ oc describe svc/web`{{execute}}
 
-**Endpoints**shows the IPs of the 2 pods that the load-balancer is sending traffic to.
+**Endpoints** shows the IPs of the 2 pods that the load-balancer is sending traffic to.
 
 ```
 ...

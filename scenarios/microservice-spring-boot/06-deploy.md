@@ -1,4 +1,4 @@
-It’s time to build and deploy our service on OpenShift. First, make sure you are on the **coolstore**project:
+It’s time to build and deploy our service on OpenShift. First, make sure you are on the **coolstore** project:
 
 `oc project coolstore`{{execute}}
 
@@ -15,7 +15,7 @@ able to communicate with the OpenShift platform using the REST endpoints in
 order to issue the commands allowing to build a project, deploy it and finally 
 launch a docker process as a pod.
 
-To build and deploy the Catalog service on OpenShift using the **fabric8**maven plugin, run the following maven command:
+To build and deploy the Catalog service on OpenShift using the **fabric8** maven plugin, run the following maven command:
 
 `mvn fabric8:deploy`{{execute}}
 
@@ -31,30 +31,34 @@ containers for the project.
 
 Let's take a moment and review the OpenShift resources that are created for the Catalog REST API:
 
-* **Build Config**: **catalog-s2i**build config is the configuration for building the Catalog 
+* Build Config: **catalog-s2i** build config is the configuration for building the Catalog 
 container image from the catalog source code or JAR archive
-* **Image Stream**: **catalog**image stream is the virtual view of all catalog container 
+* Image Stream: **catalog** image stream is the virtual view of all catalog container 
 images built and pushed to the OpenShift integrated registry.
-* **Deployment Config**: **catalog**deployment config deploys and redeploys the Catalog container 
+* Deployment Config: **catalog** deployment config deploys and redeploys the Catalog container 
 image whenever a new Catalog container image becomes available
-* **Service**: **catalog**service is an internal load balancer which identifies a set of 
+* Service: **catalog** service is an internal load balancer which identifies a set of 
 pods (containers) in order to proxy the connections it receives to them. Backing pods can be 
 added to or removed from a service arbitrarily while the service remains consistently available, 
 enabling anything that depends on the service to refer to it at a consistent address (service name 
 or IP).
-* **Route**: **catalog**route registers the service on the built-in external load-balancer 
+* Route: **catalog** route registers the service on the built-in external load-balancer 
 and assigns a public DNS name to it so that it can be reached from outside OpenShift cluster.
 
-You can review the above resources in the OpenShift Web Console or using **oc describe**command:
+You can review the above resources in the OpenShift Web Console or using **oc describe** command:
 
-> **bc**is the short-form of **buildconfig**and can be interchangeably used instead of it with the 
-> OpenShift CLI. The same goes for **is**instead of **imagestream** **dc**instead of**deploymentconfig**
-> and **svc**instead of **service**
+> **bc** is the short-form of **buildconfig** and can be interchangeably used instead of it with the 
+> OpenShift CLI. The same goes for **is** instead of **imagestream** **dc** instead of **deploymentconfig**
+> and **svc** instead of **service**
 
 `oc describe bc catalog-s2i`{{execute}}
+
 `oc describe is catalog`{{execute}}
+
 `oc describe dc catalog`{{execute}}
+
 `oc describe svc catalog`{{execute}}
+
 `oc describe route catalog`{{execute}}
 
 You can see the expose DNS url for the Catalog service in the OpenShift Web Console or using 
@@ -64,7 +68,7 @@ OpenShift CLI:
 
 Copy the route url for the Catalog service and verify the Catalog service works using **curl**
 
-> Replace **CATALOG-ROUTE-HOST**with the Catalog route host listed from your project.
+> Replace **CATALOG-ROUTE-HOST** with the Catalog route host listed from your project.
 
 `curl http://CATALOG-ROUTE-HOST/api/catalog`
 
