@@ -12,10 +12,6 @@ container image of it.
 The source code for the the Node.js Web front-end is available in this Git repository: 
 <https://github.com/openshift-roadshow/cloud-native-labs/tree/master/web-nodejs>
 
-First, make sure you are on the **coolstore** project:
-
-`oc project coolstore`{{execute}}
-
 Use the OpenShift CLI command to create a new build and deployment for the Web component:
 
 > Feeling adventurous? Build and deploy the Web front-end via the OpenShift Web Console 
@@ -37,7 +33,7 @@ assigining arbitrary key-value labels to the application objects in order to mak
 find them later on when you have many applications in the same project.
 
 A build gets created and starts building the Node.js Web UI container image. You can see the build 
-logs using OpenShift Web Console or OpenShift CLI:
+logs using OpenShift Web Console or OpenShift CLI, after a few moments when the build starts:
 
 `oc logs -f bc/web`{{execute}}
 

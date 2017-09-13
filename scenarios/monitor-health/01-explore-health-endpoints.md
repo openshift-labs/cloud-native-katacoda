@@ -5,7 +5,7 @@ database connection health, backoffice system availability, etc).
 
 [Spring Boot Actuator](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready) is a 
 sub-project of Spring Boot which adds health and management HTTP endpoints to the application. Enabling Spring Boot 
-Actuator is done via adding **org.springframework.boot:spring-boot-starter-actuator** to the Maven project 
+Actuator is done via adding **org.springframework.boot:spring-boot-starter-actuator** dependency to the Maven project 
 dependencies which is already done for the Catalog services.
 
 Verify that the health endpoint works for the Catalog service using **curl** replacing **CATALOG-ROUTE-HOST**
@@ -46,7 +46,7 @@ Expectedly, Eclipse Vert.x also provides a [health check module](http://vertx.io
 which is enabled by adding **io.vertx:vertx-health-check** as a dependency to the Maven project. 
 
 Verify that the health endpoint works for the Inventory service using **curl** replacing **API-GATEWAY-ROUTE-HOST**
-with the API Gateway route url::
+with the API Gateway route url:
 
 > Yup! You can use **oc get route gateway** to get the API Gateway route url 
 

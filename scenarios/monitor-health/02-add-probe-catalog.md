@@ -28,7 +28,7 @@ Add a liveness probe on the catalog deployment config using **oc set probe**
 > Therefore, as soon as you define the probe, OpenShift automatically redeploys the 
 > Catalog pod using the new configuration including the liveness probe. 
 
-The **--get-url** defines the HTTP endpoint to use for check the liveness of the container. The **\http://:8080**
+The **--get-url** defines the HTTP endpoint to use for check the liveness of the container. The **ht<span>tp://:8080**
 syntax is a convenient way to define the endpoint without having to worry about the hostname for the running 
 container. 
 

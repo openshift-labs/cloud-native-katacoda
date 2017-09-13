@@ -3,7 +3,6 @@ services simultaneously and verify that the API Gateway works as expected.
 
 Start the Catalog service in a new terminal:
 
-
 `cd catalog-spring-boot`{{execute T2}}
 
 `mvn spring-boot:run`{{execute T2}}
