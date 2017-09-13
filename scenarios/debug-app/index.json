@@ -23,12 +23,12 @@
                 "title": "Fix the Inventory Bug",
                 "text": "04-fix-code.md"
             }
-        ]
-    },
-    "intro": {
-        "courseData": "run-init.sh",
-        "code": "run-prep-lab.sh",
-        "text": "00-intro.md"
+        ],
+        "intro": {
+            "courseData": "run-init.sh",
+            "code": "run-prep-lab.sh",
+            "text": "00-intro.md"
+        }
     },
     "environment": {
         "uilayout": "editor-terminal",

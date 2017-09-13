@@ -31,11 +31,11 @@
                 "title": "Monitoring Metrics",
                 "text": "06-explore-metrics.md"
             }
-        ]
-    },
-    "intro": {
-        "courseData": "run-init.sh",
-        "text": "00-intro.md"
+        ],
+        "intro": {
+            "courseData": "run-init.sh",
+            "text": "00-intro.md"
+        },
     },
     "environment": {
         "uilayout": "editor-terminal",

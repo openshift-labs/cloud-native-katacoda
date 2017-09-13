@@ -27,12 +27,12 @@
                 "title": "Run the Pipeline on Every Code Change",
                 "text": "05-webhooks.md"
             }
-        ]
-    },
-    "intro": {
-        "courseData": "run-init.sh",
-        "code": "run-prep-lab.sh",
-        "text": "00-intro.md"
+        ],
+        "intro": {
+            "courseData": "run-init.sh",
+            "code": "run-prep-lab.sh",
+            "text": "00-intro.md"
+        }
     },
     "environment": {
         "uilayout": "editor-terminal",

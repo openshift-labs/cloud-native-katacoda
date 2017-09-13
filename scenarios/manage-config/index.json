@@ -23,11 +23,11 @@
                 "title": "Sensitive Configuration Data",
                 "text": "04-secrets.md"
             }
-        ]
-    },
-    "intro": {
-        "courseData": "run-init.sh",
-        "text": "00-intro.md"
+        ],
+        "intro": {
+            "courseData": "run-init.sh",
+            "text": "00-intro.md"
+        }
     },
     "environment": {
         "uilayout": "editor-terminal",

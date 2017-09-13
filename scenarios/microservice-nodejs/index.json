@@ -11,11 +11,11 @@
                 "title": "Deploy Web UI on OpenShift",
                 "text": "01-deploy.md"
             }
-        ]
-    },
-    "intro": {
-        "courseData": "run-init.sh",
-        "text": "00-intro.md"
+        ],
+        "intro": {
+            "courseData": "run-init.sh",
+            "text": "00-intro.md"
+        }
     },
     "environment": {
         "uilayout": "editor-terminal",

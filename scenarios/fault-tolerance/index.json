@@ -27,12 +27,12 @@
                 "title": "Deploy the API Gateway Circuit Breaker",
                 "text": "05-deploy-gateway.md"
             }
-        ]
-    },
-    "intro": {
-        "courseData": "run-init.sh",
-        "code": "run-prep-lab.sh",
-        "text": "00-intro.md"
+        ],
+        "intro": {
+            "courseData": "run-init.sh",
+            "code": "run-prep-lab.sh",
+            "text": "00-intro.md"
+        }
     },
     "environment": {
         "uilayout": "editor-terminal",
