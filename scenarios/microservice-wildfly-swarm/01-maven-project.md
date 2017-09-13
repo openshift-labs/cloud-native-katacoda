@@ -1,5 +1,5 @@
-The **inventory-wildfly-swarm** project has the following structure which shows the components of 
-the WildFly Swarm project laid out in different subdirectories according to Maven best 
+The **inventory-wildfly-swarm** project shows the components of 
+a WildFly Swarm project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
 `tree`{{execute}}

@@ -1,10 +1,7 @@
-It’s time to build and deploy our service on OpenShift. First, make sure you are on the **coolstore** project:
-
-`oc project coolstore`{{execute}}
-
+It’s time to build and deploy our service on OpenShift. 
 OpenShift [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature can be used to build a container image from your project. OpenShift 
-S2I uses the supported OpenJDK container image to build the final container image 
+S2I uses the [supported OpenJDK container image](https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html/red_hat_java_s2i_for_openshift) to build the final container image 
 of the Catalog service by uploading the Spring Boot uber-jar from the **target**
 folder to the OpenShift platform. 
 
@@ -48,7 +45,7 @@ and assigns a public DNS name to it so that it can be reached from outside OpenS
 You can review the above resources in the OpenShift Web Console or using **oc describe** command:
 
 > **bc** is the short-form of **buildconfig** and can be interchangeably used instead of it with the 
-> OpenShift CLI. The same goes for **is** instead of **imagestream** **dc** instead of **deploymentconfig**
+> OpenShift CLI. The same goes for **is** instead of **imagestream**, **dc** instead of **deploymentconfig**
 > and **svc** instead of **service**
 
 `oc describe bc catalog-s2i`{{execute}}

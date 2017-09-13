@@ -1,7 +1,4 @@
-It’s time to build and deploy our service on OpenShift. First, make sure you are on the **coolstore** project:
-
-`oc project coolstore`{{execute}}
-
+It’s time to build and deploy our service on OpenShift. 
 Like discussed, Vert.x service discovery integrates into OpenShift service discovery via OpenShift 
 REST API and imports available services to make them available to the Vert.x application. Security 
 in OpenShift comes first and therefore accessing the OpenShift REST API requires the user or the 
@@ -17,7 +14,7 @@ Grant permission to the API Gateway to be able to access OpenShift REST API and 
 
 OpenShift [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature can be used to build a container image from your project. OpenShift 
-S2I uses the supported OpenJDK container image to build the final container 
+S2I uses the [supported OpenJDK container image](https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html/red_hat_java_s2i_for_openshift) to build the final container 
 image of the API Gateway service by uploading the Vert.x uber-jar from 
 the **target** folder to the OpenShift platform. 
 
@@ -53,7 +50,7 @@ pods (containers) in order to proxy the connections it receives to them. Backing
 added to or removed from a service arbitrarily while the service remains consistently available, 
 enabling anything that depends on the service to refer to it at a consistent address (service name 
 or IP).
-* Route\: **gateway** route registers the service on the built-in external load-balancer 
+* Route: **gateway** route registers the service on the built-in external load-balancer 
 and assigns a public DNS name to it so that it can be reached from outside OpenShift cluster.
 
 You can review the above resources in the OpenShift Web Console or using **oc describe** command:

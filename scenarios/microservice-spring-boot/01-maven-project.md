@@ -1,5 +1,5 @@
-The **catalog-spring-boot** project has the following structure which shows the components of 
-the Spring Boot project laid out in different subdirectories according to Maven best 
+The **catalog-spring-boot** project shows the components of 
+a Spring Boot project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
 `tree`{{execute}}
@@ -28,7 +28,7 @@ Once built, the resulting **jar** is located in the **target/** directory:
 
 `ls target/*.jar`{{execute}}
 
-The listed jar archite, **catalog-1.0-SNAPSHOT.jar** is an uber-jar with all the dependencies required packaged in the **jar** to enable running the application with **java -jar**
+The listed jar archite, **catalog-1.0-SNAPSHOT.jar** is an uber-jar with all the dependencies required packaged in the **jar** to enable running the application with **java -jar**.
 
 Now that the project is ready, let's get coding and create a domain model, data repository, and a  
 RESTful endpoint to create the Catalog service:

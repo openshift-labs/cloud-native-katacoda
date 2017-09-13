@@ -27,10 +27,11 @@ public class CatalogController {
 }
 </pre>
 
-The above REST services defines an endpoint that is accessible via **HTTP GET** at **/api/catalog** Notice 
-the **repository** field on the controller class which is used to retrieve the list of products. Spring Boot 
+The above REST services defines an endpoint that is accessible via **HTTP GET** at **/api/catalog**.
+
+Notice the **repository** field on the controller class which is used to retrieve the list of products. Spring Boot 
 automatically provides an implementation for **ProductRepository** at runtime and 
-[it into the controller using the **@Autowire** annotation](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-spring-beans-and-dependency-injection.html).
+[injects it into the controller using the **@Autowire** annotation](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-spring-beans-and-dependency-injection.html).
 
 Build and package the Catalog service using Maven.
 

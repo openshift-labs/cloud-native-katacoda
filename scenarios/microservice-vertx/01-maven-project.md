@@ -1,5 +1,5 @@
-The **gateway-vertx** project has the following structure which shows the components of 
-the Vert.x project laid out in different subdirectories according to Maven best 
+The **gateway-vertx** project shows the components of 
+a Vert.x project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
 `tree`{{execute}}
@@ -15,9 +15,7 @@ to easily scale and handle large amounts of throughput with few threads.All API 
 
 Although you can have multiple, there is currently only one Verticle created in the **gateway-vertx** project. 
 
-Examine `GatewayVerticle.java`
-
-Here is what happens in the above code:
+Examine **GatewayVerticle.java**. Here is what happens in this verticle:
 
 1. A Verticle is created by extending from **AbstractVerticle** class
 2. **Router** is retrieved for mapping the REST endpoints
@@ -37,8 +35,8 @@ Once built, the resulting *jar* is located in the **target/** directory:
 
 `ls target/*.jar`{{execute}}
 
-The listed jar archive, **gateway-1.0-SNAPSHOT.jar** is an uber-jar with all the dependencies required packaged in the *jar* to enable running the 
-application with **java -jar**
+The listed jar archive, **gateway-1.0-SNAPSHOT.jar** is an uber-jar with all the 
+dependencies required packaged in the *jar* to enable running the application with **java -jar**.
 
 You can run the Vert.x application using **java -jar** or conveniently using **vertx:run** goal from 
 the **vertx-maven-plugin**

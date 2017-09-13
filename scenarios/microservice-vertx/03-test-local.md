@@ -1,22 +1,24 @@
 Since the API Gateway requires the Catalog and Inventory services to be running, let's run all three 
 services simultaneously and verify that the API Gateway works as expected. 
 
-Open a new terminal window and start the Catalog service:
+Start the Catalog service in a new terminal:
 
 
-`cd catalog-spring-boot`{{copy}}
-`mvn spring-boot:run`{{copy}}
+`cd catalog-spring-boot`{{execute T2}}
 
-Open another new terminal window and start the Inventory service:
+`mvn spring-boot:run`{{execute T2}}
 
-`cd inventory-wildfly-swarm`{{copy}}
-`mvn wildfly-swarm:run`{{copy}}
+Start the Inventory service as well in another new terminal:
 
-Now that Catalog and Inventory services are up and running, start the API Gateway service in a new terminal window:
+`cd inventory-wildfly-swarm`{{execute T3}}
 
+`mvn wildfly-swarm:run`{{execute T3}}
 
-`cd gateway-vertx`{{copy}}
-`mvn vertx:run`{{copy}}
+Now that Catalog and Inventory services are up and running, start the API Gateway service:
+
+`cd gateway-vertx`{{execute T1}}
+
+`mvn vertx:run`{{execute T1}}
 
 > You will see the following exception in the logs: `java.io.FileNotFoundException: /.../kubernetes.io/serviceaccount/token`
 > 
@@ -26,8 +28,7 @@ Now that Catalog and Inventory services are up and running, start the API Gatewa
 
 Now you can test the API Gateway by hitting the **/api/products** endpoint using **curl**
 
-
-`curl http://localhost:8080/api/products`{{execute}}
+`curl http://localhost:8080/api/products`{{execute T1}}
 
 You should see a JSON response like:
 ```
