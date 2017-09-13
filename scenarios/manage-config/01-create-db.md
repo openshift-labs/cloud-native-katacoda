@@ -24,7 +24,7 @@ oc new-app postgresql-persistent \
     --param=POSTGRESQL_USER=inventory \
     --param=POSTGRESQL_PASSWORD=inventory \
     --labels=app=coolstore,microservice=inventory
-```{{execute}}
+```
 
 > The **--param** parameter provides a value for the given parameters. The recommended approach is 
 > not to provide any value for username and password and allow the template to generate a random value for 
