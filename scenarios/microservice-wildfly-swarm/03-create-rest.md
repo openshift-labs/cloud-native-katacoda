@@ -1,5 +1,5 @@
 WildFly Swarm uses JAX-RS standard for building REST services. Create a new Java class named 
-`InventoryResource.java` in `com.redhat.cloudnative.inventory` package with the following content:
+**InventoryResource.java** in **com.redhat.cloudnative.inventory** package with the following content:
 
 <pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java" data-target="replace">
 package com.redhat.cloudnative.inventory;
@@ -25,12 +25,12 @@ public class InventoryResource {
 }
 </pre>
 
-The above REST services defines an endpoint that is accessible via `HTTP GET` at 
-for example `/api/inventory/329299` with 
+The above REST services defines an endpoint that is accessible via **HTTP GET** at 
+for example **/api/inventory/329299** with 
 the last path param being the product id which we want to check its inventory status.
 
 Build and package the Inventory service using Maven
 
 `mvn package`{{execute}}
 
-You should see a `BUILD SUCCESS` in the build logs.
+You should see a **BUILD SUCCESS** in the build logs.

@@ -2,10 +2,10 @@ Using WildFly Swarm maven plugin, you can conveniently run the application local
 
 `mvn wildfly-swarm:run`{{execute}}
 
-> Alternatively, you can run the application using the uber-jar produced during the Maven build: `java -jar target/inventory-1.0-SNAPSHOT-swarm.jar`
+> Alternatively, you can run the application using the uber-jar produced during the Maven build: **java -jar target/inventory-1.0-SNAPSHOT-swarm.jar**
 
-Once you see `WildFly Swarm is Ready` in the logs, the Inventory service is up and running and you can access the 
-inventory REST API. Let’s test it out using `curl` in a new terminal window:
+Once you see **WildFly Swarm is Ready** in the logs, the Inventory service is up and running and you can access the 
+inventory REST API. Let’s test it out using **curl** in a new terminal window:
 
 `curl http://localhost:9001/api/inventory/329299`{{execute}}
 
@@ -16,4 +16,4 @@ You would see a JSON response like this:
 
 The REST API returned a JSON object representing the inventory count for this product. Congratulations!
 
-Stop the service by pressing `CTRL-C` in the terminal window.
+Stop the service by pressing **CTRL-C** in the terminal window.
