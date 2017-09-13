@@ -10,7 +10,7 @@ Click on the plus icon on the top navigation bar and then on **New Repository**.
 
 ![Create New Repository](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-gogs-plus-icon.png)
 
-Give `inventory-wildfly-swarm` as **Repository Name** and click on **Create Repository** 
+Give **inventory-wildfly-swarm**as **Repository Name** and click on **Create Repository** 
 button, leaving the rest with default values.
 
 ![Create New Repository](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-gogs-new-repo.png)

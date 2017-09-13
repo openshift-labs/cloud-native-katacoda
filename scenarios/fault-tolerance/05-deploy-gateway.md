@@ -1,14 +1,14 @@
 
 You can now trigger a new continuer image build on OpenShift using 
-the `oc start-build` command which allows you to build container images directly from the application 
-archives (`jar`, `war`, etc) without the need to have access to the source code for example by downloading 
-the `jar` file form the Maven repository (e.g. Nexus or Artifactory).
+the **oc start-build**command which allows you to build container images directly from the application 
+archives (**jar** **war** etc) without the need to have access to the source code for example by downloading 
+the **jar**file form the Maven repository (e.g. Nexus or Artifactory).
 
 `oc start-build gateway-s2i --from-file=target/gateway-1.0-SNAPSHOT.jar`{{execute}}
 
-As soon as the new `gateway` container image is built, OpenShift deploys the new image automatically 
+As soon as the new **gateway**container image is built, OpenShift deploys the new image automatically 
 thanks to the [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
-defined on the `gateway` deployment config.
+defined on the **gateway**deployment config.
 
 Let's try the Web UI again in the browser while the Inventory service is still down.
 

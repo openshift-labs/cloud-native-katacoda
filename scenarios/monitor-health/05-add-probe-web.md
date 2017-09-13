@@ -2,7 +2,7 @@ Although you can add the liveness and health probes to the Web UI using a single
 give the OpenShift Web Console a try this time.
 
 Go the OpenShift Web Console in your browser and in the **coolstore** project. Click on 
-**Applications >> Deployments** on the left-side bar. Click on `web` and then the **Configuration** 
+**Applications >> Deployments** on the left-side bar. Click on **web**and then the **Configuration** 
 tab. You will see the warning about health checks, with a link to
 click in order to add them. Click **Add health checks** now. 
 

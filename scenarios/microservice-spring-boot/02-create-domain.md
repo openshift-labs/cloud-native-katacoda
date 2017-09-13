@@ -1,6 +1,6 @@
 Use your favorite text-editor (we &hearts; Visual Studio Code and Sublime) or IDE (JBoss Developer 
-Studio is our favorite) to create a new Java class named `Product.java` in 
-`com.redhat.cloudnative.catalog` package with the following code:
+Studio is our favorite) to create a new Java class named **Product.java**in 
+**com.redhat.cloudnative.catalog**package with the following code:
 
 <pre class="file" data-filename="./catalog-spring-boot/src/main/java/com/redhat/cloudnative/catalog/Product.java" data-target="replace">
 package com.redhat.cloudnative.catalog;
@@ -67,6 +67,6 @@ public class Product implements Serializable {
 }
 </pre>
 
-Review the `Product` domain model and note the JPA annotations on this class. `@Entity` marks the 
-class as a JPA entity, `@Table` customizes the table creation process by defining a table 
-name and database constraint and `@Id` marks the primary key for the table
+Review the **Product**domain model and note the JPA annotations on this class. **@Entity**marks the 
+class as a JPA entity, **@Table**customizes the table creation process by defining a table 
+name and database constraint and **@Id**marks the primary key for the table

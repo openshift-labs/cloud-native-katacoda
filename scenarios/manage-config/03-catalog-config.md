@@ -1,11 +1,11 @@
 You should be quite familiar with config maps by now. Spring Boot application configuration is provided 
-via a properties filed called `application.properties` and can be 
+via a properties filed called **application.properties**and can be 
 [overriden and overlayed via multiple mechanisms](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html). 
 
-> Check out the default Spring Boot configuration in Catalog Maven project `catalog-spring-boot/src/main/resources/application.properties`.
+> Check out the default Spring Boot configuration in Catalog Maven project **catalog-spring-boot/src/main/resources/application.properties**
 
 In this lab, you will configure the Catalog service which is based on Spring Boot to override the default 
-configuration using an alternative `application.properties` backed by a config map.
+configuration using an alternative **application.properties**backed by a config map.
 
 Create a config map with the the Spring Boot configuration content using the PostgreSQL database 
 credentials:
@@ -42,7 +42,7 @@ Although Spring Cloud Kubernetes tries to discover config maps, due to security 
 by default are not allowed to snoop around OpenShift clusters and discover objects. Security comes first, 
 and discovery is a privilege that needs to be granted to containers in each project. 
 
-Since you do want Spring Boot to discover the config maps inside the `coolstore` project, you 
+Since you do want Spring Boot to discover the config maps inside the **coolstore**project, you 
 need to grant permission to the Spring Boot service account to access the OpenShift REST API and find the 
 config maps. However you have done this already in previous labs and no need to grant permission again. 
 
@@ -59,7 +59,7 @@ When the Catalog container is ready, verify that the PostgreSQL database is bein
 
 `oc logs dc/catalog | grep hibernate.dialect`{{execute}}
 
-You would see the `PostgreSQL94Dialect` is selected by Hibernate in the logs:
+You would see the **PostgreSQL94Dialect**is selected by Hibernate in the logs:
 
 ```
 2017-08-10 21:07:51.670  INFO 1 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect

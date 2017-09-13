@@ -26,8 +26,8 @@ Let's take the Inventory service down and see what happens to the CoolStore onli
 
 Now point your browser at the Web UI route url.
 
-> You can find the Web UI route url in the OpenShift Web Console above the `web` pod or 
-> using the `oc get routes` command.
+> You can find the Web UI route url in the OpenShift Web Console above the **web**pod or 
+> using the **oc get routes**command.
 
 ![CoolStore Without Circuit Breaker](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-coolstore-no-cb.png)
 
@@ -38,7 +38,7 @@ The CoolStore online shop cannot function without the products list, however the
 crucial bit in the shopping experience. Let's add a circuit breaker for calls to the Inventory service and 
 provide a default inventory status when the Inventory service is not responsive.
 
-In the `gateway-vertx` project, replace the `GatewayVerticle.java` code with the following:
+In the **gateway-vertx**project, replace the **GatewayVerticle.java**code with the following:
 
 <pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java" data-target="replace">
 package com.redhat.cloudnative.gateway;
@@ -160,8 +160,8 @@ public class GatewayVerticle extends AbstractVerticle {
 </pre>
 
 The above code is quite similar to the previous code however it wraps the calls to the Inventory 
-service in a `CircuitBreaker` using the built-in circuit breaker in Vert.x. The circuit breaker 
-is configured (using `CircuitBreakerOptions`) to flip open after 3 failures and time out on the 
+service in a **CircuitBreaker**using the built-in circuit breaker in Vert.x. The circuit breaker 
+is configured (using **CircuitBreakerOptions** to flip open after 3 failures and time out on the 
 calls after 1 second. 
 
 ```
@@ -174,7 +174,7 @@ circuit = CircuitBreaker.create("inventory-circuit-breaker", vertx,
 );
 ```
 
-The `circuit.rxExecuteCommandWithFallback(...)` method, defines the fallback logic for 
+The **circuit.rxExecuteCommandWithFallback(...)**method, defines the fallback logic for 
 when the circuit is open and logs an error without calling the Inventory service in those 
 scenarios.
 

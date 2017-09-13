@@ -18,11 +18,11 @@ the database credentials in a secret in the project it's being created:
 
 `oc describe secret catalog-postgresql`{{execute}}
 
-This secret has two encrypted properties defined as `database-user` and `database-password` which hold 
+This secret has two encrypted properties defined as **database-user**and **database-password**which hold 
 the PostgreSQL username and password values. These values are injected in the PostgreSQL container as 
 environment variables and used to initialize the database.
 
-Go to the **coolstore** in the OpenShift Web Console and click on the `catalog-postgresql` 
+Go to the **coolstore** in the OpenShift Web Console and click on the **catalog-postgresql**
 deployment (blue text under the title **Deployment**) and then on the **Environment**. Notice the values 
 from the secret are defined as env vars on the deployment:
 

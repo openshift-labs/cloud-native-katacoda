@@ -6,7 +6,7 @@ In order to automate triggering the pipeline, you can define a webhook on your G
 to notify OpenShift on every commit that is made to the Git repository and trigger a pipeline 
 execution.
 
-You can get see the webhook links for your `inventory-pipeline` using the `describe` command.
+You can get see the webhook links for your **inventory-pipeline**using the **describe**command.
 
 `oc describe bc inventory-pipeline`{{execute}}
 
@@ -45,7 +45,7 @@ Click on **Add Webhook**.
 
 All done. You can click on the newly defined webhook to see the list of *Recent Delivery*. 
 Clicking on the **Test Delivery** button allows you to manually trigger the webhook for 
-testing purposes. Click on it and verify that the `inventory-pipeline` start running 
+testing purposes. Click on it and verify that the **inventory-pipeline**start running 
 immediately.
 
 Well done! You are ready for the next lab.

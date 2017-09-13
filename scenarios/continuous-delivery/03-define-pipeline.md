@@ -10,7 +10,7 @@ a Git repository and referenced by the build configuration.
 Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline 
 and is created using a [scripted or declarative syntax](https://jenkins.io/doc/book/pipeline/syntax/).
 
-Create a file called `Jenkinsfile` in the root the `inventory-wildfly-swarm`:
+Create a file called **Jenkinsfile**in the root the **inventory-wildfly-swarm**
 
 <pre class="file" data-filename="./inventory-wildfly-swarm/Jenkinsfile" data-target="replace">
 node("maven") {
@@ -39,16 +39,16 @@ This pipeline has three stages:
 * *Deploy Image*: to deploy the Inventory container image in the current project
 
 Note that the pipeline definition is fully integrated with OpenShift and you can 
-perform operations like image build, image deploy, etc directly from within the `Jenkinsfile`.
+perform operations like image build, image deploy, etc directly from within the **Jenkinsfile**
 
 When building deployment pipelines, it's important to treat your [infrastructure and everything else that needs to be configured (including the pipeline definition) as code](https://martinfowler.com/bliki/InfrastructureAsCode.html) 
 and store them in a source repository for version control. 
 
-Commit and push the `Jenkinsfile` to the Git repository.
+Commit and push the **Jenkinsfile**to the Git repository.
 
 `git add Jenkinsfile`{{execute}}
 `git commit -m "pipeline added"`{{execute}}
 `git push origin master`{{execute}}
 
 The pipeline definition is ready and now you can create a deployment pipeline using 
-this `Jenkinsfile`.
+this **Jenkinsfile**

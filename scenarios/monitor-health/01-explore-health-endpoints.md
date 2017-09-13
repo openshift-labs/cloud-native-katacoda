@@ -5,13 +5,13 @@ database connection health, backoffice system availability, etc).
 
 [Spring Boot Actuator](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready) is a 
 sub-project of Spring Boot which adds health and management HTTP endpoints to the application. Enabling Spring Boot 
-Actuator is done via adding `org.springframework.boot:spring-boot-starter-actuator` to the Maven project 
+Actuator is done via adding **org.springframework.boot:spring-boot-starter-actuator**to the Maven project 
 dependencies which is already done for the Catalog services.
 
-Verify that the health endpoint works for the Catalog service using `curl`, replacing `CATALOG-ROUTE-HOST` 
+Verify that the health endpoint works for the Catalog service using **curl** replacing **CATALOG-ROUTE-HOST**
 with the Catalog route url:
 
-> Remember how to find out the route urls? Try `oc get route catalog` 
+> Remember how to find out the route urls? Try **oc get route catalog**
 
 `curl http://CATALOG-ROUTE-HOST/health`
 
@@ -20,14 +20,14 @@ You should see a response like:
 {"status":"UP","diskSpace":{"status":"UP","total":3209691136,"free":2667175936,"threshold":10485760},"db":{"status":"UP","database":"H2","hello":1}}
 ```
 
-[WildFly Swarm health endpoints](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/advanced/monitoring.html) function in a similar fashion and are enabled by adding `org.wildfly.swarm:monitor` 
+[WildFly Swarm health endpoints](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/advanced/monitoring.html) function in a similar fashion and are enabled by adding **org.wildfly.swarm:monitor**
 to the Maven project dependencies. 
 This is also already done for the Inventory service.
 
-Verify that the health endpoint works for the Inventory service using `curl`, replacing `INVENTORY-ROUTE-HOST` 
+Verify that the health endpoint works for the Inventory service using **curl** replacing **INVENTORY-ROUTE-HOST**
 with the Catalog route url:
 
-> You know this by know! Use `oc get route inventory` to get the Inventory route url 
+> You know this by know! Use **oc get route inventory**to get the Inventory route url 
 
 `curl http://INVENTORY-ROUTE-HOST/node`
 
@@ -43,12 +43,12 @@ with the Catalog route url:
 ```
 
 Expectedly, Eclipse Vert.x also provides a [health check module](http://vertx.io/docs/vertx-health-check/java) 
-which is enabled by adding `io.vertx:vertx-health-check` as a dependency to the Maven project. 
+which is enabled by adding **io.vertx:vertx-health-check**as a dependency to the Maven project. 
 
-Verify that the health endpoint works for the Inventory service using `curl`, replacing `API-GATEWAY-ROUTE-HOST` 
+Verify that the health endpoint works for the Inventory service using **curl** replacing **API-GATEWAY-ROUTE-HOST**
 with the API Gateway route url::
 
-> Yup! You can use `oc get route gateway` to get the API Gateway route url 
+> Yup! You can use **oc get route gateway**to get the API Gateway route url 
 
 `curl http://API-GATEWAY-ROUTE-HOST/health`
 

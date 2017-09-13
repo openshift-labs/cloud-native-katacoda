@@ -12,7 +12,7 @@ container image of it.
 The source code for the the Node.js Web front-end is available in this Git repository: 
 <https://github.com/openshift-roadshow/cloud-native-labs/tree/master/web-nodejs>
 
-First, make sure you are on the `coolstore` project:
+First, make sure you are on the **coolstore**project:
 
 `oc project coolstore`{{execute}}
 
@@ -21,7 +21,7 @@ Use the OpenShift CLI command to create a new build and deployment for the Web c
 > Feeling adventurous? Build and deploy the Web front-end via the OpenShift Web Console 
 > instead. To give you a hint, start by clicking on **Add to project** within the 
 > **coolstore** project and pick **JavaScript** and then **Node.js** in the service 
-> catalog. Don't forget to click on **advanced options** and set **Context Dir** to `web-nodejs` 
+> catalog. Don't forget to click on **advanced options** and set **Context Dir** to **web-nodejs**
 > which is the sub-folder of the Git repository where the source code for Web resides.
 
 ```
@@ -31,8 +31,8 @@ oc new-app nodejs~https://github.com/openshift-roadshow/cloud-native-labs.git \
         --labels=app=coolstore,microservice=web
 ```{{execute}}
 
-The `--context-dir` option specifies the sub-directly of the Git repository which contains 
-the source code for the application to be built and deployed. The `--labels` allows 
+The **--context-dir**option specifies the sub-directly of the Git repository which contains 
+the source code for the application to be built and deployed. The **--labels**allows 
 assigining arbitrary key-value labels to the application objects in order to make it easier to 
 find them later on when you have many applications in the same project.
 
@@ -41,7 +41,7 @@ logs using OpenShift Web Console or OpenShift CLI:
 
 `oc logs -f bc/web`{{execute}}
 
-The `-f` option is to follow the logs as the build progresses. After the building the Node.s Web UI 
+The **-f**option is to follow the logs as the build progresses. After the building the Node.s Web UI 
 completes, it gets pushed into the internal image registry in OpenShift and then deployed within 
 your project.
 
@@ -57,10 +57,10 @@ products and their inventory status.
 
 ![CoolStore Shop](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-web.png)
 
-Currently the `fabric8-maven-plugin` has a 
+Currently the **fabric8-maven-plugin**has a 
 [bug](https://github.com/fabric8io/fabric8-maven-plugin/issues/742)
 that prevents grouping the pods properly. Run the following 
-tweak to assign an `app` label to deployment configs and group them 
+tweak to assign an **app**label to deployment configs and group them 
 together in the OpenShift Web Console
 
 `oc label dc app=coolstore --all --overwrite`{{execute}}

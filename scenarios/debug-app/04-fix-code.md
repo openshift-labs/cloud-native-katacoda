@@ -1,4 +1,4 @@
-Edit `com/redhat/cloudnative/inventory/InventoryResource.java` add replace the code with 
+Edit **com/redhat/cloudnative/inventory/InventoryResource.java**add replace the code with 
 the following in order to return a zero inventory for products that don't exist in the inventory 
 database.
 
@@ -47,7 +47,7 @@ Commit the changes to the Git repository.
 `git push origin master`{{execute}}
 ~~~
 
-As soon as you commit the changes to the Git repository, the `inventory-pipeline` gets 
+As soon as you commit the changes to the Git repository, the **inventory-pipeline**gets 
 triggered to build and deploy a new Inventory container with the fix. Go to the 
 OpenShift Web Console and inside the **coolstore** project. On the sidebar 
 menu, Click on **Builds >> Pipelines** to see its progress.
