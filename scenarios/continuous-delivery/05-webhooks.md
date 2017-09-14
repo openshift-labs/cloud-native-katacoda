@@ -19,7 +19,7 @@ Copy the Generic webhook url which you will need in the next steps.
 
 Go to Gogs browser tab and then your **inventory-wildfly-swarm** Git repository, then click on **Settings**:
 
-<https://gogs-[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
+<https://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
 
 ![Repository Settings](https://katacoda.com/openshift-roadshow/assets/cd-gogs-settings-link.png)
 
