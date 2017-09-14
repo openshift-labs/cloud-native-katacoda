@@ -9,7 +9,7 @@
         "steps": [
             {
                 "title": "Investigate The Bug",
-                "text": "01-investigate.md"
+                "text": "01-investigation.md"
             },
             {
                 "title": "Enable Remote Debugging",
