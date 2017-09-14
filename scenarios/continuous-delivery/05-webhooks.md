@@ -39,4 +39,4 @@ Clicking on the **Test Delivery** button allows you to manually trigger the webh
 testing purposes. Click on it and verify that the **inventory-pipeline** start running 
 immediately.
 
-Well done! You are ready for the next lab.
+Well done! You are ready for the next scenario.

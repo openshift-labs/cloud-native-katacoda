@@ -58,4 +58,4 @@ You should see a response like:
 ```
 
 Last but not least, although you can build more sophisticated health endpoints for the Web UI as well, you 
-can use the root context ("/") of the Web UI in this lab to verify it's up and running.
+can use the root context ("/") of the Web UI in this scenario to verify it's up and running.

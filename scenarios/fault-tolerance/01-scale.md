@@ -10,7 +10,7 @@ between those instances (horizontal scaling).
 
 ![Scaling Up vs Scaling Out](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/fault-scale-up-vs-out.png)
 
-In previous labs, you learned how to build container images from your application code and 
+In previous scenarios, you learned how to build container images from your application code and 
 deploy them on OpenShift. Container images on OpenShift follow the 
 [immutable server](https://martinfowler.com/bliki/ImmutableServer.html) pattern which guarantees 
 your application instances will always starts from a known well-configured state and makes 

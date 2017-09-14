@@ -19,7 +19,7 @@ user interface and allows the CoolStore online shop to continue functioning and 
 out-of-stock product to a few customers can simply be resolved by a discount coupons while 
 losing the trust of all visiting customers due to a crashed online store is not so easily repairable!
 
-Scale the Inventory service back up before moving on to the next labs.
+Scale the Inventory service back up before moving on to the next scenarios.
 
 `oc scale dc/inventory --replicas=1`{{execute}}
 

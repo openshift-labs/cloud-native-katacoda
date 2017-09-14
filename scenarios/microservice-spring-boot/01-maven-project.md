@@ -12,8 +12,8 @@ Examine **CatalogApplication.java**
 
 The database is configured using the Spring application configuration file which is located at 
 **src/main/resources/application.properties**. Examine this file to see the database connection details 
-and note that an in-memory H2 database is used in this lab for local development and will be replaced
-with a PostgreSQL database in the following labs. Be patient! More on that later.
+and note that an in-memory H2 database is used in this scenario for local development and will be replaced
+with a PostgreSQL database in the following scenarios. Be patient! More on that later.
 
 You can use Maven to make sure the skeleton project builds successfully.
 

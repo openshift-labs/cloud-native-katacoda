@@ -73,4 +73,4 @@ You should see a JSON response like:
 {"itemId":"329299","quantity":35}
 ```
 
-Well done! You are ready to move on to the next lab.
+Well done! You are ready to move on to the next scenario.

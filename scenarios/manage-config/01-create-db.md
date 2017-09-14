@@ -26,7 +26,7 @@ for the Inventory service using the PostgreSQL template that is provided out-of-
 
 > The **--param** parameter provides a value for the given parameters. The recommended approach is 
 > not to provide any value for username and password and allow the template to generate a random value for 
-> you due to security reasons. In this lab in order to reduce typos, a fixed value is provided for username and 
+> you due to security reasons. In this scenario in order to reduce typos, a fixed value is provided for username and 
 > password.
 
 And another one for the Catalog service:

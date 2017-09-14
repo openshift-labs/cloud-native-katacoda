@@ -80,7 +80,7 @@ As you the **ab** container generates the load, you will notice that it will cre
 Web UI cpu usage and trigger the autoscaler to scale the Web UI container to 5 pods (as configured 
 on the deployment config) to cope with the load.
 
-> Depending on the resources available on the OpenShift cluster in the lab environment, 
+> Depending on the resources available on the OpenShift cluster, 
 > the Web UI might scale to fewer than 5 pods to handle the extra load. You can increase 
 > the load by specifying a higher number of requests (e.g. 80K) using **ab -n** flag.
 

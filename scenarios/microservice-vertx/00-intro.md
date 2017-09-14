@@ -1,5 +1,5 @@
-In this lab you will learn about Eclipse Vert.x and how you can 
-build microservices using reactive principles. During this lab you will 
+In this scenario you will learn about Eclipse Vert.x and how you can 
+build microservices using reactive principles. During this scenario you will 
 create a scalable API Gateway that aggregates Catalog and Inventory APIs.
 
 ## What is Eclipse Vert.x?

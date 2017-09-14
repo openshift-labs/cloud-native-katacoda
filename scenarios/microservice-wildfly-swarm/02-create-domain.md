@@ -72,7 +72,7 @@ for this project. Also note that the configurations uses **META-INF/load.sql** t
 initial data into the database.
 
 Examine **src/main/resources/project-stages.yml** to see the database connection details. 
-An in-memory H2 database is used in this lab for local development and in the following 
+An in-memory H2 database is used in this scenario for local development and in the following 
 labs will be replaced with a PostgreSQL database. Be patient! More on that later.
 
 Build and package the Inventory service using Maven to make sure you code compiles:

@@ -1,4 +1,4 @@
-In this lab so far you have been looking how to make sure the application pod is running, can scale to accommodate 
+In this scenario so far you have been looking how to make sure the application pod is running, can scale to accommodate 
 user load and recovers from failures. However failures also happen in the downstream services that an application 
 is dependent on. It's not uncommon that the whole application fails or slows down because one of the downstream 
 services consumed by the application is not responsive or responds slowly.

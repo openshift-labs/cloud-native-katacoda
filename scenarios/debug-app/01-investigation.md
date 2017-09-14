@@ -3,7 +3,7 @@ products not be displayed in the web interface.
 
 ![Inventory Status Bug](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/debug-coolstore-bug.png)
 
-This is not an expected behavior! In previous labs, you added a circuit breaker to 
+This is not an expected behavior! In previous scenarios, you added a circuit breaker to 
 protect the CoolStore application from failures and in case the Inventory API is not 
 available, to skip it and show the products without the inventory status. However, right 
 now the inventory status is available for all products but one which is not how we 

@@ -1,6 +1,6 @@
-In this lab you will learn about Node.js and will deploy the Node.js and Angular-based 
+In this scenario you will learn about Node.js and will deploy the Node.js and Angular-based 
 web front+end for the CoolStore online shop which uses the API Gateway services you deployed 
-in previous labs. 
+in previous scenarios. 
 
 ![API Gateway Pattern](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-arch.png)
 

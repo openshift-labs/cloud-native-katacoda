@@ -1,4 +1,4 @@
-In the previous labs, you have created two RESTful services: Catalog and Inventory. Instead of the 
+In the previous scenarios, you have created two RESTful services: Catalog and Inventory. Instead of the 
 web front contacting each of these backend services, you can create an API Gateway which is an entry 
 point for for the web front to access all backend services from a single place. This pattern is expectedly 
 called [API Gateway](http://microservices.io/patterns/apigateway.html) and is a common practice in Microservices 
@@ -112,7 +112,7 @@ for finding where dependent services are deployed
 and accessing their endpoints. Vert.x service discovery can seamlessly integrated with external 
 service discovery mechanisms provided by OpenShift, Kubernetes, Consul, Redis, etc.
 
-In this lab, since you will deploy the API Gateway on OpenShift, the OpenShift service discovery 
+In this scenario, since you will deploy the API Gateway on OpenShift, the OpenShift service discovery 
 bridge is used to automatically import OpenShift services into the Vert.x application as they 
 get deployed and undeployed. Since you also want to test the API Gateway locally, there is an 
 **onErrorReturn()** clause in the the service lookup to fallback on a local service for Inventory 

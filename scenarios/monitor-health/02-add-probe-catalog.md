@@ -1,5 +1,5 @@
 Health probes are defined on the deployment config for each pod and can be added using OpenShift Web 
-Console or OpenShift CLI. You will try both in this lab.
+Console or OpenShift CLI. You will try both in this scenario.
 
 Like mentioned, health probes are defined on a deployment config for each pod. Review the available 
 deployment configs in the project. 

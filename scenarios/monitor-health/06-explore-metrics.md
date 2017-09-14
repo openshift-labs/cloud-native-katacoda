@@ -12,4 +12,4 @@ to see a more detailed view of the metrics charts.
 
 ![Container Metrics](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-metrics-detailed.png)
 
-Well done! You are ready to move on to the next lab.
+Well done! You are ready to move on to the next scenario.

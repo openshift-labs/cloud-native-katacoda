@@ -1,4 +1,4 @@
-In this lab you will learn about building microservices using a subset of Java EE 
+In this scenario you will learn about building microservices using a subset of Java EE 
 technologies which are driven via the MicroProfile standard. Furthermore you will create a 
 microservice called Inventory using WildFly Swarm to expose a REST API for 
 checking product inventory status.

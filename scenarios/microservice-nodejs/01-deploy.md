@@ -2,10 +2,10 @@ The Web UI is built using Node.js for server-side JavaScript and AngularJS for c
 JavaScript. Let's deploy it on OpenShift using the certified Node.js container image available 
 in OpenShift. 
 
-In the previous labs, you used the OpenShift 
+In the previous scenarios, you used the OpenShift 
 [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature via the [Fabric8 Maven Plugin](https://maven.fabric8.io) to build a container image from the 
-source code on your laptop. In this lab, you will still use S2I but instead instruct OpenShift 
+source code on your laptop. In this scenario, you will still use S2I but instead instruct OpenShift 
 to obtain the application code directly from the source repository and build and deploy a 
 container image of it.
 
@@ -64,4 +64,4 @@ together in the OpenShift Web Console
 
 ![CoolStore Pods](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-pods-nodb.png)
 
-Well done! You are ready to move on to the next lab.
+Well done! You are ready to move on to the next scenario.

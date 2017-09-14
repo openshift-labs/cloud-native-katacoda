@@ -3,7 +3,7 @@ previous sections. In this section, you will learn how to recover application po
 failures happen. In fact, you don't need to do anything because OpenShift automatically 
 recovers failed pods when pods are not feeling healthy. The healthiness of application pods is determined via the 
 [health probes](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes) 
-which was discussed in the previous labs.
+which was discussed in the previous scenarios.
 
 There are three auto-healing scenarios that OpenShift handles automatically:
 

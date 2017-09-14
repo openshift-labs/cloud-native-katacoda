@@ -1,4 +1,4 @@
-In this lab you will learn about deployment pipelines and you will create a pipeline to 
+In this scenario you will learn about deployment pipelines and you will create a pipeline to 
 automate build and deployment of the Inventory service.
 
 #### Continuous Delivery

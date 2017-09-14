@@ -4,7 +4,7 @@ via a properties filed called **application.properties** and can be
 
 > Check out the default Spring Boot configuration in Catalog Maven project **catalog-spring-boot/src/main/resources/application.properties**
 
-In this lab, you will configure the Catalog service which is based on Spring Boot to override the default 
+In this scenario, you will configure the Catalog service which is based on Spring Boot to override the default 
 configuration using an alternative **application.properties** backed by a config map.
 
 Create a config map with the the Spring Boot configuration content using the PostgreSQL database 
@@ -45,7 +45,7 @@ and discovery is a privilege that needs to be granted to containers in each proj
 
 Since you do want Spring Boot to discover the config maps inside the **coolstore** project, you 
 need to grant permission to the Spring Boot service account to access the OpenShift REST API and find the 
-config maps. However you have done this already in previous labs and no need to grant permission again. 
+config maps. However you have done this already in previous scenarios and no need to grant permission again. 
 
 > For the record, you can grant permission to the default service account in your project using this 
 command: 

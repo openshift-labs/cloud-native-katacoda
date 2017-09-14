@@ -74,4 +74,4 @@ You should see a JSON response like:
 [{"itemId":"329299","name":"Red Fedora","desc":"Official Red Hat Fedora","price":34.99},...]
 ```
 
-Well done! You are ready to move on to the next lab.
+Well done! You are ready to move on to the next scenario.

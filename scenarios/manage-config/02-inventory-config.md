@@ -4,7 +4,7 @@ configuration is however using a [YAML file](https://reference.wildfly-swarm.io/
 which you have already packaged within the Inventory Maven project.
 
 The YAML file can be packaged within the application JAR file and be overladed 
-[using command-line or system properties](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/configuration/project_stages.html#_command_line_switches_system_properties) which you will do in this lab.
+[using command-line or system properties](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/configuration/project_stages.html#_command_line_switches_system_properties) which you will do in this scenario.
 
 > Check out **inventory-wildfly-swarm/src/main/resources/project-stages.yml** which contains the default configuration.
 

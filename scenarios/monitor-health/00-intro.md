@@ -1,4 +1,4 @@
-In this lab we will learn how to monitor application health using OpenShift 
+In this scenario we will learn how to monitor application health using OpenShift 
 health probes and how you can see container resource consumption using metrics.
 
 ##  Health Probes

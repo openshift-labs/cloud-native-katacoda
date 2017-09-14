@@ -1,5 +1,5 @@
-In this lab you will learn about Spring Boot and how you can build microservices 
-using Spring Boot and JBoss technologies. During this lab, you will create a REST API for 
+In this scenario you will learn about Spring Boot and how you can build microservices 
+using Spring Boot and JBoss technologies. During this scenario, you will create a REST API for 
 the Catalog service in order to provide a list of products for the CoolStore online shop.
 
 ## What is Spring Boot?

@@ -1,7 +1,7 @@
 Config map is a superb mechanism for externalizing application configuration while keeping 
 containers independent of in which environment or on what container platform they are running. 
 Nevertheless, due their clear-text nature, they are not suitable for sensitive data like 
-database credentials, SSH certificates, etc. In the current lab, we used config maps for database 
+database credentials, SSH certificates, etc. In the current scenario, we used config maps for database 
 credentials to simplify the steps however for production environments, you should opt for a more 
 secure way to handle sensitive data.
 
@@ -12,7 +12,7 @@ and also at rest when kept on a persistent disk. Like config maps, secrets can b
 containers a environment variables or files on the filesystem using a temporary file-storage 
 facility (tmpfs).
 
-You won't create any secrets in this lab however you have already created 2 secrets when you created 
+You won't create any secrets in this scenario however you have already created 2 secrets when you created 
 the PostgreSQL databases for Inventory and Catalog services. The PostgreSQL template by default stores 
 the database credentials in a secret in the project it's being created:
 
@@ -28,4 +28,4 @@ from the secret are defined as env vars on the deployment:
 
 ![Secrets as Env Vars](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/config-psql-secret.png)
 
-That's all for this lab! You are ready to move on to the next lab.
+That's all for this scenario! You are ready to move on to the next scenario.
