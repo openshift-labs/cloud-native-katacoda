@@ -27,7 +27,7 @@ Now that Catalog and Inventory services are up and running, start the API Gatewa
 
 Now you can test the API Gateway by hitting the **/api/products** endpoint using **curl**
 
-`curl http://localhost:8080/api/products`{{execute T1}}
+`curl http://localhost:8080/api/products`{{execute T4}}
 
 You should see a JSON response like:
 ```

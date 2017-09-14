@@ -7,7 +7,7 @@ Using WildFly Swarm maven plugin, you can conveniently run the application local
 Once you see **WildFly Swarm is Ready** in the logs, the Inventory service is up and running and you can access the 
 inventory REST API. Let’s test it out using **curl** in a new terminal window:
 
-`curl http://localhost:9001/api/inventory/329299`{{execute}}
+`curl http://localhost:9001/api/inventory/329299`{{execute T2}}
 
 You would see a JSON response like this:
 ```
