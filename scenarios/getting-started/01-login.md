@@ -9,7 +9,7 @@ want to authenticate to:
 `oc login https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 Enter your username and password:
-* Username: `developer`
-* Password: `developer`
+* Username: **developer**
+* Password: **developer**
 
 Congratulations, you are now authenticated to the OpenShift server.

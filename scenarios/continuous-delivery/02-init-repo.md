@@ -24,8 +24,8 @@ Commit and push the existing code to the GitHub repository.
 
 
 Enter your Git repository credentials if you get asked to enter your credentials. 
-* Username: *developer*
-* Password: *developer*
+* Username: **developer**
+* Password: **developer**
 
 Go to your **inventory-wildfly-swarm** repository web interface and refresh the page. You should 
 see the project files in the repository.

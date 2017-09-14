@@ -4,8 +4,8 @@ for version control during this scenario. Open Gogs in a new browser tab:
 <https://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
 
 Log in with the following credentials:
-* Username: *developer*
-* Password: *developer*
+* Username: **developer**
+* Password: **developer**
 
 Click on the plus icon on the top navigation bar and then on **New Repository**.
 
