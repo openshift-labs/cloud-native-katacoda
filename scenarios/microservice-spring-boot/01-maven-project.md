@@ -2,7 +2,7 @@ The **catalog-spring-boot** project shows the components of
 a Spring Boot project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
-`catalog-spring-boot`{{execute}}
+`cd catalog-spring-boot`{{execute}}
 
 `tree`{{execute}}
 

@@ -15,13 +15,13 @@ package com.redhat.cloudnative.catalog;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface ProductRepository extends CrudRepository<Product, String> {
+public interface ProductRepository extends CrudRepository&lt;Product, String&gt; {
 }
 </pre>
 
 Build and package the Catalog service using Maven to make sure there are no compilation errors:
 
-`mvn clean package`{{execute}}
+`mvn package`{{execute}}
 
 That's it! Now that you have a domain model and a repository to retrieve the domain mode, let's create a 
 RESTful service that returns the list of products.
