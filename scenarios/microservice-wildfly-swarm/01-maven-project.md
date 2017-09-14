@@ -2,6 +2,8 @@ The **inventory-wildfly-swarm** project shows the components of
 a WildFly Swarm project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
+`cd inventory-wildfly-swarm`{{execute}}
+
 `tree`{{execute}}
 
 > WildFly Swarm projects can also be managed using other tools besides Maven, such as

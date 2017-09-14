@@ -30,7 +30,6 @@
         ],
         "intro": {
             "courseData": "run-init.sh",
-            "code": "run-prep-lab.sh",
             "text": "00-intro.md"
         }
     },

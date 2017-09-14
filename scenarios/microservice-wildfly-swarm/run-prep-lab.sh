@@ -1,1 +1,0 @@
-cd ~/inventory-wildfly-swarm
