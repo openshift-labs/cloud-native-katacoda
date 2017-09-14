@@ -22,15 +22,16 @@ spring.jpa.hibernate.ddl-auto=create
 service name published on OpenShift. This name will be resolved by the internal DNS server 
 exposed by OpenShift and accessible to containers running on OpenShift.
 
-`oc create configmap catalog --from-file=./application.properties`{{execute}}
+`oc create configmap catalog \
+      --from-file=./application.properties`{{execute}}
 
 > You can use the OpenShift Web Console to create config maps by clicking on **Resources &rarr; Config Maps** 
 > on the left sidebar inside the your project. Click on **Create Config Map** button to create a config map 
 > with the following info:
 > 
-> * Name: `catalog`
-> * Key: `application.properties`
-> * Value: *copy-paste the content of the above application.properties excluding the first and last lines (the lines that contain EOF)*
+> * Name: **catalog**
+> * Key: **application.properties**
+> * Value: *copy-paste the content of the above application.properties*
 
 The [Spring Cloud Kubernetes](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes) plug-in implements 
 the integration between Kubernetes and Spring Boot and is already added as a dependency to the Catalog Maven 

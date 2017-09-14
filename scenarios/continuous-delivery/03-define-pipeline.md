@@ -34,9 +34,9 @@ node("maven") {
 
 This pipeline has three stages:
 
-* *Build JAR*: to build and test the jar file using Maven
-* *Build Image*: to build a container image from the Inventory JAR archive using OpenShift S2I
-* *Deploy Image*: to deploy the Inventory container image in the current project
+* Build JAR: to build and test the jar file using Maven
+* Build Image: to build a container image from the Inventory JAR archive using OpenShift S2I
+* Deploy Image: to deploy the Inventory container image in the current project
 
 Note that the pipeline definition is fully integrated with OpenShift and you can 
 perform operations like image build, image deploy, etc directly from within the **Jenkinsfile**
@@ -47,7 +47,9 @@ and store them in a source repository for version control.
 Commit and push the **Jenkinsfile** to the Git repository.
 
 `git add Jenkinsfile`{{execute}}
+
 `git commit -m "pipeline added"`{{execute}}
+
 `git push origin master`{{execute}}
 
 The pipeline definition is ready and now you can create a deployment pipeline using 

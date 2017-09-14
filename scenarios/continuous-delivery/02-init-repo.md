@@ -9,18 +9,23 @@ replace **GIT-REPO** with the Git repository url in the following commands:
 > previous steps. 
 
 `cd inventory-wildfly-swarm`{{execute}}
+
 `git init`{{execute}}
+
 `git remote add origin GIT-REPO-URL`
 
 Commit and push the existing code to the GitHub repository.
 
 `git add . --all`{{execute}}
+
 `git commit -m "initial add"`{{execute}}
+
 `git push -u origin master`{{execute}}
 
+
 Enter your Git repository credentials if you get asked to enter your credentials. 
-* Username: `developer`
-* Password: `developer`
+* Username: *developer*
+* Password: *developer*
 
 Go to your **inventory-wildfly-swarm** repository web interface and refresh the page. You should 
 see the project files in the repository.

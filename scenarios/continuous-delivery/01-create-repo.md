@@ -1,10 +1,11 @@
 There is a Gogs Git Server deployed on your OpenShift cluster which you can use 
-for version control during this lab. Go to Gogs web:
+for version control during this lab. Open Gogs in a new browser tab:
+
 <https://gogs-[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
 
 Log in with the following credentials:
-* Username: `developer`
-* Password: `developer`
+* Username: *developer*
+* Password: *developer*
 
 Click on the plus icon on the top navigation bar and then on **New Repository**.
 
