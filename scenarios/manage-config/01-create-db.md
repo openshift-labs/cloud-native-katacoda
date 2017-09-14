@@ -17,12 +17,14 @@ for the Inventory service using the PostgreSQL template that is provided out-of-
 > making it simple to re-create complex deployments by just deploying a single template. Templates can 
 > be parameterized to get input for fields like service names and generate values for fields like passwords.
 
-`oc new-app postgresql-persistent \
-    --param=DATABASE_SERVICE_NAME=inventory-postgresql \
-    --param=POSTGRESQL_DATABASE=inventory \
-    --param=POSTGRESQL_USER=inventory \
-    --param=POSTGRESQL_PASSWORD=inventory \
-    --labels=app=coolstore,microservice=inventory`{{execute}}
+```
+oc new-app postgresql-persistent \
+--param=DATABASE_SERVICE_NAME=inventory-postgresql \
+--param=POSTGRESQL_DATABASE=inventory \
+--param=POSTGRESQL_USER=inventory \
+--param=POSTGRESQL_PASSWORD=inventory \
+--labels=app=coolstore,microservice=inventory
+```{{execute}}
 
 > The **--param** parameter provides a value for the given parameters. The recommended approach is 
 > not to provide any value for username and password and allow the template to generate a random value for 
