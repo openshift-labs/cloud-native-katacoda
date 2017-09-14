@@ -43,9 +43,10 @@ public class InventoryResource {
 Commit the changes to the Git repository.
 
 `git add src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java`{{execute}}
+
 `git commit -m "inventory returns zero for non-existing product id`{{execute}}
+
 `git push origin master`{{execute}}
-~~~
 
 As soon as you commit the changes to the Git repository, the **inventory-pipeline** gets 
 triggered to build and deploy a new Inventory container with the fix. Go to the 
@@ -56,6 +57,6 @@ When the pipeline completes successfully, point your browser at the Web route an
 that the inventory status is visible for all products. The suspect product should show 
 the inventory status as _Not in Stock_.
 
-![Inventory Status Bug Fixed](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/debug-coolstore-bug-fixed.png)
+![Inventory Status Bug Fixed](https://katacoda.com/openshift-roadshow/assets/debug-coolstore-bug-fixed.png)
 
 Well done and congratulations for completing all the scenarios.

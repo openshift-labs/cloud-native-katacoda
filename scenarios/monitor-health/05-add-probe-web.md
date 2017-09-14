@@ -9,7 +9,7 @@ click in order to add them. Click **Add health checks** now.
 > Instead of **Configuration** tab, you can directly click on **Actions** button on the top-right 
 > and then **Edit Health Checks**
 
-![Health Probes](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-web-details.png)
+![Health Probes](https://katacoda.com/openshift-roadshow/assets/health-web-details.png)
 
 You will want to click both **Add Readiness Probe** and **Add Liveness Probe** and
 then fill them out as follows:
@@ -26,13 +26,13 @@ then fill them out as follows:
 * Initial Delay: **180**
 * Timeout: **1**
 
-![Readiness Probe](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-readiness.png)
+![Readiness Probe](https://katacoda.com/openshift-roadshow/assets/health-readiness.png)
 
-![Readiness Probe](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-liveness.png)
+![Readiness Probe](https://katacoda.com/openshift-roadshow/assets/health-liveness.png)
 
 Click **Save** and then click the **Overview** button in the left navigation. You
 will notice that Web UI pod is getting restarted and it stays light blue
 for a while. This is a sign that the pod(s) have not yet passed their readiness
 checks and it turns blue when it's ready!
 
-![Web Redeploy](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-web-redeploy.png)
+![Web Redeploy](https://katacoda.com/openshift-roadshow/assets/health-web-redeploy.png)

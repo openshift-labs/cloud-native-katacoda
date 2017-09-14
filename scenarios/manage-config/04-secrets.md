@@ -26,6 +26,6 @@ Go to the **coolstore** in the OpenShift Web Console and click on the **catalog-
 deployment (blue text under the title **Deployment**) and then on the ** Environment**. Notice the values 
 from the secret are defined as env vars on the deployment:
 
-![Secrets as Env Vars](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/config-psql-secret.png)
+![Secrets as Env Vars](https://katacoda.com/openshift-roadshow/assets/config-psql-secret.png)
 
 That's all for this scenario! You are ready to move on to the next scenario.

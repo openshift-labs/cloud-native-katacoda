@@ -30,4 +30,4 @@ Enter your Git repository credentials if you get asked to enter your credentials
 Go to your **inventory-wildfly-swarm** repository web interface and refresh the page. You should 
 see the project files in the repository.
 
-![Inventory Repository](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/cd-gogs-inventory-repo.png)
+![Inventory Repository](https://katacoda.com/openshift-roadshow/assets/cd-gogs-inventory-repo.png)

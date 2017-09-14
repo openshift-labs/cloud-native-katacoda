@@ -5,11 +5,11 @@ OpenShift provides container metrics out-of-the-box and displays how much memory
 each container has been consuming over time. In the project overview, you can see three charts 
 near each pod that shows the resource consumption by that pod.
 
-![Container Metrics](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-metrics-brief.png)
+![Container Metrics](https://katacoda.com/openshift-roadshow/assets/health-metrics-brief.png)
 
 Click on any of the pods (blue circle) which takes you to the pod details. Click on the **Metrics** tab 
 to see a more detailed view of the metrics charts.
 
-![Container Metrics](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/health-metrics-detailed.png)
+![Container Metrics](https://katacoda.com/openshift-roadshow/assets/health-metrics-detailed.png)
 
 Well done! You are ready to move on to the next scenario.

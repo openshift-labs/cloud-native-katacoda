@@ -4,7 +4,7 @@ point for for the web front to access all backend services from a single place. 
 called [API Gateway](http://microservices.io/patterns/apigateway.html) and is a common practice in Microservices 
 architecture.
 
-![API Gateway Pattern](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-arch.png)
+![API Gateway Pattern](https://katacoda.com/openshift-roadshow/assets/coolstore-arch.png)
 
 Replace the content of **src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java** class with the following:
 

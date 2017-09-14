@@ -33,4 +33,4 @@ The listed jar archite, **catalog-1.0-SNAPSHOT.jar** is an uber-jar with all the
 Now that the project is ready, let's get coding and create a domain model, data repository, and a  
 RESTful endpoint to create the Catalog service:
 
-![Catalog RESTful Service](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/springboot-catalog-arch.png)
+![Catalog RESTful Service](https://katacoda.com/openshift-roadshow/assets/springboot-catalog-arch.png)

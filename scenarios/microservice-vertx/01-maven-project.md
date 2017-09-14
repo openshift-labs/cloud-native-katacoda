@@ -11,7 +11,7 @@ via the built-in event bus in Vert.x. Verticles get deployed and run by Vert.x i
 is important that the code in a Verticle does not block. This asynchronous architecture allows Vert.x applications 
 to easily scale and handle large amounts of throughput with few threads.All API calls in Vert.x by default are non-blocking and support this concurrency model.
 
-![Vert.x Event Loop](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/vertx-event-loop.jpg)
+![Vert.x Event Loop](https://katacoda.com/openshift-roadshow/assets/vertx-event-loop.jpg)
 
 Although you can have multiple, there is currently only one Verticle created in the **gateway-vertx** project. 
 

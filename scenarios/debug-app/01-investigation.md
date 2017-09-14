@@ -1,7 +1,7 @@
 CoolStore application seem to have a bug that causes the inventory status for one of the 
 products not be displayed in the web interface. 
 
-![Inventory Status Bug](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/debug-coolstore-bug.png)
+![Inventory Status Bug](https://katacoda.com/openshift-roadshow/assets/debug-coolstore-bug.png)
 
 This is not an expected behavior! In previous scenarios, you added a circuit breaker to 
 protect the CoolStore application from failures and in case the Inventory API is not 

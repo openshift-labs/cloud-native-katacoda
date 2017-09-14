@@ -2,7 +2,7 @@ In this scenario you will learn about Node.js and will deploy the Node.js and An
 web front+end for the CoolStore online shop which uses the API Gateway services you deployed 
 in previous scenarios. 
 
-![API Gateway Pattern](https://raw.githubusercontent.com/openshift-roadshow/cloud-native-katacoda/master/assets/coolstore-arch.png)
+![API Gateway Pattern](https://katacoda.com/openshift-roadshow/assets/coolstore-arch.png)
 
 ## What is Node.js?
 
