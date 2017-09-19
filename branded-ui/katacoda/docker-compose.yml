@@ -1,0 +1,5 @@
+web:
+  build: .
+  environment:
+    VIRTUAL_HOST: 'dev.roadshow.openshift.com,openshift-roadshow.katacoda.com'
+  restart: always
