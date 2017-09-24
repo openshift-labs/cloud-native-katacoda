@@ -40,7 +40,7 @@ provide a default inventory status when the Inventory service is not responsive.
 
 In the **gateway-vertx** project, replace the **GatewayVerticle.java** code with the following:
 
-<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java" data-target="replace">
+<pre class="file" data-filename="./gateway-vertx/src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java" data-target="replace">
 package com.redhat.cloudnative.gateway;
 
 import io.vertx.circuitbreaker.CircuitBreakerOptions;

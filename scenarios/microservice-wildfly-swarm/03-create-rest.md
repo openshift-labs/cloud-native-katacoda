@@ -1,7 +1,7 @@
 WildFly Swarm uses JAX-RS standard for building REST services. Create a new Java class named 
 **InventoryResource.java** in **com.redhat.cloudnative.inventory** package with the following content:
 
-<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java" data-target="replace">
+<pre class="file" data-filename="./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java" data-target="replace">
 package com.redhat.cloudnative.inventory;
 
 import javax.enterprise.context.ApplicationScoped;
