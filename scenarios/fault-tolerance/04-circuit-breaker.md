@@ -1,23 +1,23 @@
-In this scenario so far you have been looking how to make sure the application pod is running, can scale to accommodate 
-user load and recovers from failures. However failures also happen in the downstream services that an application 
-is dependent on. It's not uncommon that the whole application fails or slows down because one of the downstream 
+In this scenario so far you have been looking how to make sure the application pod is running, can scale to accommodate
+user load and recovers from failures. However failures also happen in the downstream services that an application
+is dependent on. It's not uncommon that the whole application fails or slows down because one of the downstream
 services consumed by the application is not responsive or responds slowly.
 
-[Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) is a pattern to address this issue and while 
-became popular with microservice architecture, it's a useful pattern for all applications that depend on other 
+[Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) is a pattern to address this issue and while
+became popular with microservice architecture, it's a useful pattern for all applications that depend on other
 services.
 
-The idea behind the circuit breaker is that you wrap the API calls to downstream services in a circuit breaker 
-object, which monitors for failures. Once the service invocation fails certain number of times, the circuit 
-breaker flips open, and all further calls to the circuit breaker return with an error or a fallback logic 
-without making the call to the unresponsive API. After a certain period, the circuit breaker for allow a call 
-to the downstream service to test the waters. If the call success, the circuit breaker closes and would call 
+The idea behind the circuit breaker is that you wrap the API calls to downstream services in a circuit breaker
+object, which monitors for failures. Once the service invocation fails certain number of times, the circuit
+breaker flips open, and all further calls to the circuit breaker return with an error or a fallback logic
+without making the call to the unresponsive API. After a certain period, the circuit breaker for allow a call
+to the downstream service to test the waters. If the call success, the circuit breaker closes and would call
 the downstream service on consequent calls.
 
 ![Circuit Breaker](/api/workshops/roadshow/content/assets/images/fault-circuit-breaker.png){:width="300px"}
 
-Spring Boot and WildFly Swarm provide convenient integration with [Hystrix](https://github.com/Netflix/Hystrix) 
-which is a framework that provides circuit breaker functionality. Eclipse Vert.x, in addition to integration 
+Spring Boot and WildFly Swarm provide convenient integration with [Hystrix](https://github.com/Netflix/Hystrix)
+which is a framework that provides circuit breaker functionality. Eclipse Vert.x, in addition to integration
 with Hystrix, provides built-in support for circuit breakers.
 
 Let's take the Inventory service down and see what happens to the CoolStore online shop.
@@ -26,16 +26,16 @@ Let's take the Inventory service down and see what happens to the CoolStore onli
 
 Now point your browser at the Web UI route url.
 
-> You can find the Web UI route url in the OpenShift Web Console above the **web** pod or 
+> You can find the Web UI route url in the OpenShift Web Console above the **web** pod or
 > using the **oc get routes** command.
 
 ![CoolStore Without Circuit Breaker](https://katacoda.com/openshift-roadshow/assets/fault-coolstore-no-cb.png)
 
-Although only the Inventory service is down, there are no products displayed in the online store because 
-the Inventory service call failure propagates and causes the entire API Gateway to blow up! 
+Although only the Inventory service is down, there are no products displayed in the online store because
+the Inventory service call failure propagates and causes the entire API Gateway to blow up!
 
-The CoolStore online shop cannot function without the products list, however the inventory status is not a 
-crucial bit in the shopping experience. Let's add a circuit breaker for calls to the Inventory service and 
+The CoolStore online shop cannot function without the products list, however the inventory status is not a
+crucial bit in the shopping experience. Let's add a circuit breaker for calls to the Inventory service and
 provide a default inventory status when the Inventory service is not responsive.
 
 In the **gateway-vertx** project, replace the **GatewayVerticle.java** code with 
@@ -136,7 +136,7 @@ public class GatewayVerticle extends AbstractVerticle {
                                             LOG.warn("Inventory error for {}: status code {}",
                                                     product.getString("itemId"), resp.statusCode());
                                         }
-                                        return product.copy().put("availability", 
+                                        return product.copy().put("availability",
                                             new JsonObject().put("quantity", resp.body().getInteger("quantity")));
                                     })
                                     .subscribe(
@@ -157,10 +157,10 @@ public class GatewayVerticle extends AbstractVerticle {
 }
 </pre>
 
-The above code is quite similar to the previous code however it wraps the calls to the Inventory 
-service in a **CircuitBreaker** using the built-in circuit breaker in Vert.x. The circuit breaker 
-is configured (using **CircuitBreakerOptions** to flip open after 3 failures and time out on the 
-calls after 1 second. 
+The above code is quite similar to the previous code however it wraps the calls to the Inventory
+service in a **CircuitBreaker** using the built-in circuit breaker in Vert.x. The circuit breaker
+is configured (using **CircuitBreakerOptions** to flip open after 3 failures and time out on the
+calls after 1 second.
 
 ```
 circuit = CircuitBreaker.create("inventory-circuit-breaker", vertx,
@@ -172,14 +172,14 @@ circuit = CircuitBreaker.create("inventory-circuit-breaker", vertx,
 );
 ```
 
-The **circuit.rxExecuteCommandWithFallback(...)** method, defines the fallback logic for 
-when the circuit is open and logs an error without calling the Inventory service in those 
+The **circuit.rxExecuteCommandWithFallback(...)** method, defines the fallback logic for
+when the circuit is open and logs an error without calling the Inventory service in those
 scenarios.
 
 ```
 circuit.rxExecuteCommandWithFallback(
     future ->
-        // call inventory service 
+        // call inventory service
         ...
     error -> {
         // log and error

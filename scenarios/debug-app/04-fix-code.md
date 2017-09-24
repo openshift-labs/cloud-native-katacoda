@@ -1,8 +1,8 @@
-Edit **com/redhat/cloudnative/inventory/InventoryResource.java** and replace the code with 
+Edit **com/redhat/cloudnative/inventory/InventoryResource.java** add replace the code with 
 the following in order to return a zero inventory for products that don't exist in the inventory 
-database. Replace the code by by clicking on *Copy to Editor*:
+database.
 
-<pre class="file" data-filename="./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java" data-target="replace">
+<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java" data-target="replace">
 package com.redhat.cloudnative.inventory;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -50,13 +50,13 @@ Commit the changes to the Git repository.
 
 `git push origin master`{{execute}}
 
-As soon as you commit the changes to the Git repository, the **inventory-pipeline** gets 
-triggered to build and deploy a new Inventory container with the fix. Go to the 
-OpenShift Web Console and inside the **coolstore** project. On the sidebar 
+As soon as you commit the changes to the Git repository, the **inventory-pipeline** gets
+triggered to build and deploy a new Inventory container with the fix. Go to the
+OpenShift Web Console and inside the **coolstore** project. On the sidebar
 menu, Click on **Builds &rarr; Pipelines** to see its progress.
 
-When the pipeline completes successfully, point your browser at the Web route and verify 
-that the inventory status is visible for all products. The suspect product should show 
+When the pipeline completes successfully, point your browser at the Web route and verify
+that the inventory status is visible for all products. The suspect product should show
 the inventory status as _Not in Stock_.
 
 ![Inventory Status Bug Fixed](https://katacoda.com/openshift-roadshow/assets/debug-coolstore-bug-fixed.png)

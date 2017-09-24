@@ -1,8 +1,7 @@
 Create a new Java class named **Inventory.java** in 
-**com.redhat.cloudnative.inventory** package with the following code by clicking on
- *Copy to Editor*:
+**com.redhat.cloudnative.inventory** package with the following code.
 
-<pre class="file" data-filename="./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/Inventory.java" data-target="replace">
+<pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/inventory/Inventory.java" data-target="replace">
 package com.redhat.cloudnative.inventory;
 
 import javax.persistence.Entity;
@@ -45,17 +44,17 @@ public class Inventory implements Serializable {
 }
 </pre>
 
-Review the **Inventory** domain model and note the JPA annotations on this class. **@Entity** marks 
-the class as a JPA entity, **@Table** customizes the table creation process by defining a table 
+Review the **Inventory** domain model and note the JPA annotations on this class. **@Entity** marks
+the class as a JPA entity, **@Table** customizes the table creation process by defining a table
 name and database constraint and **@Id** marks the primary key for the table.
 
-WildFly Swarm configuration is done to a large extend through detecting the intent of the 
-developer and automatically adding the required dependencies configurations to make sure it can 
-get out of the way and developers can be productive with their code rather than Googling for 
-configuration snippets. As an example, configuration database access with JPA is composed of 
+WildFly Swarm configuration is done to a large extend through detecting the intent of the
+developer and automatically adding the required dependencies configurations to make sure it can
+get out of the way and developers can be productive with their code rather than Googling for
+configuration snippets. As an example, configuration database access with JPA is composed of
 the following steps:
 
-1. Adding the **org.wildfly.swarm:jpa** dependency to **pom.xml** 
+1. Adding the **org.wildfly.swarm:jpa** dependency to **pom.xml**
 2. Adding the database driver (e.g. **org.postgresql:postgresql**) to ** pom.xml**
 3. Adding database connection details in **src/main/resources/project-stages.yml**
 
@@ -68,12 +67,12 @@ Examine **pom.xml** and note the **org.wildfly.swarm:jpa** that is already added
 </dependency>
 ```
 
-Examine **src/main/resources/META-INF/persistence.xml** to see the JPA datasource configuration 
-for this project. Also note that the configurations uses **META-INF/load.sql** to import 
+Examine **src/main/resources/META-INF/persistence.xml** to see the JPA datasource configuration
+for this project. Also note that the configurations uses **META-INF/load.sql** to import
 initial data into the database.
 
-Examine **src/main/resources/project-stages.yml** to see the database connection details. 
-An in-memory H2 database is used in this scenario for local development and in the following 
+Examine **src/main/resources/project-stages.yml** to see the database connection details.
+An in-memory H2 database is used in this scenario for local development and in the following
 labs will be replaced with a PostgreSQL database. Be patient! More on that later.
 
 Build and package the Inventory service using Maven to make sure you code compiles:
