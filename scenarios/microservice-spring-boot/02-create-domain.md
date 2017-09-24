@@ -1,5 +1,5 @@
 Create a new Java class named **Product.java** in 
-**com.redhat.cloudnative.catalog** package with the following code:
+**com.redhat.cloudnative.catalog** package with the following code by clicking on *Copy to Editor*:
 
 <pre class="file" data-filename="./catalog-spring-boot/src/main/java/com/redhat/cloudnative/catalog/Product.java" data-target="replace">
 package com.redhat.cloudnative.catalog;

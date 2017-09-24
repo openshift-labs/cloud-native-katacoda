@@ -8,7 +8,7 @@ In this scenario, you will configure the Catalog service which is based on Sprin
 configuration using an alternative **application.properties** backed by a config map.
 
 Create a config map with the the Spring Boot configuration content using the PostgreSQL database 
-credentials:
+credentials by clicking on *Copy to Editor*:
 
 <pre class="file" data-filename="./application.properties" data-target="replace">
 spring.datasource.url=jdbc:postgresql://catalog-postgresql:5432/catalog

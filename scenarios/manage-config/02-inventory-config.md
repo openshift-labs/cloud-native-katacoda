@@ -8,8 +8,9 @@ The YAML file can be packaged within the application JAR file and be overladed
 
 > Check out **inventory-wildfly-swarm/src/main/resources/project-stages.yml** which contains the default configuration.
 
-Create a YAML file with the PostgreSQL database credentials. Note that you can give an arbitrary 
-name to this configuration (e.g. **prod** in order to tell WildFly Swarm which one to use:
+Create a YAML file with the PostgreSQL database credentials by clicking on *Copy to Editor*. 
+Note that you can give an arbitrary name to this configuration 
+(e.g. **prod** in order to tell WildFly Swarm which one to use:
 
 <pre class="file" data-filename="./project-stages.yml" data-target="replace">
 project:

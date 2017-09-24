@@ -1,5 +1,6 @@
 Create a new Java class named **Inventory.java** in 
-**com.redhat.cloudnative.inventory** package with the following code.
+**com.redhat.cloudnative.inventory** package with the following code by clicking on
+ *Copy to Editor*:
 
 <pre class="file" data-filename="./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/Inventory.java" data-target="replace">
 package com.redhat.cloudnative.inventory;

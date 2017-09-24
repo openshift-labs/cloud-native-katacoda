@@ -10,7 +10,8 @@ a Git repository and referenced by the build configuration.
 Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline 
 and is created using a [scripted or declarative syntax](https://jenkins.io/doc/book/pipeline/syntax/).
 
-Create a file called **Jenkinsfile** in the root the **inventory-wildfly-swarm**
+Create a file called **Jenkinsfile** in the root the **inventory-wildfly-swarm** by clicking on
+ *Copy to Editor*:
 
 <pre class="file" data-filename="./inventory-wildfly-swarm/Jenkinsfile" data-target="replace">
 node("maven") {

@@ -1,6 +1,6 @@
-Edit **com/redhat/cloudnative/inventory/InventoryResource.java** add replace the code with 
+Edit **com/redhat/cloudnative/inventory/InventoryResource.java** and replace the code with 
 the following in order to return a zero inventory for products that don't exist in the inventory 
-database.
+database. Replace the code by by clicking on *Copy to Editor*:
 
 <pre class="file" data-filename="./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java" data-target="replace">
 package com.redhat.cloudnative.inventory;
