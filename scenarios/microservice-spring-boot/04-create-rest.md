@@ -26,8 +26,8 @@ public class CatalogController {
 
     @ResponseBody
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Product> getAll() {
-        Spliterator<Product> products = repository.findAll().spliterator();
+    public List&lt;Product&gt; getAll() {
+        Spliterator&lt;Product&gt; products = repository.findAll().spliterator();
         return StreamSupport.stream(products, false).collect(Collectors.toList());
     }
 }
