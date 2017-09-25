@@ -4,6 +4,7 @@
     "title": "Getting Started with OpenShift",
     "description": "",
     "difficulty": "beginner",
+    "authenticated": true,
     "time": "5-10 minutes",
     "details": {
         "steps": [
