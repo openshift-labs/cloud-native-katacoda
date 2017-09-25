@@ -45,7 +45,7 @@ the **vertx-maven-plugin**
 
 Verify the application is working using **curl** in a new terminal window:
 
-`curl http://localhost:8080`{{execute}}
+`curl http://localhost:8080`{{execute T1}}
 
 You should see a **{"message": "Hello World"}** JSON response.
 
