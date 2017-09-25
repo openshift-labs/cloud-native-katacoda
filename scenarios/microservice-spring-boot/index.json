@@ -33,7 +33,7 @@
             }
         ],
         "intro": {
-            "courseData": "run-init.sh",
+            "code": "run-init.sh",
             "text": "00-intro.md"
         }
     },
