@@ -5,6 +5,7 @@
     "description": "",
     "difficulty": "intermediate",
     "time": "20-30 minutes",
+    "authenticated": true,
     "details": {
         "steps": [
             {

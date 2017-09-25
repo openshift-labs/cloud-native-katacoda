@@ -5,6 +5,7 @@
     "description": "",
     "difficulty": "beginner",
     "time": "10-15 minutes",
+    "authenticated": true,
     "details": {
         "steps": [
             {
