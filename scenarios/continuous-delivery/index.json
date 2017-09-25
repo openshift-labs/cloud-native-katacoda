@@ -34,12 +34,13 @@
         }
     },
     "files": [
-      "./inventory-wildfly-swarm/Jenkinsfile"
+      "./Jenkinsfile"
     ],
     "environment": {
         "uilayout": "editor-terminal",
         "hideintro": false,
         "uisettings": "java",
+        "uieditorpath": "/root/inventory-wildfly-swarm",
         "showdashboard": true,
         "dashboard": "Dashboard",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"

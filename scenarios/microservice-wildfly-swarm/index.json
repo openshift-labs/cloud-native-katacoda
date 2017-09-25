@@ -34,13 +34,14 @@
         }
     },
     "files": [
-      "./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/Inventory.java",
-      "./inventory-wildfly-swarm/src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java"
+      "./src/main/java/com/redhat/cloudnative/inventory/Inventory.java",
+      "./src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java"
     ],
     "environment": {
         "uilayout": "editor-terminal",
         "hideintro": false,
         "uisettings": "java",
+        "uieditorpath": "/root/inventory-wildfly-swarm",
         "showdashboard": true,
         "dashboard": "Dashboard",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"

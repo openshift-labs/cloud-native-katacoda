@@ -38,14 +38,15 @@
         }
     },
     "files": [
-      "./catalog-spring-boot/src/main/java/com/redhat/cloudnative/catalog/Product.java",
-      "./catalog-spring-boot/src/main/java/com/redhat/cloudnative/catalog/ProductRepository.java",
-      "./catalog-spring-boot/src/main/java/com/redhat/cloudnative/catalog/CatalogController.java"
+      "./src/main/java/com/redhat/cloudnative/catalog/Product.java",
+      "./src/main/java/com/redhat/cloudnative/catalog/ProductRepository.java",
+      "./src/main/java/com/redhat/cloudnative/catalog/CatalogController.java"
     ],
     "environment": {
         "uilayout": "editor-terminal",
         "hideintro": false,
         "uisettings": "java",
+        "uieditorpath": "/root/catalog-spring-boot",
         "showdashboard": true,
         "dashboard": "Dashboard",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
