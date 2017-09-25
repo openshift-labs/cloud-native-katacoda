@@ -2,8 +2,6 @@ The **catalog-spring-boot** project shows the components of
 a Spring Boot project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
-`cd catalog-spring-boot`{{execute}}
-
 `tree`{{execute}}
 
 This is a minimal Spring Boot project with support for RESTful services and Spring Data with JPA for connecting

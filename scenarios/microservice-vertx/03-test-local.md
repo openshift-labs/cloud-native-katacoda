@@ -3,21 +3,15 @@ services simultaneously and verify that the API Gateway works as expected.
 
 Start the Catalog service in a new terminal:
 
-`cd catalog-spring-boot`{{execute T2}}
-
-`mvn spring-boot:run`{{execute T2}}
+`mvn spring-boot:run -f catalog-spring-boot`{{execute T2}}
 
 Start the Inventory service as well in another new terminal:
 
-`cd inventory-wildfly-swarm`{{execute T3}}
-
-`mvn wildfly-swarm:run`{{execute T3}}
+`mvn wildfly-swarm:run -f inventory-wildfly-swarm`{{execute T3}}
 
 Now that Catalog and Inventory services are up and running, start the API Gateway service:
 
-`cd gateway-vertx`{{execute T1}}
-
-`mvn vertx:run`{{execute T1}}
+`mvn vertx:run -f gateway-vertx`{{execute T1}}
 
 > You will see the following exception in the logs: `java.io.FileNotFoundException: /.../kubernetes.io/serviceaccount/token`
 > 
