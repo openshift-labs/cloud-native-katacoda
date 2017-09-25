@@ -88,14 +88,14 @@ public class GatewayVerticle extends AbstractVerticle {
 
         ServiceDiscovery.create(vertx, discovery -> {
             // Catalog lookup
-            Single<WebClient> catalogDiscoveryRequest = HttpEndpoint.rxGetWebClient(discovery,
+            Single&lt;WebClient&gt; catalogDiscoveryRequest = HttpEndpoint.rxGetWebClient(discovery,
                     rec -> rec.getName().equals("catalog"))
                     .onErrorReturn(t -> WebClient.create(vertx, new WebClientOptions()
                             .setDefaultHost(System.getProperty("catalog.api.host", "localhost"))
                             .setDefaultPort(Integer.getInteger("catalog.api.port", 9000))));
 
             // Inventory lookup
-            Single<WebClient> inventoryDiscoveryRequest = HttpEndpoint.rxGetWebClient(discovery,
+            Single&lt;WebClient&gt; inventoryDiscoveryRequest = HttpEndpoint.rxGetWebClient(discovery,
                     rec -> rec.getName().equals("inventory"))
                     .onErrorReturn(t -> WebClient.create(vertx, new WebClientOptions()
                             .setDefaultHost(System.getProperty("inventory.api.host", "localhost"))
