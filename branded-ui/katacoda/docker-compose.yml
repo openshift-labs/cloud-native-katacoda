@@ -1,5 +1,5 @@
 web:
-  build: .
+  image: openshift-roadshow/cloud-native-katacoda
   environment:
-    VIRTUAL_HOST: 'dev.roadshow.openshift.com,openshift-roadshow.katacoda.com'
+    VIRTUAL_HOST: 'dev.roadshow.openshift.com'
   restart: always

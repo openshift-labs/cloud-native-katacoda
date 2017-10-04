@@ -1,4 +1,5 @@
 /*
+ * v1 
  * This is a manifest file that'll be compiled into container-platform.css, which will include all the files
  * listed below.
  *
@@ -226,7 +227,7 @@ h2 {
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-  background-image: url("/bg-ocp-announce.png");
+  background-image: url("/static/bg-ocp-announce.png");
   background-repeat: no-repeat;
   color: #fff; }
   @media (min-width: 768px) {
@@ -282,7 +283,7 @@ h2 {
             margin-left: auto; }
       .masthead.masthead-overview .item.devpreview {
         background-color: #373534;
-        background-image: url("/bg-ocp-announce.png"); }
+        background-image: url("/static/bg-ocp-announce.png"); }
         .masthead.masthead-overview .item.devpreview .title-inner {
           text-align: center; }
           .masthead.masthead-overview .item.devpreview .title-inner .primary-message {
@@ -1034,7 +1035,7 @@ h2 {
 
 .container-platform_contact .masthead, .container-platform_features .masthead, .container-platform_customers .masthead, .container-platform_resources .masthead, .container-platform_trial .masthead, .container-platform_middleware_services .masthead, .container-platform_whats-new .masthead, .container-platform_kubernetes .masthead, .container-platform_containers .masthead, .container-platform_app-automation .masthead, .container-platform_analyst-reports .masthead, .container-platform_compare-openshift .masthead, .container-platform_middleware-services .masthead {
   background-color: #373534;
-  background-image: image-url("/bg-masthead-train.jpg"); }
+  background-image: image-url("/static/bg-masthead-train.jpg"); }
   .container-platform_contact .masthead .title-inner, .container-platform_features .masthead .title-inner, .container-platform_customers .masthead .title-inner, .container-platform_resources .masthead .title-inner, .container-platform_trial .masthead .title-inner, .container-platform_middleware_services .masthead .title-inner, .container-platform_whats-new .masthead .title-inner, .container-platform_kubernetes .masthead .title-inner, .container-platform_containers .masthead .title-inner, .container-platform_app-automation .masthead .title-inner, .container-platform_analyst-reports .masthead .title-inner, .container-platform_compare-openshift .masthead .title-inner, .container-platform_middleware-services .masthead .title-inner {
     text-align: center; }
     .container-platform_contact .masthead .title-inner .primary-message, .container-platform_features .masthead .title-inner .primary-message, .container-platform_customers .masthead .title-inner .primary-message, .container-platform_resources .masthead .title-inner .primary-message, .container-platform_trial .masthead .title-inner .primary-message, .container-platform_middleware_services .masthead .title-inner .primary-message, .container-platform_whats-new .masthead .title-inner .primary-message, .container-platform_kubernetes .masthead .title-inner .primary-message, .container-platform_containers .masthead .title-inner .primary-message, .container-platform_app-automation .masthead .title-inner .primary-message, .container-platform_analyst-reports .masthead .title-inner .primary-message, .container-platform_compare-openshift .masthead .title-inner .primary-message, .container-platform_middleware-services .masthead .title-inner .primary-message {

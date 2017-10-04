@@ -1,7 +1,0 @@
-baseurl = "http://dev.roadshow.openshift.com/"
-languageCode = "en-us"
-title = "OpenShift Roadshow"
-disableLiveReload = true
-
-[params]
-  embedjs = "//host02.katacoda.com/embed.js"
