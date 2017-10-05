@@ -2,7 +2,7 @@ The **gateway-vertx** project shows the components of
 a Vert.x project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
-`tree`{{execute}}
+`tree`{{execute T1}}
 
 This is a minimal Vert.x project with support for RESTful services. This project currently contains no code
 other than the main class, **GatewayVerticle.java** which is there to bootstrap the Vert.x application. Verticles
@@ -27,13 +27,13 @@ You can use Maven to make sure the skeleton project builds successfully.
 > Make sure to run the **package** Maven goal and not **install** The latter would 
 > download a lot more dependencies and do things you don't need yet!
 
-`mvn package`{{execute}}
+`mvn package`{{execute T1}}
 
 You should see a **BUILD SUCCESS** in the logs.
 
 Once built, the resulting *jar* is located in the **target/** directory:
 
-`ls target/*.jar`{{execute}}
+`ls target/*.jar`{{execute T1}}
 
 The listed jar archive, **gateway-1.0-SNAPSHOT.jar** is an uber-jar with all the 
 dependencies required packaged in the *jar* to enable running the application with **java -jar**.
@@ -41,11 +41,11 @@ dependencies required packaged in the *jar* to enable running the application wi
 You can run the Vert.x application using **java -jar** or conveniently using **vertx:run** goal from 
 the **vertx-maven-plugin**
 
-`mvn vertx:run`{{execute}}
+`mvn vertx:run`{{execute T1}}
 
 Verify the application is working using **curl** in a new terminal window:
 
-`curl http://localhost:8080`{{execute T1}}
+`curl http://localhost:8080`{{execute T2}}
 
 You should see a **{"message": "Hello World"}** JSON response.
 
