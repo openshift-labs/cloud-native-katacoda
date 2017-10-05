@@ -26,5 +26,5 @@ dev:
 	  -v $(shell pwd):/go/src/github.com/$(NAME) \
 	  golang:1.7
 
-start:	buildrelease
+start:	release
 	docker-compose -p openshift-roadshow up -d
