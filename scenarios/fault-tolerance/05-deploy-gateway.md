@@ -12,7 +12,7 @@ defined on the **gateway** deployment config.
 
 Let's try the Web UI again in the browser while the Inventory service is still down.
 
-![CoolStore With Circuit Breaker](.../images/fault-coolstore-with-cb.png)
+![CoolStore With Circuit Breaker](https://katacoda.com/openshift-roadshow/assets/fault-coolstore-with-cb.png)
 
 It looks better now! The Inventory service failure is contained and the inventory status is removed from the 
 user interface and allows the CoolStore online shop to continue functioning and accept orders. Selling an 

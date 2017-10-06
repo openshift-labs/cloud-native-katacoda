@@ -14,7 +14,7 @@ without making the call to the unresponsive API. After a certain period, the cir
 to the downstream service to test the waters. If the call success, the circuit breaker closes and would call
 the downstream service on consequent calls.
 
-![Circuit Breaker](/api/workshops/roadshow/content/assets/images/fault-circuit-breaker.png){:width="300px"}
+![Circuit Breaker](https://katacoda.com/openshift-roadshow/assets/fault-circuit-breaker.png)
 
 Spring Boot and WildFly Swarm provide convenient integration with [Hystrix](https://github.com/Netflix/Hystrix)
 which is a framework that provides circuit breaker functionality. Eclipse Vert.x, in addition to integration
