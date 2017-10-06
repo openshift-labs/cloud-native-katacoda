@@ -14,8 +14,8 @@ configured to fetch the **Jenkinsfile** from the Git repository of the current f
 pipeline is created, OpenShift auto-provisions a Jenkins server in your project, using 
 the certified Jenkins image that is available in OpenShift image registry.
 
-Go OpenShift Web Console inside the **coolstore** project and from the left sidebar 
-click on **Builds &rarr; Pipelines**
+Click on *Dashboard* to go to the OpenShift Web Console. In the **coolstore** project, 
+click on **Builds &rarr; Pipelines** from the left sidebar 
 
 ![OpenShift Pipeline](https://katacoda.com/openshift-roadshow/assets/cd-pipeline-inprogress.png)
 

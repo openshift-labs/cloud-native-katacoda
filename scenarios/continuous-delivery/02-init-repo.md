@@ -12,7 +12,7 @@ replace **GIT-REPO** with the Git repository url in the following commands:
 
 `git init`{{execute}}
 
-`git remote add origin GIT-REPO-URL`
+`git remote add origin http://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/developer/inventory-wildfly-swarm.git`
 
 Before you commig the source code to the Git repository, configure your name and 
 email so that the commit owner can be seen on the repository. Replace the name 

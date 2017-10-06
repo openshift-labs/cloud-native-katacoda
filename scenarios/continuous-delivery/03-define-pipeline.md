@@ -16,7 +16,7 @@ Create a file called **Jenkinsfile** in the root the **inventory-wildfly-swarm**
 <pre class="file" data-filename="./inventory-wildfly-swarm/Jenkinsfile" data-target="replace">
 node("maven") {
   stage("Build JAR") {
-    git url: "INVENTORY-GIT-URL"
+    git url: "http://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/developer/inventory-wildfly-swarm.git"
     sh "mvn clean package"
     stash name:"jar", includes:"target/inventory-1.0-SNAPSHOT-swarm.jar"
   }

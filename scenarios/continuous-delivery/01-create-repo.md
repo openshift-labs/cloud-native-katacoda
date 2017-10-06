@@ -1,7 +1,7 @@
 There is a Gogs Git Server deployed on your OpenShift cluster which you can use 
 for version control during this scenario. Open Gogs in a new browser tab:
 
-<https://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
+<http://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
 
 Log in with the following credentials:
 * Username: **developer**
