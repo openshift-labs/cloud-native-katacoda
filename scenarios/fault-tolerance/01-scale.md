@@ -33,18 +33,18 @@ First, get list of deployment configs available in the project.
 
 And then, scale the **web** deployment config to 2 pods:
 
-`$ oc scale dc/web --replicas=2`{{execute}}
+`oc scale dc/web --replicas=2`{{execute}}
 
 The **--replicas** option specified the number of Web UI pods that should be running. If you look 
 at the OpenShift Web Console, you can see a new pod is being started for the Web UI and as soon 
 as the health probes pass, it will be automatically added to the load-balancer.
 
-![Scaling Up Pods](https://katacoda.com/openshift-roadshow/assets/fault-scale-up.png){:width="740px"}
+![Scaling Up Pods](https://katacoda.com/openshift-roadshow/assets/fault-scale-up.png)
 
 You can verify that the new pod is added to the load balancer by checking the details of the 
 Web UI service object:
 
-`$ oc describe svc/web`{{execute}}
+`oc describe svc/web`{{execute}}
 
 **Endpoints** shows the IPs of the 2 pods that the load-balancer is sending traffic to.
 
@@ -60,5 +60,5 @@ can be specified using an annotation on the route object. Run the following
 to change the load-balancing strategy to round robin: 
 
 ```
-$ oc annotate route/web haproxy.router.openshift.io/balance=roundrobin
+oc annotate route/web haproxy.router.openshift.io/balance=roundrobin
 ```

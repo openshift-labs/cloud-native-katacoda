@@ -43,7 +43,7 @@ Set resource containers on the Web UI pod using **oc set resource** to the follo
 > (E, P, T, G, M, K) or their power-of-two-equivalents (Ei, Pi, Ti, Gi, Mi, Ki).
 
 
-`$ oc set resources dc/web --limits=cpu=400m,memory=512Mi --requests=cpu=200m,memory=256Mi`{{execute}}
+`oc set resources dc/web --limits=cpu=400m,memory=512Mi --requests=cpu=200m,memory=256Mi`{{execute}}
 
 > You can also use the OpenShift Web Console by clicking on **Applications** &rarr; **Deployments** within 
 > the **coolstore** project. Click then on **web** and from the **Actions** menu on 
