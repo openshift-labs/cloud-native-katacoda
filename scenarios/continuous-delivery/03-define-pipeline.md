@@ -13,7 +13,7 @@ and is created using a [scripted or declarative syntax](https://jenkins.io/doc/b
 Create a file called **Jenkinsfile** in the root the **inventory-wildfly-swarm** by clicking on
  *Copy to Editor*:
 
-<pre class="file" data-filename="./Jenkinsfile" data-target="replace">
+<pre class="file" data-filename="./inventory-wildfly-swarm/Jenkinsfile" data-target="replace">
 node("maven") {
   stage("Build JAR") {
     git url: "INVENTORY-GIT-URL"

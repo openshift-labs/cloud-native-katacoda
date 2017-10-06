@@ -14,6 +14,14 @@ replace **GIT-REPO** with the Git repository url in the following commands:
 
 `git remote add origin GIT-REPO-URL`
 
+Before you commig the source code to the Git repository, configure your name and 
+email so that the commit owner can be seen on the repository. Replace the name 
+and the email with your own in the following commands:
+
+`git config --global user.name "Developer"`{{execute}}
+
+`git config --global user.email "developer@os.com"`{{execute}}
+
 Commit and push the existing code to the GitHub repository.
 
 `git add . --all`{{execute}}
