@@ -2,19 +2,17 @@ Now that you have a Git repository for the Inventory service, you should push th
 source code into this Git repository.
 
 Go the **inventory-wildfly-swarm** folder, initialize it as a Git working copy and add 
-the GitHub repository as the remote repository for your working copy. Make sure you 
-replace **GIT-REPO** with the Git repository url in the following commands:
-
-> Paste the Git repository url from the clipboard which you have copied in the 
-> previous steps. 
+the GitHub repository as the remote repository for your working copy. 
 
 `cd inventory-wildfly-swarm`{{execute}}
 
 `git init`{{execute}}
 
-`git remote add origin http://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/developer/inventory-wildfly-swarm.git`
+> Replace **GIT-REPO-URL** with the Git repository url you copied in the previous step
 
-Before you commig the source code to the Git repository, configure your name and 
+`git remote add origin GIT-REPO-URL`
+
+Before you commit the source code to the Git repository, configure your name and 
 email so that the commit owner can be seen on the repository. Replace the name 
 and the email with your own in the following commands:
 
