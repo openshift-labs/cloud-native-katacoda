@@ -40,9 +40,21 @@
     },
     {
       "pathway_id": "openshift-roadshow/scenarios",
+      "course_id": "fault-tolerance",
+      "id": "fault-tolerance",
+      "title": "Service Resilience and Fault Tolerance"
+    },
+    {
+      "pathway_id": "openshift-roadshow/scenarios",
       "course_id": "manage-config",
       "id": "manage-config",
       "title": "Managing Application Configuration"
+    },
+    {
+      "pathway_id": "openshift-roadshow/scenarios",
+      "course_id": "continuous-delivery",
+      "id": "continuous-delivery",
+      "title": "Continuous Delivery"
     },
     {
       "pathway_id": "openshift-roadshow/scenarios",

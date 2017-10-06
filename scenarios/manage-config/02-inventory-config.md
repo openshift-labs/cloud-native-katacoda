@@ -33,7 +33,7 @@ And then create a config map that you will use to overlay on the default **proje
 packaged in the Inventory JAR archive:
 
 `oc create configmap inventory \
-       --from-file=./project-stages.yml`{{execute}}
+   --from-file=./project-stages.yml`{{execute}}
 
 > If you don't like bash commands, Go to the **coolstore** 
 > project in OpenShift Web Console and then on the left sidebar, **Resources &rarr; Config Maps**. Click 
@@ -41,7 +41,7 @@ packaged in the Inventory JAR archive:
 > 
 > * Name: **inventory**
 > * Key: **project-stages.yml**
-> * Value: *copy-paste the content of the above project-stages.yml**
+> * Value: *copy-paste the content of the above project-stages.yml*
 
 Config maps hold key-value pairs and in the above command an **inventory** config map 
 is created with **project-stages.yml** as the key and the content of the **project-stages.yml** as the 
@@ -55,9 +55,9 @@ Modify the Inventory deployment config so that it injects the YAML configuration
 a config map into the Inventory container:
 
 `oc volume dc/inventory \
-      --add \
-      --configmap-name=inventory \
-      --mount-path=/app/config`{{execute}}
+   --add \
+   --configmap-name=inventory \
+   --mount-path=/app/config`{{execute}}
 
 The above command mounts the content of the **inventory** config map into the Inventory container 
 at **/app/config/project-stages.yaml**
@@ -70,7 +70,7 @@ WildFly Swarm configuration, using the **JAVA_OPTIONS** environment variable.
 > to tune the JVM without the need to rebuild a new Java runtime container image every time a new option is needed.
 
 `oc set env dc/inventory \
-    JAVA_OPTIONS="-Dswarm.project.stage=prod -Dswarm.project.stage.file=file:///app/config/project-stages.yml"`{{execute}}
+   JAVA_OPTIONS="-Dswarm.project.stage=prod -Dswarm.project.stage.file=file:///app/config/project-stages.yml"`{{execute}}
 
 The Inventory pod gets restarted automatically due to the configuration changes. Wait till it's ready, 
 and then verify that the config map is in fact injected into the container by opening a remote shell into the 
