@@ -38,7 +38,7 @@
         }
     },
     "environment": {
-        "uilayout": "editor-terminal",
+        "uilayout": "terminal",
         "hideintro": false,
         "uisettings": "javascript",
         "showdashboard": true,

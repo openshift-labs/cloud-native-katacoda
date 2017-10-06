@@ -37,7 +37,7 @@
       "./Jenkinsfile"
     ],
     "environment": {
-        "uilayout": "editor-terminal",
+        "uilayout": "terminal",
         "hideintro": false,
         "uisettings": "java",
         "uieditorpath": "/root/inventory-wildfly-swarm",

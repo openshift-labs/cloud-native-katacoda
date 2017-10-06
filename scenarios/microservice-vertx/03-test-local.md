@@ -11,9 +11,9 @@ Start the Inventory service as well in another new terminal:
 
 Now that Catalog and Inventory services are up and running, start the API Gateway service:
 
-`mvn vertx:run -f gateway-vertx`{{execute T1}}
+`mvn vertx:run`{{execute T1}}
 
-> You will see the following exception in the logs: `java.io.FileNotFoundException: /.../kubernetes.io/serviceaccount/token`
+> You will see the following exception in the logs: `java.io.FileNotFoundException: .../kubernetes.io/serviceaccount/token`
 > 
 > This is expected and is the result of Vert.x trying to import services form OpenShift. Since you are 
 > running the API Gateway on your local machine, the lookup fails and falls back to the local service 

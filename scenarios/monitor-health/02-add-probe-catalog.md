@@ -10,17 +10,12 @@ deployment configs in the project.
 
 Add a liveness probe on the catalog deployment config using **oc set probe**
 
-```
-oc set probe dc/catalog \
-      --liveness \
-      --get-url=http://:8080/health
-```{{execute}}
+```oc set probe dc/catalog --liveness --get-url=http://:8080/health```{{execute}}
 
-> OpenShift automates deployments using 
-> [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
-> that react to changes to the container image or configuration. 
-> Therefore, as soon as you define the probe, OpenShift automatically redeploys the 
-> Catalog pod using the new configuration including the liveness probe. 
+OpenShift automates deployments using [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
+that react to changes to the container image or configuration. 
+Therefore, as soon as you define the probe, OpenShift automatically redeploys the 
+Catalog pod using the new configuration including the liveness probe. 
 
 The **--get-url** defines the HTTP endpoint to use for check the liveness of the container. The **ht<span>tp://:8080**
 syntax is a convenient way to define the endpoint without having to worry about the hostname for the running 
@@ -37,11 +32,7 @@ the liveness probe.
 > to restart the container and when to leave it alone and remove it from the load-balancer so 
 > that an administrator would  manually investigate the issue. 
 
-```
-oc set probe dc/catalog \
-    --readiness \
-    --get-url=http://:8080/health
-```{{execute}}
+```oc set probe dc/catalog --readiness --get-url=http://:8080/health```{{execute}}
 
 Viola! OpenShift automatically restarts the Catalog pod and as soon as the health 
 probes succeed, it is ready to receive traffic. 

@@ -34,7 +34,7 @@
       "./project-stages.yml"
     ],
     "environment": {
-        "uilayout": "editor-terminal",
+        "uilayout": "terminal",
         "hideintro": false,
         "uisettings": "java",
         "showdashboard": true,
