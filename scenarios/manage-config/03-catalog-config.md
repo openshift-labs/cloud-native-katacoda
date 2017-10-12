@@ -7,7 +7,7 @@ via a properties filed called **application.properties** and can be
 In this scenario, you will configure the Catalog service which is based on Spring Boot to override the default 
 configuration using an alternative **application.properties** backed by a config map.
 
-Create a config map with the the Spring Boot configuration content using the PostgreSQL database 
+Create a properties file with the Spring Boot configuration content using the PostgreSQL database 
 credentials by clicking on *Copy to Editor*:
 
 <pre class="file" data-filename="./application.properties" data-target="replace">
