@@ -56,9 +56,15 @@ Delete the Catalog container to make it start again and look for the config maps
 
 `oc delete pod -l app=catalog`{{execute}}
 
-When the Catalog container is ready, verify that the PostgreSQL database is being used:
+When the Catalog container is ready, verify that the PostgreSQL database is being used. Look 
+up the Catalog pod name:
 
-`oc logs dc/catalog | grep hibernate.dialect`{{execute}}
+`oc get pods -l microservice=catalog`{{execute}}
+
+And then check the Catalog pod logs:
+> Replace **CATALOG-POD-NAME** with the Inventory pod name in your project.
+
+`oc logs CATALOG-POD-NAME | grep hibernate.dialect`
 
 You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 

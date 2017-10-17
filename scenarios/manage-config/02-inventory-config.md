@@ -91,9 +91,14 @@ You would see the content of the config map that is mounted inside the container
 >     oc rsh dc/inventory cat /app/config/project-stages.yml
 
 Also verify that the PostgreSQL database is actually used by the Inventory service. You 
-can either check the Inventory pod logs:
+can check the Inventory pod logs by looking up the Inventory pod name:
 
-`oc logs dc/inventory | grep hibernate.dialect`{{execute}}
+`oc get pods -l microservice=inventory`{{execute}}
+
+And then check the Inventory pod logs:
+> Replace **INVENTORY-POD-NAME** with the Inventory pod name in your project.
+
+`oc logs INVENTORY-POD-NAME | grep hibernate.dialect`
 
 You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 
