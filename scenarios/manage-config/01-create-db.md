@@ -23,7 +23,7 @@ oc new-app postgresql-persistent \
     --param=POSTGRESQL_DATABASE=inventory \
     --param=POSTGRESQL_USER=inventory \
     --param=POSTGRESQL_PASSWORD=inventory \
-    --labels=app=coolstore,microservice=inventory
+    --labels=app=inventory
 ```{{execute}}
 
 > The **--param** parameter provides a value for the given parameters. The recommended approach is 
@@ -39,7 +39,7 @@ oc new-app postgresql-persistent \
     --param=POSTGRESQL_DATABASE=catalog \
     --param=POSTGRESQL_USER=catalog \
     --param=POSTGRESQL_PASSWORD=catalog \
-    --labels=app=coolstore,microservice=catalog
+    --labels=app=catalog
 ```{{execute}}
 
 Now you can move on to configure the Inventory and Catalog service to use these PostgreSQL databases.

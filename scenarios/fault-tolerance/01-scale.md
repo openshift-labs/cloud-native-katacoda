@@ -41,7 +41,7 @@ as the health probes pass, it will be automatically added to the load-balancer.
 
 ![Scaling Up Pods](https://katacoda.com/openshift-roadshow/assets/fault-scale-up.png)
 
-You can verify that the new pod is added to the load balancer by checking the details of the 
+After the new pod is deployed, you can verify that the new pod is added to the load balancer by checking the details of the 
 Web UI service object:
 
 `oc describe svc/web`{{execute}}
@@ -59,6 +59,4 @@ The load-balancer by default, sends the client to the same pod on consequent req
 can be specified using an annotation on the route object. Run the following 
 to change the load-balancing strategy to round robin: 
 
-```
-oc annotate route/web haproxy.router.openshift.io/balance=roundrobin
-```
+`oc annotate route/web haproxy.router.openshift.io/balance=roundrobin`{{execute}}

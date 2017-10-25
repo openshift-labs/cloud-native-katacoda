@@ -73,32 +73,14 @@ WildFly Swarm configuration, using the **JAVA_OPTIONS** environment variable.
    JAVA_OPTIONS="-Dswarm.project.stage=prod -Dswarm.project.stage.file=file:///app/config/project-stages.yml"`{{execute}}
 
 The Inventory pod gets restarted automatically due to the configuration changes. Wait till it's ready, 
-and then verify that the config map is in fact injected into the container by opening a remote shell into the 
-Inventory container:
+and then verify that the config map is in fact injected into the container by running a shell command inside the Inventory container:
 
-`oc rsh dc/inventory`{{execute}}
+`oc rsh dc/inventory cat /app/config/project-stages.yml`{{execute}}
 
-When connected to the container, check if the YAML file is there
+Also verify that the PostgreSQL database is actually used by the Inventory service. Check the 
+Inventory pod logs:
 
-> Run this command inside the Inventory container, after opening a remote shell to it.
-
-`cat /app/config/project-stages.yml`{{execute}}
-
-You would see the content of the config map that is mounted inside the container.
-
-> You can run a command remotely on a container using **oc rsh**
-> 
->     oc rsh dc/inventory cat /app/config/project-stages.yml
-
-Also verify that the PostgreSQL database is actually used by the Inventory service. You 
-can check the Inventory pod logs by looking up the Inventory pod name:
-
-`oc get pods -l microservice=inventory`{{execute}}
-
-And then check the Inventory pod logs:
-> Replace **INVENTORY-POD-NAME** with the Inventory pod name in your project.
-
-`oc logs INVENTORY-POD-NAME | grep hibernate.dialect`
+`oc logs dc/inventory | grep hibernate.dialect`
 
 You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 
