@@ -12,7 +12,7 @@ and start JDB by pointing at the folder containing the Java source code for the 
 
 `cd inventory-wildfly-swarm`{{execute T2}}
 
-`jdb -attach 5005 -sourcepath :src/main/java/`{{execute T2}}
+`jdb -attach localhost:5005 -sourcepath :src/main/java/`{{execute T2}}
 
 Now that you are connected to the JVM running inside the Inventory pod on OpenShift, add 
 a breakpoint to pause the code execution when it reaches the Java method handling the 
@@ -33,7 +33,8 @@ the suspect product id in this terminal in order to pause the code execution at 
 `curl -v http://INVENTORY-ROUTE-HOST/api/inventory/444436`
 
 The code execution pauses at the **getAvailability()** method. You can verify it 
-using the **list** command to see the source code. The arrow shows which line is 
+using the **list** command to see the source code in the terminal window where 
+you started JDB. The arrow shows which line is 
 to execute next:
 
 `list`{{execute T2}}
