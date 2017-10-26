@@ -3,11 +3,13 @@ for version control during this scenario. Open Gogs in a new browser tab:
 
 <http://gogs-infra-app-[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com>
 
-Log in with the following credentials:
+Register with the following details:
 * Username: **developer**
+* Email: **developer@me.com**
 * Password: **developer**
 
-Click on the plus icon on the top navigation bar and then on **New Repository**.
+Login after registration and then click on the plus icon on the top navigation 
+bar and then on **New Repository**.
 
 ![Create New Repository](https://katacoda.com/openshift-roadshow/assets/cd-gogs-plus-icon.png)
 

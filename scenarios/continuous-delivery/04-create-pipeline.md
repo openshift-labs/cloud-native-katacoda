@@ -29,3 +29,6 @@ advanced pipelines in the
 In order to update the deployment pipeline, all you need to do is to update the **Jenkinsfile**
 in the **inventory-wildfly-swarm** Git repository. OpenShift pipeline automatically executes the 
 updated pipeline next time it runs.
+
+> You can see the pipeline logs by clicking on **View Log** and then logging into Jenkins using 
+> your OpenShift credentials

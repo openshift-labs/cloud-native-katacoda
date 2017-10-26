@@ -55,5 +55,6 @@ Commit and push the **Jenkinsfile** to the Git repository.
 
 `git push origin master`{{execute}}
 
-The pipeline definition is ready and now you can create a deployment pipeline using
+Enter your Git credentials if asked. The pipeline definition is 
+ready and now you can create a deployment pipeline using
 this **Jenkinsfile**
