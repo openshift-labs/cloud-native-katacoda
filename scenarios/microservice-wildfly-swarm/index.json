@@ -24,7 +24,7 @@
                 "text": "04-create-rest.md"
             },
             {
-                "title": "Testing Locally",
+                "title": "Testing Inventory Service",
                 "text": "05-test-local.md"
             },
             {
@@ -36,8 +36,12 @@
                 "text": "07-deploy.md"
             },
             {
+                "title": "Explore Created Resources",
+                "text": "08-explore-resources.md"
+            },
+            {
                 "title": "Verify on OpenShift",
-                "text": "08-verify.md"
+                "text": "09-verify.md"
             }
 
         ],
