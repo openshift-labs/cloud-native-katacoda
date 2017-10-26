@@ -23,8 +23,7 @@ Use the OpenShift CLI command to create a new build and deployment for the Web c
 ```
 oc new-app nodejs~https://github.com/openshift-roadshow/cloud-native-labs.git \
         --context-dir=web-nodejs \
-        --name=web \
-        --labels=app=web
+        --name=web
 ```{{execute}}
 
 The **--context-dir** option specifies the sub-directly of the Git repository which contains 

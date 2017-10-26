@@ -13,10 +13,10 @@ the Inventory pod.
 
 Enable remote debugging on the **inventory** deployment config:
 
-~~~shell
+```
 $ cd inventory-wildfly-swarm
 $ mvn fabric8:debug
-~~~~
+```{{execute}
 
 The default port for remoting debugging is **5005** however you can change this port by setting 
 the **JAVA_DEBUG_PORT** environment variable. You can read more about all the supported environment 

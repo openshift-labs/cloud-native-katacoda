@@ -36,7 +36,7 @@ pod to verify how OpenShift starts the pod again. First, check the Catalog pod t
 The **-l** options tells the command to list pods that have the **app=catalog** label 
 assigned to them. You can see pods labels using **oc get pods --show-labels** command.
 
-Delete the Catalog pod. Replace **CATALOG-POD-NAME** with the name of the Catalog pod in your project
+Delete the Catalog pod.
 
 `oc delete pods -l app=catalog`{{execute}}
 
