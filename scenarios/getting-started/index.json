@@ -16,14 +16,21 @@
                 "text": "02-create-project.md"
             },
             {
+                "title": "Projects in OpenShift Web Console",
+                "text": "03-projects-console.md"
+            },
+            {
                 "title": "Explore Maven Projects",
-                "text": "03-maven-projects.md"
+                "text": "04-maven-projects.md"
             }
         ],
         "intro": {
             "courseData": "run-init.sh",
             "text": "00-intro.md"
-        }
+        },
+        "finish": {
+          "text": "99-outro.md"
+      }
     },
     "environment": {
         "uilayout": "terminal-iframe",
