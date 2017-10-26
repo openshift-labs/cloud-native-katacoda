@@ -31,26 +31,4 @@ the source code for the application to be built and deployed. The **--labels** a
 assigining arbitrary key-value labels to the application objects in order to make it easier to 
 find them later on when you have many applications in the same project.
 
-A build gets created and starts building the Node.js Web UI container image. You can see the build 
-logs using OpenShift Web Console or OpenShift CLI, after a few moments when the build starts:
-
-`oc logs -f bc/web`{{execute}}
-
-The **-f** option is to follow the logs as the build progresses. After the building the Node.s Web UI 
-completes, it gets pushed into the internal image registry in OpenShift and then deployed within 
-your project.
-
-In order to access the Web UI from outside (e.g. from a browser), it needs to get added to the load 
-balancer. Run the following command to add the Web UI service to the built-in HAProxy load balancer 
-in OpenShift.
-
-`oc expose svc/web`{{execute}}
-
-`oc get route web`{{execute}}
-
-Point your browser at the Web UI route url. You should be able to see the CoolStore with all 
-products and their inventory status.
-
-![CoolStore Shop](https://katacoda.com/openshift-roadshow/assets/coolstore-web.png)
-
-Well done! You are ready to move on to the next scenario.
+A build gets created and starts building the Node.js Web UI container image. 

@@ -26,4 +26,4 @@ You would see a JSON response like:
 As mentioned earlier, Vert.x built-in service discovery is integrated with OpenShift service 
 discovery to lookup the Catalog and Inventory APIs.
 
-Well done! You are ready to move on to the next scenario.
+Well done! 

@@ -12,4 +12,4 @@ to see a more detailed view of the metrics charts.
 
 ![Container Metrics](https://katacoda.com/openshift-roadshow/assets/health-metrics-detailed.png)
 
-Well done! You are ready to move on to the next scenario.
+Well done!

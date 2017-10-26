@@ -18,4 +18,4 @@ You can also click on **Dashboard** at the top of the terminal window to
 open OpenShift Web Console and log in using your username and password to 
 see the Catalog service in the web console.
 
-Well done! You are ready to move on to the next scenario.
+Well done!
