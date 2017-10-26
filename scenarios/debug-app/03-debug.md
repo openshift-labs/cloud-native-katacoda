@@ -10,7 +10,9 @@ Studio, Eclipse or IntelliJ you can use them for remote debugging.
 Go to the **inventory-wildfly-swarm** project folder in a new terminal window
 and start JDB by pointing at the folder containing the Java source code for the application under debug:
 
-`jdb -attach 5005 -sourcepath :src/main/java/`{{execute T1}}
+`cd inventory-wildfly-swarm`{{execute T2}}
+
+`jdb -attach 5005 -sourcepath :src/main/java/`{{execute T2}}
 
 Now that you are connected to the JVM running inside the Inventory pod on OpenShift, add 
 a breakpoint to pause the code execution when it reaches the Java method handling the 
@@ -19,7 +21,7 @@ REST API **/api/inventory** Review the **InventoryResource.java** class and note
 
 Add the breakpoint.
 
-`stop in com.redhat.cloudnative.inventory.InventoryResource.getAvailability`{{execute T1}}
+`stop in com.redhat.cloudnative.inventory.InventoryResource.getAvailability`{{execute T2}}
 
 Click on the plus sign on top of the terminal window and then 
 **Open New Terminal**. Use **curl** to invoke the Inventory API with 
@@ -34,7 +36,7 @@ The code execution pauses at the **getAvailability()** method. You can verify it
 using the **list** command to see the source code. The arrow shows which line is 
 to execute next:
 
-`list`{{execute T1}}
+`list`{{execute T2}}
 
 You'll see an output similar to this.
 
@@ -53,12 +55,12 @@ default task-3[1] list
 Execute one line of code using **next** command so the the inventory object is 
 retrieved from the database.
 
-`next`{{execute T1}}
+`next`{{execute T2}}
 
 Use **locals** command to see the local variables and verify the retrieved inventory 
 object from the database.
 
-`locals`{{execute T1}}
+`locals`{{execute T2}}
 
 You'll see an output similar to this.
 
@@ -82,6 +84,7 @@ should be returned instead of **null**
 
 Exit the debugger.
 
-`quit`{{execute T1}}
+`quit`{{execute T2}}
 
-And then stop the port forwarding via pressing **CTRL+C** in the first terminal window.
+And then stop the fabric8 maven plugin port forwarding via pressing **CTRL+C** 
+in the first terminal window.

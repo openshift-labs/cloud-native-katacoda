@@ -9,36 +9,19 @@ by setting the **JAVA_DEBUG=true** environment variables on the deployment confi
 that you want to remotely debug.
 
 An easier approach would be to use the fabric8 maven plugin to enable remote debugging on 
-the Inventory pod.
+the Inventory pod. It also forwards the default remote debugging port, 5005, from the 
+Inventory pod to your workstation so simplify connectivity.
 
-Enable remote debugging on the **inventory** deployment config:
+Enable remote debugging on Inventory:
 
-```
-$ cd inventory-wildfly-swarm
-$ mvn fabric8:debug
-```{{execute T1}}
+`cd inventory-wildfly-swarm`{{execute T1}}
 
-The default port for remoting debugging is **5005** however you can change this port by setting 
-the **JAVA_DEBUG_PORT** environment variable. You can read more about all the supported environment 
-variables for changing the Java image behavior in the [Java S2I Image docs](https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html/red_hat_java_s2i_for_openshift/reference#configuration_environment_variables).
-
-As soon as you enable remote debugging, a new Inventory pod gets started. You can now use the OpenShift CLI to forward a local port to the remote debugging port on the Inventory 
-pod and treat it as if the JVM was running locally on your machine. Find out the name of the 
-Inventory pod using **oc get** command in a new terminal window:
-
-> The **--show-all=false** option makes the OpenShift CLI to list only pods that are running excluding 
-> pods that are stopped.
-
-`oc get pods --show-all=false`{{execute T2}}
-
-And forward a local port to the Inventory pod port **5005**
-
-> The pod name would be different in your project. Replace **INVENTORY-POD-NAME** with 
-> the pod name from your project.
-
-`oc port-forward INVENTORY-POD-NAME 5005`
+`mvn fabric8:debug`{{execute T1}}
 
 You are all set now to start debugging using the tools of you choice. 
+
+Don't wait for the command to return! The fabric8 maven plugin keeps the forwarded 
+port open so that you can start debugging remotely.
 
 Remote debugging can be done using the prevalently available
 Java Debugger command line or any modern IDE like JBoss 
