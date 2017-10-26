@@ -8,25 +8,48 @@
     "details": {
         "steps": [
             {
-                "title": "Explore Vert.x Maven Project",
+                "title": "Explore Vert.x Project",
                 "text": "01-maven-project.md"
             },
             {
+                "title": "Build Maven Project",
+                "text": "02-maven-build.md"
+            },
+            {
                 "title": "Create an API Gateway",
-                "text": "02-create-verticle.md"
+                "text": "03-create-verticle.md"
             },
             {
-                "title": "Test API Gateway Locally",
-                "text": "03-test-local.md"
+                "title": "Examine the Gateway Verticle",
+                "text": "04-explore-verticle.md"
             },
             {
-                "title": "Deploy API Gateway on OpenShift",
-                "text": "04-deploy.md"
+                "title": "Start Inventory and Catalog",
+                "text": "05-test-start-services.md"
+            },
+            {
+                "title": "Test API Gateway",
+                "text": "06-test-local.md"
+            },
+            {
+                "title": "Deploy on OpenShift",
+                "text": "07-deploy.md"
+            },
+            {
+                "title": "Explore Created Resources",
+                "text": "08-explore-resources.md"
+            },
+            {
+                "title": "Verify on OpenShift",
+                "text": "09-verify.md"
             }
         ],
         "intro": {
             "code": "run-init.sh",
             "text": "00-intro.md"
+        },
+        "finish": {
+          "text": "99-outro.md"
         }
     },
     "files": [

@@ -14,7 +14,7 @@ You should see a JSON response like:
 [{"itemId":"329299","name":"Red Fedora","desc":"Official Red Hat Fedora","price":34.99},...]
 ```
 
-You can also click on *Dashboard* at the top of the terminal window to 
+You can also click on **Dashboard** at the top of the terminal window to 
 open OpenShift Web Console and log in using your username and password to 
 see the Catalog service in the web console.
 

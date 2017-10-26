@@ -1,14 +1,3 @@
-Since the API Gateway requires the Catalog and Inventory services to be running, let's run all three 
-services simultaneously and verify that the API Gateway works as expected. 
-
-Start the Catalog service in a new terminal:
-
-`mvn spring-boot:run -f catalog-spring-boot`{{execute T2}}
-
-Start the Inventory service as well in another new terminal:
-
-`mvn wildfly-swarm:run -f inventory-wildfly-swarm`{{execute T3}}
-
 Now that Catalog and Inventory services are up and running, start the API Gateway service:
 
 `mvn vertx:run`{{execute T1}}
@@ -25,7 +14,7 @@ Now you can test the API Gateway by hitting the **/api/products** endpoint using
 
 You should see a JSON response like:
 ```
-[ {
+[{
   "itemId" : "329299",
   "name" : "Red Fedora",
   "desc" : "Official Red Hat Fedora",
@@ -33,9 +22,7 @@ You should see a JSON response like:
   "availability" : {
     "quantity" : 35
   }
-},
 ...
-]
 ```
 
 Note that the JSON response aggregates responses fro Catalog and Inventory services and 
