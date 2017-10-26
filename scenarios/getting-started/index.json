@@ -8,7 +8,7 @@
     "details": {
         "steps": [
             {
-                "title": "Explore OpenShift with OpenShift CLI",
+                "title": "Explore OpenShift CLI",
                 "text": "01-login.md"
             },
             {
@@ -30,7 +30,7 @@
         },
         "finish": {
           "text": "99-outro.md"
-      }
+        }
     },
     "environment": {
         "uilayout": "terminal-iframe",

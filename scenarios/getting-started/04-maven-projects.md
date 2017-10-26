@@ -5,4 +5,5 @@ Explore the list of project skeletons:
 
 `ls -l`{{execute}}
 
-Now you are ready to get started with the scenarios!
+You will use these projects in the following scenarios to build microservices 
+using WildFly Swarm, Spring Boot and Eclipse Vert.x

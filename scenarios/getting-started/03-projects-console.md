@@ -1,4 +1,3 @@
-## Projects in OpenShift Web Console
 OpenShift ships with a web-based console that will allow users to
 perform various tasks via a browser. To get a feel for how the web console
 works, open a new browser tab and go to the OpenShift Web Console:

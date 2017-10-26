@@ -8,29 +8,45 @@
     "details": {
         "steps": [
             {
-                "title": "Explore WildFly Swarm Maven Project",
+                "title": "Explore WildFly Swarm Project",
                 "text": "01-maven-project.md"
             },
             {
+                "title": "Build Maven Project",
+                "text": "02-maven-build.md"
+            },
+            {
                 "title": "Create a Domain Model",
-                "text": "02-create-domain.md"
+                "text": "03-create-domain.md"
             },
             {
                 "title": "Create a RESTful Service",
-                "text": "03-create-rest.md"
+                "text": "04-create-rest.md"
             },
             {
-                "title": "Test Inventory Service Locally",
-                "text": "04-test-local.md"
+                "title": "Testing Locally",
+                "text": "05-test-local.md"
             },
             {
-                "title": "Deploy Inventory Service on OpenShift",
-                "text": "05-deploy.md"
+                "title": "Source-to-Image",
+                "text": "06-s2i.md"
+            },
+            {
+                "title": "Deploy on OpenShift",
+                "text": "07-deploy.md"
+            },
+            {
+                "title": "Verify on OpenShift",
+                "text": "08-verify.md"
             }
+
         ],
         "intro": {
             "code": "run-init.sh",
             "text": "00-intro.md"
+        },
+        "finish": {
+          "text": "99-outro.md"
         }
     },
     "files": [
