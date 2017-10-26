@@ -17,7 +17,7 @@ Although you can have multiple, there is currently only one Verticle created in 
 
 Examine **GatewayVerticle.java**. Here is what happens in this verticle:
 
-1. A Verticle is created by extending from **AbstractVerticle** class
-2. **Router** is retrieved for mapping the REST endpoints
-3. A REST endpoint is created for **/*** to return a static JSON response `{"message": "Hello World"}`
-3. An HTTP Server is created which listens on port 8080
+1. A Verticle is created
+2. **Router** is used for mapping the REST endpoints
+3. A REST endpoint is created to return a static response
+3. An HTTP Server is created to listen on port 8080
