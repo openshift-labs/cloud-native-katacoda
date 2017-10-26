@@ -16,7 +16,7 @@ Enable remote debugging on the **inventory** deployment config:
 ```
 $ cd inventory-wildfly-swarm
 $ mvn fabric8:debug
-```{{execute}
+```{{execute T1}
 
 The default port for remoting debugging is **5005** however you can change this port by setting 
 the **JAVA_DEBUG_PORT** environment variable. You can read more about all the supported environment 
@@ -24,12 +24,12 @@ variables for changing the Java image behavior in the [Java S2I Image docs](http
 
 As soon as you enable remote debugging, a new Inventory pod gets started. You can now use the OpenShift CLI to forward a local port to the remote debugging port on the Inventory 
 pod and treat it as if the JVM was running locally on your machine. Find out the name of the 
-Inventory pod using **oc get** command:
+Inventory pod using **oc get** command in a new terminal window:
 
 > The **--show-all=false** option makes the OpenShift CLI to list only pods that are running excluding 
 > pods that are stopped.
 
-`oc get pods --show-all=false`{{execute}}
+`oc get pods --show-all=false`{{execute T2}}
 
 And forward a local port to the Inventory pod port **5005**
 
