@@ -16,7 +16,7 @@ Create a file called **Jenkinsfile** in the root the **inventory-wildfly-swarm**
 <pre class="file" data-filename="./inventory-wildfly-swarm/Jenkinsfile" data-target="replace">
 node("maven") {
   stage("Build JAR") {
-    git url: "GIT-REPO-URL"
+    git url: "http://gogs-infra-app-[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/developer/inventory-wildfly-swarm.git"
     sh "mvn clean package"
     stash name:"jar", includes:"target/inventory-1.0-SNAPSHOT-swarm.jar"
   }
@@ -43,24 +43,3 @@ This pipeline has three stages:
 
 Note that the pipeline definition is fully integrated with OpenShift and you can
 perform operations like image build, image deploy, etc directly from within the **Jenkinsfile**
-
-When building deployment pipelines, it's important to treat your [infrastructure and everything else that needs to be configured (including the pipeline definition) as code](https://martinfowler.com/bliki/InfrastructureAsCode.html)
-and store them in a source repository for version control.
-
-Commit and push the **Jenkinsfile** to the Git repository.
-
-```
-git add Jenkinsfile
-```{{execute}}
-
-```
-git commit -m "pipeline added"
-```{{execute}}
-
-```
-git push origin master
-```{{execute}}
-
-Enter your Git credentials if asked. The pipeline definition is 
-ready and now you can create a deployment pipeline using
-this **Jenkinsfile**

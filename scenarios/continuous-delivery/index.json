@@ -16,16 +16,20 @@
                 "text": "02-init-repo.md"
             },
             {
-                "title": "Define Pipeline",
+                "title": "Define a Pipeline",
+                "text": "03-define-pipeline.md"
+            },
+            {
+                "title": "Add Pipeline to Git Repo",
                 "text": "03-define-pipeline.md"
             },
             {
                 "title": "Create an OpenShift Pipeline",
-                "text": "04-create-pipeline.md"
+                "text": "05-create-pipeline.md"
             },
             {
                 "title": "Trigger Pipeline on Every Change",
-                "text": "05-webhooks.md"
+                "text": "06-webhooks.md"
             }
         ],
         "intro": {
