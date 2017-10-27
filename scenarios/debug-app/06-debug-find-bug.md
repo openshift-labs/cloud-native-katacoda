@@ -5,7 +5,7 @@ to execute next:
 
 ```
 list
-```{{execute T2}}
+```{{execute T3}}
 
 You'll see an output similar to this.
 
@@ -26,14 +26,14 @@ retrieved from the database.
 
 ```
 next
-```{{execute T2}}
+```{{execute T3}}
 
 Use **locals** command to see the local variables and verify the retrieved inventory 
 object from the database.
 
 ```
 locals
-```{{execute T2}}
+```{{execute T3}}
 
 You'll see an output similar to this.
 
@@ -59,7 +59,7 @@ Exit the debugger.
 
 ```
 quit
-```{{execute T2}}
+```{{execute T3}}
 
 And then stop the fabric8 maven plugin port forwarding via pressing **CTRL+C** 
 in the first terminal window.

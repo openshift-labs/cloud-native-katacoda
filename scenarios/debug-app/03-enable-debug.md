@@ -16,11 +16,11 @@ Enable remote debugging on Inventory:
 
 ```
 cd inventory-wildfly-swarm
-```{{execute T1}}
+```{{execute T2}}
 
 ```
 mvn fabric8:debug
-```{{execute T1}}
+```{{execute T2}}
 
 You are all set now to start debugging using the tools of you choice. 
 

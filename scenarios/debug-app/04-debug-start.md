@@ -12,11 +12,11 @@ and start JDB by pointing at the folder containing the Java source code for the 
 
 ```
 cd inventory-wildfly-swarm
-```{{execute T2}}
+```{{execute T3}}
 
 ```
 jdb -attach localhost:5005 -sourcepath :src/main/java/
-```{{execute T2}}
+```{{execute T3}}
 
 Now that you are connected to the JVM running inside the Inventory pod on OpenShift, add 
 a breakpoint to pause the code execution when it reaches the Java method handling the 
@@ -27,4 +27,4 @@ Add a breakpoint:
 
 ```
 stop in com.redhat.cloudnative.inventory.InventoryResource.getAvailability
-```{{execute T2}}
+```{{execute T3}}
