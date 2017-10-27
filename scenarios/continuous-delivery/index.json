@@ -8,15 +8,15 @@
     "details": {
         "steps": [
             {
-                "title": "Create a Git Repository for Inventory",
+                "title": "Create a Inventory Git Repo",
                 "text": "01-create-repo.md"
             },
             {
-                "title": "Push Inventory Code to the Git Repository",
+                "title": "Push Inventory Code",
                 "text": "02-init-repo.md"
             },
             {
-                "title": "Define the Deployment Pipeline",
+                "title": "Define Pipeline",
                 "text": "03-define-pipeline.md"
             },
             {
@@ -24,13 +24,16 @@
                 "text": "04-create-pipeline.md"
             },
             {
-                "title": "Run the Pipeline on Every Code Change",
+                "title": "Trigger Pipeline on Every Change",
                 "text": "05-webhooks.md"
             }
         ],
         "intro": {
             "courseData": "run-init.sh",
             "text": "00-intro.md"
+        },
+        "finish": {
+            "text": "99-outro.md"
         }
     },
     "files": [

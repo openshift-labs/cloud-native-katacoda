@@ -12,9 +12,9 @@ cd inventory-wildfly-swarm
 git init
 ```{{execute}}
 
-> Replace **GIT-REPO-URL** with the Git repository url you copied in the previous step
-
-```git remote add origin GIT-REPO-URL```
+```
+git remote add origin http://gogs-infra-app-[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/developer/inventory-wildfly-swarm.git
+```{{execute}}
 
 Before you commit the source code to the Git repository, configure your name and 
 email so that the commit owner can be seen on the repository. Replace the name 
