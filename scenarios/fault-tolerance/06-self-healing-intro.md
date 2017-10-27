@@ -16,14 +16,14 @@ There are three auto-healing scenarios that OpenShift handles automatically:
   than can most likely be resolved by restarting the application despite the potential bug remaining in the 
   application.
 
-* **Application Pod Permanent Failure:** 
+* **Application Pod Permanent Failure** 
 
   When an application pod fails and does not pass its 
   [readiness health probe](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes), 
   it signals that the failure is more severe and restart does not help to mitigate the issue. OpenShift then 
   removes the application pod from the load-balancer to prevent sending traffic to it.
 
-* **Application Pod Removal:** 
+* **Application Pod Removal** 
 
   If an instance of the application pod get removed, OpenShift automatically 
   starts new identical application pods based on the same container image and configuration so that the 
