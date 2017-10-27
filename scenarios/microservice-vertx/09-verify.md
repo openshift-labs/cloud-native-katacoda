@@ -3,7 +3,7 @@ OpenShift CLI.
 
 `oc get routes`{{execute}}
 
-Copy the route url for API Gateway and verify the API Gateway service works using **curl**
+Copy the route url for API Gateway and verify the API Gateway service works using `curl`
 
 > Replace **API-GATEWAY-ROUTE-HOST** with your API Gateway route url in the following command
 

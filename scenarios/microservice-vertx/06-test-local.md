@@ -12,7 +12,7 @@ Note that while the application is running using `mvn vertx:run`, you can make c
 and they would immediately be compiled and updated in the running application to provide fast
 feedback to the developer.
 
-Now you can test the API Gateway by hitting the **/api/products** endpoint using **curl**
+Now you can test the API Gateway by hitting the **/api/products** endpoint using `curl`
 
 `curl http://localhost:8080/api/products`{{execute T4}}
 

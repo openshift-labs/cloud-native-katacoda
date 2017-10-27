@@ -1,5 +1,5 @@
 Spring Boot uses Spring Web MVC as the default RESTful stack in Spring applications. Create 
-a new Java class named **CatalogController.java** in **com.redhat.cloudnative.catalog** package with 
+a new Java class named `CatalogController.java` in `com.redhat.cloudnative.catalog` package with 
 the following content:
 
 <pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/catalog/CatalogController.java" data-target="replace">

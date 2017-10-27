@@ -1,5 +1,3 @@
-##  Health Probes
-
 OpenShift, using Kubernetes health probes, offers a solution for monitoring application 
 health and try to automatically heal faulty containers through restarting them to fix issues such as
 a deadlock in the application which can be resolved by restarting the container. Restarting a container 

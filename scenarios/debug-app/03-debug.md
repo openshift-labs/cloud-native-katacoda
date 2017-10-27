@@ -16,7 +16,7 @@ and start JDB by pointing at the folder containing the Java source code for the 
 
 Now that you are connected to the JVM running inside the Inventory pod on OpenShift, add 
 a breakpoint to pause the code execution when it reaches the Java method handling the 
-REST API **/api/inventory** Review the **InventoryResource.java** class and note that the 
+REST API **/api/inventory** Review the `InventoryResource.java` class and note that the 
 **getAvailability()** is the method where you should add the breakpoint.
 
 Add the breakpoint.
@@ -24,7 +24,7 @@ Add the breakpoint.
 `stop in com.redhat.cloudnative.inventory.InventoryResource.getAvailability`{{execute T2}}
 
 Click on the plus sign on top of the terminal window and then 
-**Open New Terminal**. Use **curl** to invoke the Inventory API with 
+**Open New Terminal**. Use `curl` to invoke the Inventory API with 
 the suspect product id in this terminal in order to pause the code execution at the defined breakpoint.
 
 > You can find out the Inventory route url using `oc get routes` Replace 

@@ -6,7 +6,7 @@ data manipulation functionality for the entity class that is being managed. When
 Spring finds all interfaces marked as repositories and for each interface found, the infrastructure
 configures the required persistent technologies and provides an implementation for the repository interface.
 
-Create a new Java interface named **ProductRepository.java** in **com.redhat.cloudnative.catalog** package 
+Create a new Java interface named `ProductRepository.java` in `com.redhat.cloudnative.catalog` package 
 and extend [CrudRepository](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html) interface in order to indicate to Spring that you want to expose a 
 complete set of methods to manipulate the entity.
 

@@ -31,7 +31,7 @@ information about this bug:
 There doesn't seem to be anything relevant to the **invalid response** error that the 
 API Gateway received either! 
 
-Invoke the Inventory API using **curl** for the suspect product id to see what actually 
+Invoke the Inventory API using `curl` for the suspect product id to see what actually 
 happens when API Gateway makes this call:
 
 > You can find out the Inventory route url using `oc get route inventory` Replace 

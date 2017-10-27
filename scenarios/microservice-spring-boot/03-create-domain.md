@@ -1,5 +1,5 @@
-Create a new Java class named **Product.java** in 
-**com.redhat.cloudnative.catalog** package with the following code:
+Create a new Java class named `Product.java` in 
+`com.redhat.cloudnative.catalog` package with the following code:
 
 <pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/catalog/Product.java" data-target="replace">
 package com.redhat.cloudnative.catalog;
