@@ -33,8 +33,6 @@ node("maven") {
 }
 </pre>
 
-> Replace **GIT-REPO-URL** with the Git repository url you copied in the previous step
-
 This pipeline has three stages:
 
 * Build JAR: to build and test the jar file using Maven

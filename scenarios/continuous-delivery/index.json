@@ -21,7 +21,7 @@
             },
             {
                 "title": "Add Pipeline to Git Repo",
-                "text": "03-define-pipeline.md"
+                "text": "04-add-pipeline-git.md"
             },
             {
                 "title": "Create an OpenShift Pipeline",
