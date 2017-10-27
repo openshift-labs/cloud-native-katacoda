@@ -6,22 +6,20 @@ In order to automate triggering the pipeline, you can define a webhook on your G
 to notify OpenShift on every commit that is made to the Git repository and trigger a pipeline 
 execution.
 
-You can get see the webhook links for your **inventory-pipeline** using the **describe** command.
+You can get see the webhook links for your **inventory-pipeline** by viewing pipeline details:
 
 ```
 oc describe bc inventory-pipeline
 ```{{execute}}
 
-You would see many details about the build config, including the webhooks urls.
-
-> You can also see the webhooks in the OpenShift Web Console by going to **Build &rarr; Pipelines** , 
-> click on the pipeline and go to the **Configurations** tab.
+You can also see the webhooks in the OpenShift Web Console by going to **Build &rarr; Pipelines** , 
+click on the pipeline and go to the **Configurations** tab.
 
 Copy the Generic webhook url which you will need in the next steps.
 
 Go to Gogs browser tab and then your **inventory-wildfly-swarm** Git repository, then click on **Settings**:
 
-<https://gogs-infra.app.[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com>
+<http://gogs-infra-app-[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com>
 
 ![Repository Settings](https://katacoda.com/openshift-roadshow/assets/cd-gogs-settings-link.png)
 
@@ -30,7 +28,7 @@ On the left menu, click on **Webhooks** and then on **Add Webhook** button and t
 Create a webhook with the following details:
 
 * **Payload URL**: paste the Generic webhook url you copied from the *inventory-pipeline*
-* **Content type**: **application/json**
+* **Content type**: application/json
 
 Click on **Add Webhook**. 
 

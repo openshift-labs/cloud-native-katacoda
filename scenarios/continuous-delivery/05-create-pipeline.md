@@ -1,8 +1,7 @@
 Like mentioned, [OpenShift Pipelines](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#pipeline-build) enable creating deployment pipelines using the widely popular **Jenkinsfile** format.
 
-Create a deployment pipeline.
-
-> Make sure to run the `oc new-app` command from within the **inventory-widlfly-swarm** folder.
+Create a deployment pipeline by running the following command within 
+the `inventory-widlfly-swarm` folder:
 
 ```
 oc new-app . \
@@ -32,5 +31,5 @@ In order to update the deployment pipeline, all you need to do is to update the 
 in the **inventory-wildfly-swarm** Git repository. OpenShift pipeline automatically executes the 
 updated pipeline next time it runs.
 
-> You can see the pipeline logs by clicking on **View Log** and then logging into Jenkins using 
-> your OpenShift credentials
+You can see the pipeline logs by clicking on **View Log** and then logging into Jenkins using 
+your OpenShift credentials
