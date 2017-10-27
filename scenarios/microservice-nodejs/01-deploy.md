@@ -14,12 +14,6 @@ The source code for the the Node.js Web front-end is available in this Git repos
 
 Use the OpenShift CLI command to create a new build and deployment for the Web component:
 
-> Feeling adventurous? Build and deploy the Web front-end via the OpenShift Web Console 
-> instead. To give you a hint, start by clicking on **Add to project** within the 
-> **coolstore** project and pick **JavaScript** and then **Node.js** in the service 
-> catalog. Don't forget to click on **advanced options** and set **Context Dir** to **web-nodejs**
-> which is the sub-folder of the Git repository where the source code for Web resides.
-
 ```
 oc new-app nodejs~https://github.com/openshift-roadshow/cloud-native-labs.git \
         --context-dir=web-nodejs \
