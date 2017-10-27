@@ -8,20 +8,32 @@
     "details": {
         "steps": [
             {
-                "title": "Create PostgreSQL Databases for Inventory and Catalog",
-                "text": "01-create-db.md"
+                "title": "Stateful Applications",
+                "text": "01-inmemory-db.md"
             },
             {
-                "title": "Externalize WildFly Swarm (Inventory) Configuration",
-                "text": "02-inventory-config.md"
+                "title": "Deploy PostgreSQL Templates",
+                "text": "02-create-psql.md"
             },
             {
-                "title": "Externalize Spring Boot (Catalog) Configuration",
-                "text": "03-catalog-config.md"
+                "title": "Externalize Inventory Config",
+                "text": "03-inventory-config.md"
+            },
+            {
+                "title": "Verify Inventory Config",
+                "text": "04-inventory-config-verify.md"
+            },
+            {
+                "title": "Externalize Catalog Config",
+                "text": "05-catalog-config.md"
+            },
+            {
+                "title": "Verify Catalog Config",
+                "text": "05-catalog-config-verify.md"
             },
             {
                 "title": "Sensitive Configuration Data",
-                "text": "04-secrets.md"
+                "text": "07-secrets.md"
             }
         ],
         "intro": {

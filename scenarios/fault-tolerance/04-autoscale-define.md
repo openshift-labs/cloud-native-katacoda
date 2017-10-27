@@ -1,4 +1,4 @@
-Set resource containers on the Web UI pod using `oc set resource` to the following:
+Set the following resource constraints on the Web UI pod:
 
 * Memory Request: 256 MB
 * Memory Limit: 512 MB
