@@ -5,13 +5,13 @@ database connection health, backoffice system availability, etc).
 
 [Spring Boot Actuator](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready) is a 
 sub-project of Spring Boot which adds health and management HTTP endpoints to the application. Enabling Spring Boot 
-Actuator is done via adding `org.springframework.boot:spring-boot-starter-actuator` dependency to the Maven project 
+Actuator is done via adding `spring-boot-starter-actuator` dependency to the Maven project 
 dependencies which is already done for the Catalog services.
 
 Verify that the health endpoint works for the Catalog service using `curl` replacing `CATALOG-ROUTE-HOST`
 with the Catalog route url:
 
-> Remember how to find out the route urls? Try `oc get route`
+> Find out route urls by `oc get route`
 
 ```
 curl http://CATALOG-ROUTE-HOST/health
@@ -23,7 +23,7 @@ You should see a response like:
 {"status":"UP", ...}
 ```
 
-[WildFly Swarm health endpoints](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/advanced/monitoring.html) function in a similar fashion and are enabled by adding `org.wildfly.swarm:monitor`
+[WildFly Swarm health endpoints](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/advanced/monitoring.html) function in a similar fashion and are enabled by adding WildFly Swarm `monitor`
 to the Maven project dependencies. 
 This is also already done for the Inventory service.
 
@@ -45,7 +45,7 @@ You should see a response like:
 ```
 
 Expectedly, Eclipse Vert.x also provides a [health check module](http://vertx.io/docs/vertx-health-check/java) 
-which is enabled by adding `io.vertx:vertx-health-check` as a dependency to the Maven project. 
+which is enabled by adding `vertx-health-check` as a dependency to the Maven project. 
 
 Verify that the health endpoint works for the Inventory service using `curl` 
 replacing `API-GATEWAY-ROUTE-HOST` with the API Gateway route url:

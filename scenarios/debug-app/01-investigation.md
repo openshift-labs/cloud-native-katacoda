@@ -12,7 +12,7 @@ expect to see the products.
 Since the product list is provides by the API Gateway, take a look into the API Gateway 
 logs to see if there are any errors:
 
-`oc logs dc/gateway | grep -i error`{{execute}}
+```oc logs dc/gateway | grep -i error```{{execute}}
 
 Oh! Something seems to be wrong with the response the API Gateway has received from the 
 Inventory API for the product id **444436** 
@@ -26,7 +26,7 @@ WARNING: Inventory error for 444436: status code 204
 Look into the Inventory pod logs to investigate further and see if you can find more  
 information about this bug:
 
-`oc logs dc/inventory | grep ERROR`{{execute}}
+```oc logs dc/inventory | grep ERROR```{{execute}}
 
 There doesn't seem to be anything relevant to the **invalid response** error that the 
 API Gateway received either! 
@@ -37,7 +37,7 @@ happens when API Gateway makes this call:
 > You can find out the Inventory route url using `oc get route inventory` Replace 
 > `INVENTORY-ROUTE-HOST` with the Inventory route url from your project.
 
-`curl http://INVENTORY-ROUTE-HOST/api/inventory/444436`
+```curl http://INVENTORY-ROUTE-HOST/api/inventory/444436```
 
 > You can use **curl -v** to see all the headers sent and received. You would received 
 > a **HTTP/1.1 204 No Content** response for the above request.

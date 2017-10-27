@@ -6,7 +6,7 @@ which you have already packaged within the Inventory Maven project.
 The YAML file can be packaged within the application JAR file and be overladed 
 [using command-line or system properties](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/configuration/project_stages.html#_command_line_switches_system_properties) which you will do in this scenario.
 
-> Check out **inventory-wildfly-swarm/src/main/resources/project-stages.yml** which contains the default configuration.
+> Check out `inventory-wildfly-swarm/src/main/resources/project-stages.yml` which contains the default configuration.
 
 Create a YAML file with the PostgreSQL database credentials by clicking on *Copy to Editor*. 
 Note that you can give an arbitrary name to this configuration 
@@ -29,11 +29,13 @@ swarm:
 > service name published on OpenShift. This name will be resolved by the internal DNS server 
 > exposed by OpenShift and accessible to containers running on OpenShift.
 
-And then create a config map that you will use to overlay on the default **project-stages.yml** which is 
+And then create a config map that you will use to overlay on the default `project-stages.yml` which is 
 packaged in the Inventory JAR archive:
 
-`oc create configmap inventory \
-   --from-file=./project-stages.yml`{{execute}}
+```
+oc create configmap inventory \
+   --from-file=./project-stages.yml
+```{{execute}}
 
 > If you don't like bash commands, Go to the **coolstore** 
 > project in OpenShift Web Console and then on the left sidebar, **Resources &rarr; Config Maps**. Click 
@@ -54,13 +56,15 @@ name as the key, at path on the filesystem.
 Modify the Inventory deployment config so that it injects the YAML configuration you just created as 
 a config map into the Inventory container:
 
-`oc volume dc/inventory \
+```
+oc volume dc/inventory \
    --add \
    --configmap-name=inventory \
-   --mount-path=/app/config`{{execute}}
+   --mount-path=/app/config
+```{{execute}}
 
 The above command mounts the content of the **inventory** config map into the Inventory container 
-at **/app/config/project-stages.yaml**
+at `/app/config/project-stages.yaml`
 
 The last step is the [beforementioned system properties](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/configuration/project_stages.html#_command_line_switches_system_properties) on the Inventory container to overlay the 
 WildFly Swarm configuration, using the **JAVA_OPTIONS** environment variable. 
@@ -69,18 +73,24 @@ WildFly Swarm configuration, using the **JAVA_OPTIONS** environment variable.
 > [a set of environment variables](https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html/red_hat_java_s2i_for_openshift/reference#configuration_environment_variables) 
 > to tune the JVM without the need to rebuild a new Java runtime container image every time a new option is needed.
 
-`oc set env dc/inventory \
-   JAVA_OPTIONS="-Dswarm.project.stage=prod -Dswarm.project.stage.file=file:///app/config/project-stages.yml"`{{execute}}
+```
+oc set env dc/inventory \
+   JAVA_OPTIONS="-Dswarm.project.stage=prod -Dswarm.project.stage.file=file:///app/config/project-stages.yml"
+```{{execute}}
 
 The Inventory pod gets restarted automatically due to the configuration changes. Wait till it's ready, 
 and then verify that the config map is in fact injected into the container by running a shell command inside the Inventory container:
 
-`oc rsh dc/inventory cat /app/config/project-stages.yml`{{execute}}
+```
+oc rsh dc/inventory cat /app/config/project-stages.yml
+```{{execute}}
 
 Also verify that the PostgreSQL database is actually used by the Inventory service. Check the 
 Inventory pod logs:
 
-`oc logs dc/inventory | grep hibernate.dialect`
+```
+oc logs dc/inventory | grep hibernate.dialect
+```
 
 You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 
@@ -91,13 +101,16 @@ You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 You can also connect to Inventory PostgreSQL database and check if the seed data is 
 loaded into the database:
 
-`oc rsh dc/inventory-postgresql`{{execute}}
+```
+oc rsh dc/inventory-postgresql
+```{{execute}}
 
-Once connected to the PostgreSQL container, run the following:
+Once connected to the PostgreSQL container, run the following inside the 
+Inventory PostgreSQL container:
 
-> Run this command inside the Inventory PostgreSQL container, after opening a remote shell to it.
-
-`psql -U inventory -c "select * from inventory"`{{execute}}
+```
+psql -U inventory -c "select * from inventory"
+```{{execute}}
 
 You should see the seed data gets listed.
 
@@ -117,7 +130,9 @@ You should see the seed data gets listed.
 
 Exit the container shell.
 
-`exit`{{execute}}
+```
+exit
+```{{execute}}
 
 You have now created a config map that holds the configuration content for Inventory and can be updated 
 at anytime for example when promoting the container image between environments without needing to 

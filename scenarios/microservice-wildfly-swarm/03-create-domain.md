@@ -77,6 +77,6 @@ labs will be replaced with a PostgreSQL database. Be patient! More on that later
 
 Build and package the Inventory service using Maven to make sure you code compiles:
 
-`mvn package`{{execute}}
+```mvn package```{{execute}}
 
 If builds successfully, continue to the next step to create a RESTful service.

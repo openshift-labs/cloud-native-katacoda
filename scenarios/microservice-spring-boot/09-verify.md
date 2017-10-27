@@ -1,13 +1,13 @@
 You can see the expose DNS url for the Catalog service in the OpenShift Web Console or using 
 OpenShift CLI:
 
-`oc get routes`{{execute}}
+```oc get routes```{{execute}}
 
 Copy the route url for the Catalog service and verify the Catalog service works using `curl`
 
 > Replace `CATALOG-ROUTE-HOST` with the Catalog route host listed from your project.
 
-`curl http://CATALOG-ROUTE-HOST/api/catalog`
+```curl http://CATALOG-ROUTE-HOST/api/catalog```
 
 You should see a JSON response like:
 ```

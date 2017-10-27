@@ -26,4 +26,4 @@ will be acted upon and update the response which is then sent back to the client
 
 Run the maven build to make sure the code compiles successfully.
 
-`mvn package`{{execute}}
+```mvn package```{{execute}}

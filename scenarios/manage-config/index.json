@@ -27,6 +27,9 @@
         "intro": {
             "courseData": "run-init.sh",
             "text": "00-intro.md"
+        },
+        "finish": {
+            "text": "99-outro.md"
         }
     },
     "files": [

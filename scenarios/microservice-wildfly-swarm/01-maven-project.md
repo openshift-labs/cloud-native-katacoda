@@ -2,7 +2,7 @@ The **inventory-wildfly-swarm** project shows the components of
 a WildFly Swarm project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
-`tree`{{execute}}
+```tree```{{execute}}
 
 This is a minimal Java EE project with support for JAX-RS for building 
 RESTful services and JPA for connecting

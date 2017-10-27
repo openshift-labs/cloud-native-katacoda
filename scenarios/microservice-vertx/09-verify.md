@@ -1,13 +1,13 @@
 You can see the expose DNS url for the Catalog service in the OpenShift Web Console or using 
 OpenShift CLI.
 
-`oc get routes`{{execute}}
+```oc get routes```{{execute}}
 
 Copy the route url for API Gateway and verify the API Gateway service works using `curl`
 
 > Replace **API-GATEWAY-ROUTE-HOST** with your API Gateway route url in the following command
 
-`curl http://API-GATEWAY-ROUTE-HOST/api/products`
+```curl http://API-GATEWAY-ROUTE-HOST/api/products```
 
 You would see a JSON response like:
 

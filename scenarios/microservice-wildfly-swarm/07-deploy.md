@@ -1,6 +1,6 @@
 To build and deploy the Inventory service on OpenShift using the **fabric8** maven plugin, run the following Maven command:
 
-`mvn fabric8:deploy`{{execute}}
+```mvn fabric8:deploy```{{execute}}
 
 This will cause the following to happen:
 

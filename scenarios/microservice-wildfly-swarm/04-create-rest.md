@@ -32,6 +32,6 @@ the last path param being the product id which we want to check its inventory st
 
 Build and package the Inventory service using Maven
 
-`mvn package`{{execute}}
+```mvn package```{{execute}}
 
 You should see a **BUILD SUCCESS** in the build logs.

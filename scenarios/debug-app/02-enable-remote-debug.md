@@ -14,9 +14,9 @@ Inventory pod to your workstation so simplify connectivity.
 
 Enable remote debugging on Inventory:
 
-`cd inventory-wildfly-swarm`{{execute T1}}
+```cd inventory-wildfly-swarm```{{execute T1}}
 
-`mvn fabric8:debug`{{execute T1}}
+```mvn fabric8:debug```{{execute T1}}
 
 You are all set now to start debugging using the tools of you choice. 
 

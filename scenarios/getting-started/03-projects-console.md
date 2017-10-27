@@ -2,7 +2,9 @@ OpenShift ships with a web-based console that will allow users to
 perform various tasks via a browser. To get a feel for how the web console
 works, open a new browser tab and go to the OpenShift Web Console:
 
-`https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}
+```
+https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com
+```{{copy}}
 
 The first screen you will see is the authentication screen. Enter your username and password and 
 then log in. After you have authenticated to the web console, you will be presented with a

@@ -4,9 +4,11 @@ Create a deployment pipeline.
 
 > Make sure to run the `oc new-app` command from within the **inventory-widlfly-swarm** folder.
 
-`oc new-app . \
+```
+oc new-app . \
     --name=inventory-pipeline \
-    --strategy=pipeline`{{execute}}
+    --strategy=pipeline
+```{{execute}}
 
 The above command creates a new build config of type pipeline which is automatically 
 configured to fetch the **Jenkinsfile** from the Git repository of the current folder 

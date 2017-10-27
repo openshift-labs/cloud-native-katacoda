@@ -21,12 +21,12 @@ You can review the above resources in the OpenShift Web Console or using `oc des
 > of **imagestream**, **dc** instead of **deploymentconfig** and **svc** instead of **service**.
 
 
-`oc describe bc inventory-s2i`{{execute}}
+```oc describe bc inventory-s2i```{{execute}}
 
-`oc describe is inventory`{{execute}}
+```oc describe is inventory```{{execute}}
 
-`oc describe dc inventory`{{execute}}
+```oc describe dc inventory```{{execute}}
 
-`oc describe svc inventory`{{execute}}
+```oc describe svc inventory```{{execute}}
 
-`oc describe route inventory`{{execute}}
+```oc describe route inventory```{{execute}}
