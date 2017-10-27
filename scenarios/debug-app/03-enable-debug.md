@@ -5,7 +5,7 @@ part of  Java SE standard debugging architecture which you can learn more about 
 
 
 The Java image on OpenShift has built-in support for remote debugging and it can be enabled 
-by setting the **JAVA_DEBUG=true** environment variables on the deployment config for the pod 
+by setting the `JAVA_DEBUG=true` environment variables on the deployment config for the pod 
 that you want to remotely debug.
 
 An easier approach would be to use the fabric8 maven plugin to enable remote debugging on 
