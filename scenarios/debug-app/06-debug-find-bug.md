@@ -22,14 +22,14 @@ default task-3[1] list
 28    }
 ```
 
-Execute one line of code using **next** command so the the inventory object is 
+Execute one line of code using `next` command so the the inventory object is 
 retrieved from the database.
 
 ```
 next
 ```{{execute T3}}
 
-Use **locals** command to see the local variables and verify the retrieved inventory 
+Use `locals` command to see the local variables and verify the retrieved inventory 
 object from the database.
 
 ```
@@ -48,13 +48,13 @@ inventory = null
 
 Oh! Did you notice the problem? 
 
-The **inventory** object which is the object retrieved from the database 
-for the provided product id is **null** and is returned as the REST response! The non-existing 
+The `inventory` object which is the object retrieved from the database 
+for the provided product id is `null` and is returned as the REST response! The non-existing 
 product id is not a problem on its own because it simply could mean this product is discontinued 
 and removed from the Inventory database but it's not removed from the product catalog database 
-yet. The bug is however caused because the code returns this **null** value instead of a sensible 
+yet. The bug is however caused because the code returns this `null` value instead of a sensible 
 REST response. If the product id does not exist, a proper JSON response stating a zero inventory 
-should be returned instead of **null**
+should be returned instead of `null`
 
 Exit the debugger.
 
