@@ -2,7 +2,9 @@ The **gateway-vertx** project shows the components of
 a Vert.x project laid out in different subdirectories according to Maven best 
 practices. Run the following command to examine the Maven project structure.
 
-```tree```{{execute T1}}
+```
+tree
+```{{execute T1}}
 
 This is a minimal Vert.x project with support for RESTful services. This project currently contains no code
 other than the main class, **GatewayVerticle.java** which is there to bootstrap the Vert.x application. Verticles

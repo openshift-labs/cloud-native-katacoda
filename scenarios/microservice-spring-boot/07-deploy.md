@@ -2,7 +2,9 @@ It’s time to build and deploy Catalog service on OpenShift using [Source-to-Im
 
 To build and deploy the Catalog service on OpenShift using the **fabric8** maven plugin, run the following maven command:
 
-```mvn fabric8:deploy```{{execute}}
+```
+mvn fabric8:deploy
+```{{execute}}
 
 This will cause the following to happen:
 

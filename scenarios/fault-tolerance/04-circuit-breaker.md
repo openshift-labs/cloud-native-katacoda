@@ -22,7 +22,9 @@ with Hystrix, provides built-in support for circuit breakers.
 
 Let's take the Inventory service down and see what happens to the CoolStore online shop.
 
-```oc scale dc/inventory --replicas=0```{{execute}}
+```
+oc scale dc/inventory --replicas=0
+```{{execute}}
 
 Now point your browser at the Web UI route url.
 
@@ -190,4 +192,6 @@ circuit.rxExecuteCommandWithFallback(
 
 Build the API Gateway using Maven.
 
-```mvn package```{{execute}}
+```
+mvn package
+```{{execute}}

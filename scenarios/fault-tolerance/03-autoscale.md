@@ -34,31 +34,20 @@ Set resource containers on the Web UI pod using `oc set resource` to the followi
 * CPU Request: 200 millicore
 * CPU Limit: 300 millicore
 
-> CPU is measured in units called millicores. Each node in a cluster inspects the 
-> operating system to determine the amount of CPU cores on the node, then multiplies 
-> that value by 1000 to express its total capacity. For example, if a node has 2 cores, 
-> the node’s CPU capacity would be represented as 2000m. If you wanted to use 1/10 of 
-> a single core, it would be represented as 100m. Memory is measured in 
-> bytes and is specified with [SI suffices](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-compute-resources) 
-> (E, P, T, G, M, K) or their power-of-two-equivalents (Ei, Pi, Ti, Gi, Mi, Ki).
+CPU is measured in units called millicores while memory is measured in bytes and is specified with [SI suffices](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-compute-resources) 
+(E, P, T, G, M, K) or their power-of-two-equivalents (Ei, Pi, Ti, Gi, Mi, Ki).
 
-
-```oc set resources dc/web --limits=cpu=400m,memory=512Mi --requests=cpu=200m,memory=256Mi```{{execute}}
-
-> You can also use the OpenShift Web Console by clicking on **Applications** &rarr; **Deployments** within 
-> the **coolstore** project. Click then on **web** and from the **Actions** menu on 
-> the top-right, choose **Edit Resource Limits**.
+```
+oc set resources dc/web --limits=cpu=400m,memory=512Mi --requests=cpu=200m,memory=256Mi
+```{{execute}}
 
 The pods get restarted automatically setting the new resource limits in effect. Now you can define an 
-autoscaler using `oc autoscale` command to scale the Web UI pods up to 5 instances whenever 
+autoscaler to scale the Web UI pods up to 5 instances whenever 
 the CPU consumption passes 50% utilization:
 
-> You can configure an autoscaler using OpenShift Web Console by clicking 
-> on **Applications** &rarr; **Deployments** within 
-> the **coolstore** project. Click then on **web** and from the **Actions** menu on 
-> the top-right, choose **Edit Autoscaler**.
-
-```oc autoscale dc/web --min 1 --max 5 --cpu-percent=40```{{execute}}
+```
+oc autoscale dc/web --min 1 --max 5 --cpu-percent=40
+```{{execute}}
 
 All set! Now the Web UI can scale automatically to multiple instances if the load on the CoolStore 
 online store increases. You can verify that using for example **ab** the 
@@ -68,7 +57,9 @@ generate some load on the Web UI. Since we want to run this container only once 
 it's not needed anymore, use the `oc run --rm` command to run the container and throw it away 
 after it's done running:
 
-```oc run web-load --rm --attach --image=jordi/ab -- ab -n 50000 -c 10 http://web:8080/```{{execute}}
+```
+oc run web-load --rm --attach --image=jordi/ab -- ab -n 50000 -c 10 http://web:8080/
+```{{execute}}
 
 In the above, **--image** specified which container image should be deployed. OpenShift will first 
 looks in the internal image registry and then in defined upstream registries 

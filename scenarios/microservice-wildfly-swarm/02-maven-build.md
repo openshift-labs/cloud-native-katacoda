@@ -4,13 +4,17 @@ should get a **BUILD SUCCESS** message in the logs, otherwise the build has fail
 > Make sure to run the **package** Maven goal and not **install**. The latter would 
 > download a lot more dependencies and do things you don't need yet!
 
-```mvn package```{{execute}}
+```
+mvn package
+```{{execute}}
 
 You should see a **BUILD SUCCESS** in the logs.
 
 Once built, the resulting *jar* is located in the **target** directory:
 
-```ls target/*.jar```{{execute}}
+```
+ls target/*.jar
+```{{execute}}
 
 The listed jar archive, **inventory-1.0-SNAPSHOT-swarm.jar** , is an uber-jar with 
 all the dependencies required packaged in the *jar* to enable running the 

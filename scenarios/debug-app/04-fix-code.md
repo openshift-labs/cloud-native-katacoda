@@ -42,11 +42,17 @@ public class InventoryResource {
 
 Commit the changes to the Git repository.
 
-```git add src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java```{{execute T1}}
+```
+git add src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java
+```{{execute T1}}
 
-```git commit -m "inventory returns zero for non-existing product id```{{execute T1}}
+```
+git commit -m "inventory returns zero for non-existing product id
+```{{execute T1}}
 
-```git push origin master```{{execute T1}}
+```
+git push origin master
+```{{execute T1}}
 
 As soon as you commit the changes to the Git repository, the **inventory-pipeline** gets
 triggered to build and deploy a new Inventory container with the fix. Go to the

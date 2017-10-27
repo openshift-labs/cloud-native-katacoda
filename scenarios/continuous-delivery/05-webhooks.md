@@ -8,7 +8,9 @@ execution.
 
 You can get see the webhook links for your **inventory-pipeline** using the **describe** command.
 
-```oc describe bc inventory-pipeline```{{execute}}
+```
+oc describe bc inventory-pipeline
+```{{execute}}
 
 You would see many details about the build config, including the webhooks urls.
 

@@ -4,9 +4,13 @@ source code into this Git repository.
 Go the **inventory-wildfly-swarm** folder, initialize it as a Git working copy and add 
 the GitHub repository as the remote repository for your working copy. 
 
-```cd inventory-wildfly-swarm```{{execute}}
+```
+cd inventory-wildfly-swarm
+```{{execute}}
 
-```git init```{{execute}}
+```
+git init
+```{{execute}}
 
 > Replace **GIT-REPO-URL** with the Git repository url you copied in the previous step
 
@@ -16,17 +20,27 @@ Before you commit the source code to the Git repository, configure your name and
 email so that the commit owner can be seen on the repository. Replace the name 
 and the email with your own in the following commands:
 
-```git config --global user.name "Developer"```{{execute}}
+```
+git config --global user.name "Developer"
+```{{execute}}
 
-```git config --global user.email "developer@os.com"```{{execute}}
+```
+git config --global user.email "developer@os.com"
+```{{execute}}
 
 Commit and push the existing code to the GitHub repository.
 
-```git add . --all```{{execute}}
+```
+git add . --all
+```{{execute}}
 
-```git commit -m "initial add"```{{execute}}
+```
+git commit -m "initial add"
+```{{execute}}
 
-```git push -u origin master```{{execute}}
+```
+git push -u origin master
+```{{execute}}
 
 
 Enter your Git repository credentials if you get asked to enter your credentials. 

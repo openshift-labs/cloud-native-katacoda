@@ -12,7 +12,9 @@ expect to see the products.
 Since the product list is provides by the API Gateway, take a look into the API Gateway 
 logs to see if there are any errors:
 
-```oc logs dc/gateway | grep -i error```{{execute}}
+```
+oc logs dc/gateway | grep -i error
+```{{execute}}
 
 Oh! Something seems to be wrong with the response the API Gateway has received from the 
 Inventory API for the product id **444436** 
@@ -26,7 +28,9 @@ WARNING: Inventory error for 444436: status code 204
 Look into the Inventory pod logs to investigate further and see if you can find more  
 information about this bug:
 
-```oc logs dc/inventory | grep ERROR```{{execute}}
+```
+oc logs dc/inventory | grep ERROR
+```{{execute}}
 
 There doesn't seem to be anything relevant to the **invalid response** error that the 
 API Gateway received either! 

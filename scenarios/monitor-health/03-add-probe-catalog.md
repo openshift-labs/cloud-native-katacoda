@@ -3,7 +3,9 @@ Console or OpenShift CLI.
 
 Add a liveness probe on the Catalog deployment config:
 
-```oc set probe dc/catalog --liveness --get-url=http://:8080/health```{{execute}}
+```
+oc set probe dc/catalog --liveness --get-url=http://:8080/health
+```{{execute}}
 
 OpenShift automates deployments using [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
 that react to changes to the container image or configuration. 
@@ -17,7 +19,9 @@ container.
 Add a readiness probe on the catalog deployment config using the same `/health` endpoint that you used for 
 the liveness probe. Note that it's recommended to have separate endpoints for readiness and liveness.
 
-```oc set probe dc/catalog --readiness --get-url=http://:8080/health```{{execute}}
+```
+oc set probe dc/catalog --readiness --get-url=http://:8080/health
+```{{execute}}
 
 Viola! OpenShift automatically restarts the Catalog pod and as soon as the health 
 probes succeed, it is ready to receive traffic. 

@@ -41,6 +41,8 @@ automatically provides an implementation for **ProductRepository** at runtime an
 
 Build and package the Catalog service using Maven.
 
-```mvn package```{{execute}}
+```
+mvn package
+```{{execute}}
 
 You should see a **BUILD SUCCESS** in the build logs.

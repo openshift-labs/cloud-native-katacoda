@@ -4,7 +4,9 @@ the `oc start-build` command which allows you to build container images directly
 archives (**jar**, **war**, etc) without the need to have access to the source code for example by downloading 
 the **jar** file form the Maven repository (e.g. Nexus or Artifactory).
 
-```oc start-build gateway-s2i --from-file=target/gateway-1.0-SNAPSHOT.jar```{{execute}}
+```
+oc start-build gateway-s2i --from-file=target/gateway-1.0-SNAPSHOT.jar
+```{{execute}}
 
 As soon as the new **gateway** container image is built, OpenShift deploys the new image automatically 
 thanks to the [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
@@ -21,6 +23,8 @@ losing the trust of all visiting customers due to a crashed online store is not 
 
 Scale the Inventory service back up before moving on to the next scenarios.
 
-```oc scale dc/inventory --replicas=1```{{execute}}
+```
+oc scale dc/inventory --replicas=1
+```{{execute}}
 
 Well done! Let's move on to the next.

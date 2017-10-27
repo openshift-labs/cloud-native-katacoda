@@ -20,12 +20,22 @@ You can review the above resources in the OpenShift Web Console or using `oc des
 > OpenShift CLI. The same goes for **is** instead of **imagestream**, **dc** instead of **deploymentconfig**
 > and **svc** instead of **service**
 
-```oc describe bc catalog-s2i```{{execute}}
+```
+oc describe bc catalog-s2i
+```{{execute}}
 
-```oc describe is catalog```{{execute}}
+```
+oc describe is catalog
+```{{execute}}
 
-```oc describe dc catalog```{{execute}}
+```
+oc describe dc catalog
+```{{execute}}
 
-```oc describe svc catalog```{{execute}}
+```
+oc describe svc catalog
+```{{execute}}
 
-```oc describe route catalog```{{execute}}
+```
+oc describe route catalog
+```{{execute}}

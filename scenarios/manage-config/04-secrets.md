@@ -16,7 +16,9 @@ You won't create any secrets in this scenario however you have already created 2
 the PostgreSQL databases for Inventory and Catalog services. The PostgreSQL template by default stores 
 the database credentials in a secret in the project it's being created:
 
-```oc describe secret catalog-postgresql```{{execute}}
+```
+oc describe secret catalog-postgresql
+```{{execute}}
 
 This secret has two encrypted properties defined as **database-user** and **database-password** which hold 
 the PostgreSQL username and password values. These values are injected in the PostgreSQL container as 

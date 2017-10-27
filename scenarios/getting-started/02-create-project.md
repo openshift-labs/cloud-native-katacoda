@@ -9,4 +9,6 @@ application services and endpoints you (or your teams) are using for your work.
 For this scenario, let's create a project that you will use in the following scenarios for 
 deploying your applications. 
 
-```oc new-project coolstore```{{execute}}
+```
+oc new-project coolstore
+```{{execute}}

@@ -1,7 +1,9 @@
 You can see the expose DNS url for the Catalog service in the OpenShift Web Console or using 
 OpenShift CLI:
 
-```oc get routes```{{execute}}
+```
+oc get routes
+```{{execute}}
 
 Copy the route url for the Catalog service and verify the Catalog service works using `curl`
 

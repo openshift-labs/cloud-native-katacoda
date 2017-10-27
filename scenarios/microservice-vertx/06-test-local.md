@@ -1,6 +1,8 @@
 Now that Catalog and Inventory services are up and running, start the API Gateway service:
 
-```mvn vertx:run```{{execute T1}}
+```
+mvn vertx:run
+```{{execute T1}}
 
 You will see the following exception in the logs: 
 `java.io.FileNotFoundException: .../kubernetes.io/serviceaccount/token` which is 
@@ -14,7 +16,9 @@ feedback to the developer.
 
 Now you can test the API Gateway by hitting the **/api/products** endpoint using `curl`
 
-```curl http://localhost:8080/api/products```{{execute T4}}
+```
+curl http://localhost:8080/api/products
+```{{execute T4}}
 
 You should see a JSON response like:
 ```
