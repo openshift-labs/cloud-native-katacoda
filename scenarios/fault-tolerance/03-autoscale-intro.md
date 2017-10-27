@@ -16,12 +16,14 @@ allowed to consume which will act as a guideline for OpenShift to know when to s
 down. Since the deployment config starts the application pods, the application pod resource 
 (cpu and memory) containers should also be defined on the deployment config.
 
-When allocating compute resources to application pods, each container may specify a *request*
-and a *limit*value each for CPU and memory. The 
-[*request*](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-memory-requests) 
+When allocating compute resources to application pods, each container may specify a **request**
+and a **limit** value each for CPU and memory. 
+
+The [*request*](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-memory-requests) 
 values define how much resources should be dedicated to an application pod so that it can run. It's 
-the minimum resources needed in other words. The 
-[*limit*](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-memory-limits) values 
+the minimum resources needed in other words. 
+
+The [*limit*](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-memory-limits) values 
 defines how much resources an application pod is allowed to consume, if there is more resources 
 on the node available than what the pod has request. This is to allow various quality of service 
 tiers with regards to compute resources. You can read more about these quality of service tiers 
