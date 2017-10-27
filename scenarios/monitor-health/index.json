@@ -16,11 +16,11 @@
                 "text": "02-explore-endpoints.md"
             },
             {
-                "title": "Monitoring Catalog Service Health",
+                "title": "Catalog Health",
                 "text": "03-add-probe-catalog.md"
             },
             {
-                "title": "Monitoring Inventory Service Health",
+                "title": "Monitoring Inventory Health",
                 "text": "04-add-probe-inventory.md"
             },
             {
@@ -32,7 +32,7 @@
                 "text": "06-add-probe-web.md"
             },
             {
-                "title": "Monitoring Metrics",
+                "title": "Container Metrics",
                 "text": "07-explore-metrics.md"
             }
         ],
