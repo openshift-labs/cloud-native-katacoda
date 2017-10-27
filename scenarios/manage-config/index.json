@@ -17,23 +17,27 @@
             },
             {
                 "title": "Externalize Inventory Config",
-                "text": "03-inventory-config.md"
+                "text": "03-inventory-config-create.md"
+            },
+            {
+                "title": "Externalize Inventory Config",
+                "text": "04-inventory-config-mount.md"
             },
             {
                 "title": "Verify Inventory Config",
-                "text": "04-inventory-config-verify.md"
+                "text": "05-inventory-config-verify.md"
             },
             {
                 "title": "Externalize Catalog Config",
-                "text": "05-catalog-config.md"
+                "text": "06-catalog-config.md"
             },
             {
                 "title": "Verify Catalog Config",
-                "text": "06-catalog-config-verify.md"
+                "text": "07-catalog-config-verify.md"
             },
             {
-                "title": "Sensitive Configuration Data",
-                "text": "07-secrets.md"
+                "title": "Sensitive Config Data",
+                "text": "08-secrets.md"
             }
         ],
         "intro": {
