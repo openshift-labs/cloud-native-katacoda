@@ -1,6 +1,6 @@
 
 You can now trigger a new continuer image build on OpenShift using 
-the **oc start-build** command which allows you to build container images directly from the application 
+the `oc start-build` command which allows you to build container images directly from the application 
 archives (**jar**, **war**, etc) without the need to have access to the source code for example by downloading 
 the **jar** file form the Maven repository (e.g. Nexus or Artifactory).
 

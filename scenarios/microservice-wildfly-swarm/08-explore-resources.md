@@ -14,7 +14,7 @@ or IP).
 * Route: **inventory** route registers the service on the built-in external load-balancer 
 and assigns a public DNS name to it so that it can be reached from outside OpenShift cluster.
 
-You can review the above resources in the OpenShift Web Console or using **oc describe** command:
+You can review the above resources in the OpenShift Web Console or using `oc describe` command:
 
 > **bc** is the short-form of **buildconfig** and can be interchangeably used 
 > instead of it with the OpenShift CLI. The same goes for **is** instead 

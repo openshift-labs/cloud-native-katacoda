@@ -27,7 +27,7 @@ on the node available than what the pod has request. This is to allow various qu
 tiers with regards to compute resources. You can read more about these quality of service tiers 
 in [OpenShift Documentation](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#quality-of-service-tiers).
 
-Set resource containers on the Web UI pod using **oc set resource** to the following:
+Set resource containers on the Web UI pod using `oc set resource` to the following:
 
 * Memory Request: 256 MB
 * Memory Limit: 512 MB
@@ -50,7 +50,7 @@ Set resource containers on the Web UI pod using **oc set resource** to the follo
 > the top-right, choose **Edit Resource Limits**.
 
 The pods get restarted automatically setting the new resource limits in effect. Now you can define an 
-autoscaler using **oc autoscale** command to scale the Web UI pods up to 5 instances whenever 
+autoscaler using `oc autoscale` command to scale the Web UI pods up to 5 instances whenever 
 the CPU consumption passes 50% utilization:
 
 > You can configure an autoscaler using OpenShift Web Console by clicking 
@@ -65,7 +65,7 @@ online store increases. You can verify that using for example **ab** the
 [Apache HTTP server benchmarking tool](https://httpd.apache.org/docs/2.4/programs/ab.html). Let's 
 deploy the **ab** container image from [Docker Hub](https://hub.docker.com/r/jordi/ab/) and 
 generate some load on the Web UI. Since we want to run this container only once and after it runs 
-it's not needed anymore, use the **oc run --rm** command to run the container and throw it away 
+it's not needed anymore, use the `oc run --rm` command to run the container and throw it away 
 after it's done running:
 
 `oc run web-load --rm --attach --image=jordi/ab -- ab -n 50000 -c 10 http://web:8080/`{{execute}}

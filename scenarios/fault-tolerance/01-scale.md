@@ -18,7 +18,7 @@ deploying instances a repeatable practice. Immutable server pattern simplifies s
 application instances to starting a new instance which is guaranteed to be identical to the 
 existing instances and adding it to the load-balancer.
 
-Now, let's use the **oc scale** command to scale up the Web UI pod in the CoolStore retail 
+Now, let's use the `oc scale` command to scale up the Web UI pod in the CoolStore retail 
 application to 2 instances. In OpenShift, deployment config is responsible for starting the 
 application pods and ensuring the specified number of instances for each application pod 
 is running. Therefore the number of pods you want to scale to should be defined on the 

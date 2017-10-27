@@ -2,7 +2,7 @@ Like mentioned, [OpenShift Pipelines](https://docs.openshift.com/container-platf
 
 Create a deployment pipeline.
 
-> Make sure to run the **oc new-app** command from within the **inventory-widlfly-swarm** folder.
+> Make sure to run the `oc new-app` command from within the **inventory-widlfly-swarm** folder.
 
 `oc new-app . \
     --name=inventory-pipeline \

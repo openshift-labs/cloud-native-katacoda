@@ -49,7 +49,7 @@ value. Whenever a config map is injected into a container, it would appear as a 
 name as the key, at path on the filesystem.
 
 > You can see the content of the config map in the OpenShift Web Console or by 
-> using **oc describe cm inventory** command.
+> using `oc describe cm inventory` command.
 
 Modify the Inventory deployment config so that it injects the YAML configuration you just created as 
 a config map into the Inventory container:

@@ -6,12 +6,9 @@ Go the OpenShift Web Console by clicking on **Dashboard** and go in the **coolst
 tab. You will see the warning about health checks, with a link to
 click in order to add them. Click **Add health checks** now. 
 
-> Instead of **Configuration** tab, you can directly click on **Actions** button on the top-right 
-> and then **Edit Health Checks**
-
 ![Health Probes](https://katacoda.com/openshift-roadshow/assets/health-web-details.png)
 
-You will want to click both **Add Readiness Probe** and **Add Liveness Probe** and
+You should click on both **Add Readiness Probe** and **Add Liveness Probe** and
 then fill them out as follows:
 
 *Readiness Probe*

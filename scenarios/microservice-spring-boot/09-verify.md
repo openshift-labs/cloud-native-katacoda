@@ -5,7 +5,7 @@ OpenShift CLI:
 
 Copy the route url for the Catalog service and verify the Catalog service works using **curl**
 
-> Replace **CATALOG-ROUTE-HOST** with the Catalog route host listed from your project.
+> Replace `CATALOG-ROUTE-HOST` with the Catalog route host listed from your project.
 
 `curl http://CATALOG-ROUTE-HOST/api/catalog`
 

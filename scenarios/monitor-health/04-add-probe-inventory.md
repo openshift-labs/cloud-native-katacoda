@@ -12,8 +12,8 @@ oc set probe dc/inventory \
 
 OpenShift automatically restarts the Inventory pod and as soon as the health probes succeed, it is ready to receive traffic. 
 
-Using the **oc describe** command, you can get a detailed look into the deployment config and verify that the health probes are in fact configured as you wanted:
+You can get a detailed look into the deployment config and verify that the health probes are in fact configured as you wanted:
 
 `oc describe dc/inventory`{{execute}}
 
-Look for **Liveness** and **Readiness** in the result.
+Look for `Liveness` and `Readiness` in the result.

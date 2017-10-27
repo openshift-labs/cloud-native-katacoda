@@ -8,33 +8,40 @@
     "details": {
         "steps": [
             {
-                "title": "Explore Health REST Endpoints",
-                "text": "01-explore-health-endpoints.md"
+                "title": "Health Probes",
+                "text": "01-health-probes.md"
+            },
+            {
+                "title": "Explore Health Endpoints",
+                "text": "02-explore-endpoints.md"
             },
             {
                 "title": "Monitoring Catalog Service Health",
-                "text": "02-add-probe-catalog.md"
+                "text": "03-add-probe-catalog.md"
             },
             {
                 "title": "Monitoring Inventory Service Health",
-                "text": "03-add-probe-inventory.md"
+                "text": "04-add-probe-inventory.md"
             },
             {
                 "title": "Monitoring API Gateway Health",
-                "text": "04-add-probe-gateway.md"
+                "text": "05-add-probe-gateway.md"
             },
             {
                 "title": "Monitoring Web UI Health",
-                "text": "05-add-probe-web.md"
+                "text": "06-add-probe-web.md"
             },
             {
                 "title": "Monitoring Metrics",
-                "text": "06-explore-metrics.md"
+                "text": "07-explore-metrics.md"
             }
         ],
         "intro": {
             "courseData": "run-init.sh",
             "text": "00-intro.md"
+        },
+        "finish": {
+            "text": "99-outro.md"
         }
     },
     "environment": {

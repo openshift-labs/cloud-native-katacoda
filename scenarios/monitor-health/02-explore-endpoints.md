@@ -8,10 +8,10 @@ sub-project of Spring Boot which adds health and management HTTP endpoints to th
 Actuator is done via adding **org.springframework.boot:spring-boot-starter-actuator** dependency to the Maven project 
 dependencies which is already done for the Catalog services.
 
-Verify that the health endpoint works for the Catalog service using **curl** replacing **CATALOG-ROUTE-HOST**
+Verify that the health endpoint works for the Catalog service using **curl** replacing `CATALOG-ROUTE-HOST`
 with the Catalog route url:
 
-> Remember how to find out the route urls? Try **oc get route catalog**
+> Remember how to find out the route urls? Try `oc get route`
 
 `curl http://CATALOG-ROUTE-HOST/health`
 
@@ -24,10 +24,8 @@ You should see a response like:
 to the Maven project dependencies. 
 This is also already done for the Inventory service.
 
-Verify that the health endpoint works for the Inventory service using **curl** replacing **INVENTORY-ROUTE-HOST**
+Verify that the health endpoint works for the Inventory service using **curl** replacing `INVENTORY-ROUTE-HOST`
 with the Catalog route url:
-
-> You know this by know! Use **oc get route inventory** to get the Inventory route url 
 
 `curl http://INVENTORY-ROUTE-HOST/node`
 
@@ -42,12 +40,10 @@ You should see a response like:
 ```
 
 Expectedly, Eclipse Vert.x also provides a [health check module](http://vertx.io/docs/vertx-health-check/java) 
-which is enabled by adding **io.vertx:vertx-health-check** as a dependency to the Maven project. 
+which is enabled by adding `io.vertx:vertx-health-check` as a dependency to the Maven project. 
 
-Verify that the health endpoint works for the Inventory service using **curl** replacing **API-GATEWAY-ROUTE-HOST**
-with the API Gateway route url:
-
-> Yup! You can use **oc get route gateway** to get the API Gateway route url 
+Verify that the health endpoint works for the Inventory service using `curl` 
+replacing `API-GATEWAY-ROUTE-HOST` with the API Gateway route url:
 
 `curl http://API-GATEWAY-ROUTE-HOST/health`
 
@@ -58,4 +54,4 @@ You should see a response like:
 ```
 
 Last but not least, although you can build more sophisticated health endpoints for the Web UI as well, you 
-can use the root context ("/") of the Web UI in this scenario to verify it's up and running.
+can use the root context of the Web UI in this scenario to verify it's up and running.
