@@ -8,7 +8,8 @@ You can find out the Inventory route url using `oc get route inventory` Replace
 curl -v http://INVENTORY-ROUTE-HOST/api/inventory/444436
 ```
 
-No response came back and that seems to be the reason the inventory status is not displayed 
+The response `204 No Content` means no response has come back and that seems to be the 
+reason the inventory status is not displayed 
 on the web interface.
 
 Let's debug the Inventory service to get to the bottom of this!

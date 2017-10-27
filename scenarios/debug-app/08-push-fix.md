@@ -1,3 +1,6 @@
+Go to **Terminal 2** and stop the fabric8 maven plugin port forwarding via 
+pressing **CTRL+C**.
+
 Commit the bug fix to the Git repository.
 
 ```

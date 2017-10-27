@@ -1,7 +1,8 @@
-The code execution pauses at the **getAvailability()** method. You can verify it 
-using the **list** command to see the source code in the terminal window where 
-you started JDB. The arrow shows which line is 
-to execute next:
+The code execution pauses at the `getAvailability()` method. You can verify it 
+using the `list` command to see the source code in the terminal window where 
+you started JDB. The arrow shows which line is to execute next:
+
+Go back to **Terminal 3** and run:
 
 ```
 list
@@ -60,6 +61,3 @@ Exit the debugger.
 ```
 quit
 ```{{execute T3}}
-
-And then stop the fabric8 maven plugin port forwarding via pressing **CTRL+C** 
-in the first terminal window.
