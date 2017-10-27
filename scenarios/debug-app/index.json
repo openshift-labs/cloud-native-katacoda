@@ -8,20 +8,36 @@
     "details": {
         "steps": [
             {
-                "title": "Investigate The Bug",
-                "text": "01-investigation.md"
+                "title": "Investigate Logs",
+                "text": "01-check-logs.md"
             },
             {
-                "title": "Enable Remote Debugging",
-                "text": "02-enable-remote-debug.md"
+                "title": "Investigate REST Response",
+                "text": "02-check-reponse.md"
             },
             {
-                "title": "Debug Remotely Using JDB (Java Debugger)",
-                "text": "03-debug.md"
+                "title": "Enable Debugging",
+                "text": "03-enable-debug.md"
+            },
+            {
+                "title": "Start the JDB Debugger",
+                "text": "04-debug-start.md"
+            },
+            {
+                "title": "Stop at Breakpoint",
+                "text": "05-debug-pause-breakpoint.md"
+            },
+            {
+                "title": "Examine Code Execution",
+                "text": "06-debug-find-bug.md"
             },
             {
                 "title": "Fix the Inventory Bug",
-                "text": "04-fix-code.md"
+                "text": "07-fix-code.md"
+            },
+            {
+                "title": "Push Fix to Git Repo",
+                "text": "08-push-fix.md"
             }
         ],
         "intro": {
