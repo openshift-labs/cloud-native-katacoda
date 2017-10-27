@@ -8,23 +8,47 @@
     "details": {
         "steps": [
             {
-                "title": "Scaling Up Applications",
-                "text": "01-scale.md"
+                "title": "Scaling Applications",
+                "text": "01-scale-intro.md"
             },
             {
-                "title": "Scaling Applications on Auto-pilot",
-                "text": "02-autoscale.md"
+                "title": "Scale Web UI",
+                "text": "02-scale-web.md"
             },
             {
-                "title": "Self-healing Failed Application Pods",
-                "text": "03-self-healing.md"
+                "title": "Autoscaling",
+                "text": "03-autoscale-intro.md"
             },
             {
-                "title": "Preventing Cascading Failures with Circuit Breakers",
-                "text": "04-circuit-breaker.md"
+                "title": "Define an Autoscaler",
+                "text": "04-autoscale-define.md"
             },
             {
-                "title": "Deploy the API Gateway Circuit Breaker",
+                "title": "Scaled Container Metrics",
+                "text": "05-monitor-scaled.md"
+            },
+            {
+                "title": "Self-healing",
+                "text": "06-self-healing-intro.md"
+            },
+            {
+                "title": "Self-healing",
+                "text": "07-self-healing-define.md"
+            },
+            {
+                "title": "Cascading Failures",
+                "text": "08-cascading-failures.md"
+            },
+            {
+                "title": "Circuit Breakers",
+                "text": "09-circuit-breaker.md"
+            },
+            {
+                "title": "Circuit Breakers",
+                "text": "10-circuit-breaker-add.md"
+            },
+            {
+                "title": "Deploy API Gateway",
                 "text": "05-deploy-gateway.md"
             }
         ],

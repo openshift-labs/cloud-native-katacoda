@@ -1,8 +1,8 @@
 
-You can now trigger a new continuer image build on OpenShift using 
+You can now trigger a new container image build on OpenShift using 
 the `oc start-build` command which allows you to build container images directly from the application 
 archives (**jar**, **war**, etc) without the need to have access to the source code for example by downloading 
-the **jar** file form the Maven repository (e.g. Nexus or Artifactory).
+the **jar** file form the Maven repository (e.g. Nexus, Artifactory).
 
 ```
 oc start-build gateway-s2i --from-file=target/gateway-1.0-SNAPSHOT.jar
@@ -27,4 +27,4 @@ Scale the Inventory service back up before moving on to the next scenarios.
 oc scale dc/inventory --replicas=1
 ```{{execute}}
 
-Well done! Let's move on to the next.
+Well done!
