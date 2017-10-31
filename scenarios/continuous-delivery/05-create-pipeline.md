@@ -32,4 +32,4 @@ in the **inventory-wildfly-swarm** Git repository. OpenShift pipeline automatica
 updated pipeline next time it runs.
 
 You can see the pipeline logs by clicking on **View Log** and then logging into Jenkins using 
-your OpenShift credentials
+your OpenShift credentials and authorizing Jenkins to use your OpenShift credentials.

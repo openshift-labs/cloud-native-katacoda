@@ -10,7 +10,7 @@ This is a minimal Spring Boot project with support for RESTful services and Spri
 to a database. This project currently contains no code other than the main class, `CatalogApplication.java`
 which is there to bootstrap the Spring Boot application.
 
-Examine **CatalogApplication.java**
+Examine `CatalogApplication.java`
 
 The database is configured using the Spring application configuration file which is located at 
 **src/main/resources/application.properties**. Examine this file to see the database connection details 

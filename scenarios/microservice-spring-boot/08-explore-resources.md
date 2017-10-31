@@ -22,20 +22,20 @@ You can review the above resources in the OpenShift Web Console or using `oc des
 
 ```
 oc describe bc catalog-s2i
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe is catalog
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe dc catalog
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe svc catalog
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe route catalog
-```{{execute}}
+```{{execute T1}}

@@ -4,7 +4,7 @@ To build and deploy the Catalog service on OpenShift using the **fabric8** maven
 
 ```
 mvn fabric8:deploy
-```{{execute}}
+```{{execute T1}}
 
 This will cause the following to happen:
 

@@ -6,7 +6,7 @@ architecture.
 
 ![API Gateway Pattern](https://katacoda.com/openshift-roadshow/assets/coolstore-arch.png)
 
-Replace the content of **src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java** class with the following by clicking on *Copy to Editor*:
+Replace the content of `src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java` class with the following by clicking on *Copy to Editor*:
 
 <pre class="file" data-filename="./src/main/java/com/redhat/cloudnative/gateway/GatewayVerticle.java" data-target="replace">
 package com.redhat.cloudnative.gateway;

@@ -17,8 +17,8 @@ git remote add origin http://gogs-infra-app-[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOS
 ```{{execute}}
 
 Before you commit the source code to the Git repository, configure your name and 
-email so that the commit owner can be seen on the repository. Replace the name 
-and the email with your own in the following commands:
+email so that the commit owner can be seen on the repository. If you want, you can 
+replace the name and the email with your own in the following commands:
 
 ```
 git config --global user.name "Developer"

@@ -3,7 +3,7 @@ OpenShift CLI:
 
 ```
 oc get routes
-```{{execute}}
+```{{execute T1}}
 
 Copy the route url for the Catalog service and verify the Catalog service works using `curl`
 

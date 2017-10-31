@@ -6,7 +6,11 @@ which you have already packaged within the Inventory Maven project.
 The YAML file can be packaged within the application JAR file and be overladed 
 [using command-line or system properties](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/configuration/project_stages.html#_command_line_switches_system_properties) which you will do in this scenario.
 
-Check out `inventory-wildfly-swarm/src/main/resources/project-stages.yml` which contains the default configuration.
+Check out `project-stages.yml` in Inventory Maven project which contains the default configuration:
+
+```
+cat inventory-wildfly-swarm/src/main/resources/project-stages.yml
+```{{execute}}
 
 Create a YAML file with the PostgreSQL database credentials by clicking on *Copy to Editor*. 
 Note that you can give an arbitrary name to this configuration 

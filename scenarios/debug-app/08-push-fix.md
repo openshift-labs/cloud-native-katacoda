@@ -8,7 +8,7 @@ git add src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java
 ```{{execute T2}}
 
 ```
-git commit -m "inventory returns zero for non-existing product id
+git commit -m "inventory returns zero for non-existing product id"
 ```{{execute T2}}
 
 ```

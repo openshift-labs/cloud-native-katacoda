@@ -2,7 +2,7 @@ Using Spring Boot maven plugin, you can conveniently run the application locally
 
 ```
 mvn spring-boot:run
-```{{execute}}
+```{{execute T1}}
 
 When you see **Started CatalogApplication** in the logs, you can access the 
 Catalog REST API. Let’s test it out using `curl` in a new terminal window:

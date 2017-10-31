@@ -10,7 +10,7 @@ Inventory pod logs:
 
 ```
 oc logs dc/inventory | grep hibernate.dialect
-```
+```{{execute}}
 
 You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 

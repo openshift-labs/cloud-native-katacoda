@@ -34,7 +34,7 @@ OpenShift will first looks in the internal image registry and then in defined up
 ([Red Hat Container Catalog](https://access.redhat.com/search/#/container-images) and 
 [Docker Hub](https://hub.docker.com) by default) to find and pull this image. 
 
-As the load is generates, you will notice that it will create a spike in the 
+As the load is generated, you will notice that it will create a spike in the 
 Web UI cpu usage and trigger the autoscaler to scale the Web UI container to 5 pods (as configured 
 on the deployment config) to cope with the load.
 

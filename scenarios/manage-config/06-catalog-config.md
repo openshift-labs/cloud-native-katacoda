@@ -2,7 +2,11 @@ You should be quite familiar with config maps by now. Spring Boot application co
 via a properties filed called `application.properties` and can be 
 [overriden and overlayed via multiple mechanisms](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html). 
 
-Check out the default Spring Boot configuration in Catalog Maven project `catalog-spring-boot/src/main/resources/application.properties`
+Check out the default Spring Boot configuration `application.properties` in Catalog Maven project: 
+
+```
+cat catalog-spring-boot/src/main/resources/application.properties
+```{{execute}}
 
 In this scenario, you will configure the Catalog service which is based on Spring Boot to override the default 
 configuration using an alternative `application.properties` backed by a config map.

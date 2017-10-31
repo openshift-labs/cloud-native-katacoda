@@ -15,4 +15,4 @@ another Java EE standard that provides Java developers with an
 object/relational mapping facility for managing relational data in Java applications.
 
 This project currently contains no code other than the main class for exposing a single 
-RESTful application defined in **InventoryApplication.java**.
+RESTful application defined in `InventoryApplication.java`.
