@@ -23,4 +23,4 @@ You would see a JSON response like this:
 
 The REST API returned a JSON object representing the inventory count for this product. Congratulations!
 
-Stop the service by pressing **CTRL-C** in the terminal window.
+Stop the service by pressing **CTRL-C** in the first terminal window.
