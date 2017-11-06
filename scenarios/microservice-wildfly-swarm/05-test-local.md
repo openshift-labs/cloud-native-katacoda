@@ -10,7 +10,11 @@ during the Maven build:
 ```java -jar target/inventory-1.0-SNAPSHOT-swarm.jar```
 
 Once you see **WildFly Swarm is Ready** in the logs, the Inventory service is up and running and you can access the 
-inventory REST API. Let’s test it out using `curl` in a new terminal window:
+inventory REST API. Let’s test it out using `curl` in a new terminal window. 
+
+You can open an new terminal window by clicking on the plus (+) icon on the terminal toolbar and then 
+choose **Open New Terminal**. You can also click on the following command to automatically open a new 
+terminal:
 
 ```
 curl http://localhost:9001/api/inventory/329299
