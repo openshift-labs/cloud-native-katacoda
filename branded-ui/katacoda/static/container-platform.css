@@ -224,7 +224,7 @@ h2 {
 
 .masthead {
   background-color: #168F9D;
-  background-position: right bottom;
+  background-position: 140px top;
   background-attachment: scroll;
   background-size: cover;
   background-image: url("/static/bg-cloud-native.png");
@@ -241,10 +241,15 @@ h2 {
     color: inherit; }
   .masthead h1 {
     margin-bottom: 20px;
-    font-size: 42px;
+    font-size: 50px;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: 'Overpass', Helvetica, Arial, san-seriff;
     text-transform: uppercase; }
+  .masthead h3 {
+    font-family: 'Overpass', Helvetica, Arial, san-seriff;
+    font-size: 28px;
+    line-height: 41px;}
   .masthead h2 {
     margin-top: 20px; }
   .masthead .lead {
@@ -394,7 +399,7 @@ h2 {
     .masthead.masthead-logo {
       min-height: 350px; }
       .masthead.masthead-logo .container {
-        padding-top: 20px; } }
+        padding-top: 12px; } }
   .masthead.masthead-logo .logo-ose, .masthead.masthead-logo .logo-oso, .masthead.masthead-logo .logo-osd {
     margin: 40px 0 0 0;
     height: 70px;
