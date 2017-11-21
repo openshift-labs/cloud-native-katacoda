@@ -24,12 +24,16 @@
                 "text": "04-add-pipeline-git.md"
             },
             {
+              "title": "Disable Automatic Deployments",
+              "text": "05-remove-triggers.md"
+            },
+            {
                 "title": "Create an OpenShift Pipeline",
-                "text": "05-create-pipeline.md"
+                "text": "06-create-pipeline.md"
             },
             {
                 "title": "Trigger Pipeline on Every Change",
-                "text": "06-webhooks.md"
+                "text": "07-webhooks.md"
             }
         ],
         "intro": {

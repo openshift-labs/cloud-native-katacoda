@@ -1,5 +1,6 @@
 Like mentioned, [OpenShift Pipelines](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#pipeline-build) enable creating deployment pipelines using the widely popular **Jenkinsfile** format.
 
+
 Create a deployment pipeline by running the following command within 
 the `inventory-widlfly-swarm` folder:
 
@@ -14,14 +15,6 @@ configured to fetch the **Jenkinsfile** from the Git repository of the current f
 (**inventory-wildfly-swarm** Git repository) and execute it on Jenkins. As soon as the 
 pipeline is created, OpenShift auto-provisions a Jenkins server in your project, using 
 the certified Jenkins image that is available in OpenShift image registry.
-
-There is currently a bug in OpenShift 3.6 that prevents the pipeline from getting started 
-when it's just created via command line. The issue is already resolved upstream. To get around 
-this issue, restart the pipeline:
-
-```
-oc cancel-build bc/inventory-pipeline --restart
-```{{execute}}
 
 Click on *Dashboard* to go to the OpenShift Web Console. In the **coolstore** project, 
 click on **Builds &rarr; Pipelines** from the left sidebar 

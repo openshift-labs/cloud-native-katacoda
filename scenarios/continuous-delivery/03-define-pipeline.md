@@ -14,21 +14,38 @@ Create a file called **Jenkinsfile** in the root the **inventory-wildfly-swarm**
  *Copy to Editor*:
 
 <pre class="file" data-filename="./inventory-wildfly-swarm/Jenkinsfile" data-target="replace">
-node("maven") {
-  stage("Build JAR") {
-    git url: "http://gogs-infra-app-[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/developer/inventory-wildfly-swarm.git"
-    sh "mvn clean package"
-    stash name:"jar", includes:"target/inventory-1.0-SNAPSHOT-swarm.jar"
+pipeline {
+  agent {
+      label 'maven'
   }
-
-  stage("Build Image") {
-    unstash name:"jar"
-    sh "oc start-build inventory-s2i --from-file=target/inventory-1.0-SNAPSHOT-swarm.jar"
-    openshiftVerifyBuild bldCfg: "inventory-s2i", waitTime: '20', waitUnit: 'min'
-  }
-
-  stage("Deploy") {
-    openshiftDeploy deploymentConfig: "inventory"
+  stages {
+    stage('Build JAR') {
+      steps {
+        sh "mvn package"
+        stash name:"jar", includes:"target/inventory-1.0-SNAPSHOT-swarm.jar"
+      }
+    }
+    stage('Build Image') {
+      steps {
+        unstash name:"jar"
+        script {
+          openshift.withCluster() {
+            openshift.startBuild("inventory-s2i", "--from-file=target/inventory-1.0-SNAPSHOT-swarm.jar", "--wait")
+          }
+        }
+      }
+    }
+    stage('Deploy') {
+      steps {
+        script {
+          openshift.withCluster() {
+            def dc = openshift.selector("dc", "inventory")
+            dc.rollout().latest()
+            dc.rollout().status()
+          }
+        }
+      }
+    }
   }
 }
 </pre>
@@ -37,7 +54,7 @@ This pipeline has three stages:
 
 * Build JAR: to build and test the jar file using Maven
 * Build Image: to build a container image from the Inventory JAR archive using OpenShift S2I
-* Deploy Image: to deploy the Inventory container image in the current project
+* Deploy: to deploy the Inventory container image in the current project
 
 Note that the pipeline definition is fully integrated with OpenShift and you can
 perform operations like image build, image deploy, etc directly from within the **Jenkinsfile**
