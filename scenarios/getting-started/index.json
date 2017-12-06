@@ -33,7 +33,7 @@
         }
     },
     "environment": {
-        "uilayout": "terminal-iframe",
+        "uilayout": "terminal",
         "uisettings": "javascript",
         "showdashboard": true,
         "hideintro": false,
