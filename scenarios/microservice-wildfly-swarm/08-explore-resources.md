@@ -23,20 +23,20 @@ You can review the above resources in the OpenShift Web Console or using `oc des
 
 ```
 oc describe bc inventory-s2i
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe is inventory
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe dc inventory
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe svc inventory
-```{{execute}}
+```{{execute T1}}
 
 ```
 oc describe route inventory
-```{{execute}}
+```{{execute T1}}

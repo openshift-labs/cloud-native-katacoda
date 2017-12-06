@@ -3,7 +3,7 @@ OpenShift CLI:
 
 ```
 oc get routes
-```{{execute}}
+```{{execute T1}}
 
 Copy the route url for the Inventory service and verify the API Gateway service 
 works using `curl`, replace `INVENTORY-ROUTE-HOST` with your route url:

@@ -2,7 +2,7 @@ To build and deploy the Inventory service on OpenShift using the **fabric8** mav
 
 ```
 mvn fabric8:deploy
-```{{execute}}
+```{{execute T1}}
 
 This will cause the following to happen:
 
