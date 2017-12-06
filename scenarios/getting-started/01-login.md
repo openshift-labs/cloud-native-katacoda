@@ -7,7 +7,7 @@ In order to login, we will use the **oc** command and then specify the server th
 want to authenticate to:
 
 ```
-oc login
+oc login [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com
 ```{{execute}}
 
 Enter your username and password:

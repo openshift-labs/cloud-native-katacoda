@@ -24,8 +24,8 @@
                 "text": "04-add-pipeline-git.md"
             },
             {
-              "title": "Disable Automatic Deployments",
-              "text": "05-remove-triggers.md"
+                "title": "Disable Automatic Deployments",
+                "text": "05-remove-triggers.md"
             },
             {
                 "title": "Create an OpenShift Pipeline",
