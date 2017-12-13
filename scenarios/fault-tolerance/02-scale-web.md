@@ -43,5 +43,5 @@ can be specified using an annotation on the route object. Run the following
 to change the load-balancing strategy to round robin: 
 
 ```
-oc annotate route/web haproxy.router.openshift.io/balance=roundrobin
+oc annotate route/web haproxy.router.openshift.io/balance=roundrobin --overwrite
 ```{{execute}}
