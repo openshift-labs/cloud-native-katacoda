@@ -25,7 +25,7 @@ git config --global user.name "Developer"
 ```{{execute}}
 
 ```
-git config --global user.email "developer@os.com"
+git config --global user.email "developer@me.com"
 ```{{execute}}
 
 Commit and push the existing code to the GitHub repository.
