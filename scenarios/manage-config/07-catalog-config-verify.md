@@ -14,7 +14,7 @@ You would see the **PostgreSQL94Dialect** is selected by Hibernate in the logs:
 You can also connect to the Catalog PostgreSQL database and verify that the seed data is loaded:
 
 ```
-oc rsh dc/catalog-postgresql
+oc --server https://master:8443 rsh dc/catalog-postgresql
 ```{{execute}}
 
 Once connected to the PostgreSQL container, run the following:

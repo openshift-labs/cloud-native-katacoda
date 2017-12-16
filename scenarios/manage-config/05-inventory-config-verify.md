@@ -2,7 +2,7 @@ When the Inventory pod is ready, verify that the config map is in fact injected
 into the container by running a shell command inside the Inventory container:
 
 ```
-oc rsh dc/inventory cat /app/config/project-stages.yml
+oc --server https://master:8443 rsh dc/inventory cat /app/config/project-stages.yml
 ```{{execute}}
 
 Also verify that the PostgreSQL database is actually used by the Inventory service. Check the 
@@ -22,7 +22,7 @@ You can also connect to Inventory PostgreSQL database and check if the seed data
 loaded into the database:
 
 ```
-oc rsh dc/inventory-postgresql
+oc --server https://master:8443 rsh dc/inventory-postgresql
 ```{{execute}}
 
 Once connected to the PostgreSQL container, run the following inside the 
