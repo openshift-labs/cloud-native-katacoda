@@ -1,2 +1,3 @@
-# ssh root@host01 "oadm new-project infra --display-name='Workshop Infra'"
-# ssh root@host01 "oc process -f http://bit.ly/openshift-gogs-persistent-template --param=HOSTNAME=gogs-infra..environments.katacoda.com --param=GOGS_VERSION=0.9.113 --param=SKIP_TLS_VERIFY=true -n infra | oc create -f - -n infra"
+ssh root@host01 "oc import-image jenkins:v3.7 --from='registry.access.redhat.com/openshift3/jenkins-2-rhel7:v3.7' --confirm -n openshift"
+ssh root@host01 "oc export template jenkins-persistent -n openshift -o json | sed 's/jenkins:latest/jenkins:v3.7/g' | oc replace -f - -n openshift"
+ssh root@host01 "oc export template jenkins-ephemeral -n openshift -o json | sed 's/jenkins:latest/jenkins:v3.7/g' | oc replace -f - -n openshift"
