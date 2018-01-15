@@ -1,4 +1,4 @@
-It’s time to build and deploy Catalog service on OpenShift using [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build).
+It’s time to build and deploy Catalog service on OpenShift using [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.7/architecture/core_concepts/builds_and_image_streams.html#source-build).
 
 To build and deploy the Catalog service on OpenShift using the **fabric8** maven plugin, run the following maven command:
 

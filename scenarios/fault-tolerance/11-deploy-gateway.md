@@ -9,7 +9,7 @@ oc start-build gateway-s2i --from-file=target/gateway-1.0-SNAPSHOT.jar
 ```{{execute}}
 
 As soon as the new **gateway** container image is built, OpenShift deploys the new image automatically 
-thanks to the [deployment triggers](https://docs.openshift.com/container-platform/3.6/dev_guide/deployments/basic_deployment_operations.html#triggers) 
+thanks to the [deployment triggers](https://docs.openshift.com/container-platform/3.7/dev_guide/deployments/basic_deployment_operations.html#triggers) 
 defined on the **gateway** deployment config.
 
 Let's try the Web UI again in the browser while the Inventory service is still down.

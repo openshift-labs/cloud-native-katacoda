@@ -3,7 +3,7 @@ JavaScript. Let's deploy it on OpenShift using the certified Node.js container i
 in OpenShift. 
 
 In the previous scenarios, you used the OpenShift 
-[Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) 
+[Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.7/architecture/core_concepts/builds_and_image_streams.html#source-build) 
 feature via the [Fabric8 Maven Plugin](https://maven.fabric8.io) to build a container image from the 
 source code on your laptop. In this scenario, you will still use S2I but instead instruct OpenShift 
 to obtain the application code directly from the source repository and build and deploy a 

@@ -6,7 +6,7 @@ credentials to simplify the steps however for production environments, you shoul
 secure way to handle sensitive data.
 
 Fortunately, OpenShift already provides a secure mechanism for handling sensitive data which is 
-called [Secrets](https://docs.openshift.com/container-platform/3.6/dev_guide/secrets.html). Secret objects act and are used 
+called [Secrets](https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html). Secret objects act and are used 
 similar to config maps however with the difference that they are encrypted as they travel over the wire 
 and also at rest when kept on a persistent disk. Like config maps, secrets can be injected into 
 containers a environment variables or files on the filesystem using a temporary file-storage 

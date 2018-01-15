@@ -10,7 +10,7 @@ regardless of what happens to the container itself, the data is safe and can be 
 database container.
 
 In this scenario you will deploy 2 PostgreSQL databases for the Catalog and Inventory services 
-using the templates. [OpenShift Templates](https://docs.openshift.com/container-platform/3.6/dev_guide/templates.html) 
+using the templates. [OpenShift Templates](https://docs.openshift.com/container-platform/3.7/dev_guide/templates.html) 
 use YAML/JSON to compose multiple containers and their configurations as a list of objects to 
 be created and deployed at once hence making it simple to re-create complex deployments by just 
 deploying a single template. Templates can be parameterized to get input for fields like service 

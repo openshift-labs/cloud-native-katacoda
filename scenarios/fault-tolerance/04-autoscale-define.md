@@ -5,7 +5,7 @@ Set the following resource constraints on the Web UI pod:
 * CPU Request: 200 millicore
 * CPU Limit: 300 millicore
 
-CPU is measured in units called millicores while memory is measured in bytes and is specified with [SI suffices](https://docs.openshift.com/container-platform/3.6/dev_guide/compute_resources.html#dev-compute-resources) 
+CPU is measured in units called millicores while memory is measured in bytes and is specified with [SI suffices](https://docs.openshift.com/container-platform/3.7/dev_guide/compute_resources.html#dev-compute-resources) 
 (E, P, T, G, M, K) or their power-of-two-equivalents (Ei, Pi, Ti, Gi, Mi, Ki).
 
 ```

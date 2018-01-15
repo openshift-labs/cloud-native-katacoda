@@ -1,4 +1,4 @@
-Let's create a [PostgreSQL database](https://docs.openshift.com/container-platform/3.6/using_images/db_images/postgresql.html) 
+Let's create a [PostgreSQL database](https://docs.openshift.com/container-platform/3.7/using_images/db_images/postgresql.html) 
 for the Inventory service using the PostgreSQL template that is provided out-of-the-box
 ```
 oc new-app postgresql-persistent \

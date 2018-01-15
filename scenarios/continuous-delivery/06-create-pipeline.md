@@ -1,4 +1,4 @@
-Like mentioned, [OpenShift Pipelines](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#pipeline-build) enable creating deployment pipelines using the widely popular **Jenkinsfile** format.
+Like mentioned, [OpenShift Pipelines](https://docs.openshift.com/container-platform/3.7/architecture/core_concepts/builds_and_image_streams.html#pipeline-build) enable creating deployment pipelines using the widely popular **Jenkinsfile** format.
 
 
 Create a deployment pipeline by running the following command within 

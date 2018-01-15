@@ -2,7 +2,7 @@ We looked at how to build more resilience into the applications through scaling 
 previous sections. In this section, you will learn how to recover application pods when 
 failures happen. In fact, you don't need to do anything because OpenShift automatically 
 recovers failed pods when pods are not feeling healthy. The healthiness of application pods is determined via the 
-[health probes](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes) 
+[health probes](https://docs.openshift.com/container-platform/3.7/dev_guide/application_health.html#container-health-checks-using-probes) 
 which was discussed in the previous scenarios.
 
 There are three auto-healing scenarios that OpenShift handles automatically:
@@ -10,7 +10,7 @@ There are three auto-healing scenarios that OpenShift handles automatically:
 * **Application Pod Temporary Failure** 
 
   When an application pod fails and does not pass its 
-  [liveness health probe](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes),  
+  [liveness health probe](https://docs.openshift.com/container-platform/3.7/dev_guide/application_health.html#container-health-checks-using-probes),  
   OpenShift restarts the pod in order to give the application a chance to recover and start functioning 
   again. Issues such as deadlocks, memory leaks, network disturbance and more are all examples of issues 
   than can most likely be resolved by restarting the application despite the potential bug remaining in the 
@@ -19,7 +19,7 @@ There are three auto-healing scenarios that OpenShift handles automatically:
 * **Application Pod Permanent Failure** 
 
   When an application pod fails and does not pass its 
-  [readiness health probe](https://docs.openshift.com/container-platform/3.6/dev_guide/application_health.html#container-health-checks-using-probes), 
+  [readiness health probe](https://docs.openshift.com/container-platform/3.7/dev_guide/application_health.html#container-health-checks-using-probes), 
   it signals that the failure is more severe and restart does not help to mitigate the issue. OpenShift then 
   removes the application pod from the load-balancer to prevent sending traffic to it.
 
