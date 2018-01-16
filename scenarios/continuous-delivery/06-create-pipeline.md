@@ -1,8 +1,14 @@
 Like mentioned, [OpenShift Pipelines](https://docs.openshift.com/container-platform/3.7/architecture/core_concepts/builds_and_image_streams.html#pipeline-build) enable creating deployment pipelines using the widely popular **Jenkinsfile** format.
 
+First, deploy a Jenkins server using the provided template and container image that 
+comes out-of-the-box with OpenShift:
 
-Create a deployment pipeline by running the following command within 
-the `inventory-widlfly-swarm` folder:
+```
+oc new-app jenkins-ephemeral
+```
+
+After Jenkins is deployed and is running (verify in web console), then create a 
+deployment pipeline by running the following command within the `inventory-widlfly-swarm` folder:
 
 ```
 oc new-app . \
@@ -12,15 +18,10 @@ oc new-app . \
 
 The above command creates a new build config of type pipeline which is automatically 
 configured to fetch the **Jenkinsfile** from the Git repository of the current folder 
-(**inventory-wildfly-swarm** Git repository) and execute it on Jenkins. As soon as the 
-pipeline is created, OpenShift auto-provisions a Jenkins server in your project, using 
-the certified Jenkins image that is available in OpenShift image registry.
+(**inventory-wildfly-swarm** Git repository) and execute it on Jenkins.
 
 Click on *Dashboard* to go to the OpenShift Web Console. In the **coolstore** project, 
 click on **Builds &rarr; Pipelines** from the left sidebar.
-
-> If the pipeline is still in the pending state when it's created for the first time, 
-> cancel it by clicking on it and then on the cancel button and start it again.
 
 ![OpenShift Pipeline](https://katacoda.com/openshift-roadshow/assets/cd-pipeline-inprogress.png)
 
