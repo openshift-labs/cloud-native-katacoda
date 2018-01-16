@@ -17,7 +17,10 @@ pipeline is created, OpenShift auto-provisions a Jenkins server in your project,
 the certified Jenkins image that is available in OpenShift image registry.
 
 Click on *Dashboard* to go to the OpenShift Web Console. In the **coolstore** project, 
-click on **Builds &rarr; Pipelines** from the left sidebar 
+click on **Builds &rarr; Pipelines** from the left sidebar.
+
+> If the pipeline is still in the pending state when it's created for the first time, 
+> cancel it by clicking on it and then on the cancel button and start it again.
 
 ![OpenShift Pipeline](https://katacoda.com/openshift-roadshow/assets/cd-pipeline-inprogress.png)
 
