@@ -10,7 +10,8 @@ want to authenticate to:
 oc login [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com
 ```{{execute}}
 
-Enter your username and password:
+You might get a question wether to use an insecure connection. Enter `y` and then enter 
+your username and password:
 * Username: **developer**
 * Password: **developer**
 
