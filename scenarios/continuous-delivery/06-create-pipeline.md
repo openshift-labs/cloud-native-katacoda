@@ -5,7 +5,7 @@ comes out-of-the-box with OpenShift:
 
 ```
 oc new-app jenkins-ephemeral
-```
+```{{execute}}
 
 After Jenkins is deployed and is running (verify in web console), then create a 
 deployment pipeline by running the following command within the `inventory-widlfly-swarm` folder:
