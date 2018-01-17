@@ -8,24 +8,29 @@ The Java image on OpenShift has built-in support for remote debugging and it can
 by setting the `JAVA_DEBUG=true` environment variables on the deployment config for the pod 
 that you want to remotely debug.
 
-An easier approach would be to use the fabric8 maven plugin to enable remote debugging on 
-the Inventory pod. It also forwards the default remote debugging port, 5005, from the 
-Inventory pod to your workstation so simplify connectivity.
-
-Enable remote debugging on Inventory:
-
 ```
-cd inventory-wildfly-swarm
+oc set env dc/inventory JAVA_DEBUG=true
 ```{{execute T2}}
 
+The Inventory pod will get restarted in debug mode. Since a pod is not directly accessible to 
+a remote debugger, run the following command to forward the local port 5005 to the Inventory 
+pod on port 5005. The the remote debugger can the connect to a local port and be redirected 
+to the Inventory pod.
+
+First, find the name of the Inventory pod.
+
 ```
-mvn fabric8:debug
+oc get pod -l app=inventory
 ```{{execute T2}}
+
+An then forward the local port using the following command. Replace the pod name with the 
+Inventory pod name from the previous command.
+
+```
+oc port-forward --server https://master:8443 inventory-n-nnnn 5005 
+```
 
 You are all set now to start debugging using the tools of you choice. 
-
-Don't wait for the command to return! The fabric8 maven plugin keeps the forwarded 
-port open so that you can start debugging remotely.
 
 Remote debugging can be done using the prevalently available
 Java Debugger command line or any modern IDE like JBoss 
