@@ -9,7 +9,8 @@
         "steps": [
             {
                 "title": "Explore OpenShift CLI",
-                "text": "01-login.md"
+                "text": "01-login.md",
+                "verify": "01-login-verify.sh"
             },
             {
                 "title": "Create an OpenShift Project",
