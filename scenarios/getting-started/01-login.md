@@ -17,4 +17,4 @@ your username and password:
 
 Congratulations, you are now authenticated to the OpenShift server.
 
-> Verify that you are logged in as `developer` using `oc whoami`
+> You can verify that you are logged in as **developer** using `oc whoami`
