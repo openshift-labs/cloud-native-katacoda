@@ -12,7 +12,14 @@ that you want to remotely debug.
 oc set env dc/inventory JAVA_DEBUG=true
 ```{{execute T2}}
 
-The Inventory pod will get restarted in debug mode. Since a pod is not directly accessible to 
+Since you have removed the deployment triggers in the previous scenario, you have to manually 
+trigger a new deployment for the debug environment variable to take effect.
+
+```
+oc rollout latest inventory
+```{{execute T2}}
+
+Wait till the Inventory pod is ready again. Since a pod is not directly accessible to 
 a remote debugger, run the following command to forward the local port 5005 to the Inventory 
 pod on port 5005. The the remote debugger can the connect to a local port and be redirected 
 to the Inventory pod.
@@ -29,6 +36,9 @@ Inventory pod name from the previous command.
 ```
 oc port-forward --server https://master:8443 inventory-n-nnnn 5005 
 ```
+
+Notice that the port-forward command keeps running in the terminal in order to 
+forward the specified local port to the pod. 
 
 You are all set now to start debugging using the tools of you choice. 
 
