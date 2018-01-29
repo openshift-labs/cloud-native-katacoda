@@ -46,9 +46,9 @@
     },
     {
       "pathway_id": "openshift-roadshow/scenarios",
-      "course_id": "debug-app",
-      "id": "debug-app",
-      "title": "Debugging Applications"
+      "course_id": "continuous-delivery",
+      "id": "continuous-delivery",
+      "title": "Continuous Delivery"
     }
   ]
 }
