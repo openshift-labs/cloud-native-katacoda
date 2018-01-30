@@ -43,12 +43,6 @@
       "course_id": "manage-config",
       "id": "manage-config",
       "title": "Managing Application Configuration"
-    },
-    {
-      "pathway_id": "openshift-roadshow/scenarios",
-      "course_id": "continuous-delivery",
-      "id": "continuous-delivery",
-      "title": "Continuous Delivery"
     }
   ]
 }
