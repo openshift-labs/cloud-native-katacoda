@@ -2,4 +2,5 @@ web:
   image: openshift-roadshow/cloud-native-katacoda
   environment:
     VIRTUAL_HOST: 'dev.roadshow.openshift.com'
+    CERT_NAME: 'openshift-roadshow'
   restart: always
