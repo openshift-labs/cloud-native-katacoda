@@ -27,7 +27,7 @@ deploy the `ab` container image from [Docker Hub](https://hub.docker.com/r/jordi
 generate some load on the Web UI:
 
 ```
-oc run web-load --rm --attach --restart='Never' --image=jordi/ab -- ab -n 50000 -c 10 http://web:8080/
+oc run web-load --restart='OnFailure' --image=jordi/ab -- ab -n 50000 -c 10 http://web:8080/
 ```{{execute}}
 
 OpenShift will first looks in the internal image registry and then in defined upstream registries 
