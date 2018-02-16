@@ -1,7 +1,11 @@
-Go to **Terminal 2** and stop the fabric8 maven plugin port forwarding via 
+Go to **Terminal 2** and stop the port forwarding via 
 pressing **CTRL+C**.
 
 Commit the bug fix to the Git repository.
+
+```
+cd inventory-wildfly-swarm
+```{{execute T2}}
 
 ```
 git add src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java
