@@ -37,7 +37,6 @@
             }
         ],
         "intro": {
-            "courseData": "run-init.sh",
             "text": "00-intro.md"
         },
         "finish": {
