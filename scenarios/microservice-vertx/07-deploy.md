@@ -14,7 +14,7 @@ Grant permission to the API Gateway to be able to access OpenShift REST API and 
 oc policy add-role-to-user view -n coolstore -z default
 ```{{execute T1}}
 
-It’s time to build and deploy Catalog service on OpenShift using [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.7/architecture/core_concepts/builds_and_image_streams.html#source-build).
+It’s time to build and deploy API Gateway service on OpenShift using [Source-to-Image (S2I)](https://docs.openshift.com/container-platform/3.7/architecture/core_concepts/builds_and_image_streams.html#source-build).
 To build and deploy the Inventory service on OpenShift using the fabric8 maven plugin, 
 run the following Maven command __in the first terminal window__:
 
@@ -24,7 +24,7 @@ mvn fabric8:deploy
 
 This will cause the following to happen:
 
-* The API Gateway uber-jar is built using WildFly Swarm
+* The API Gateway uber-jar is built using Vert.x 
 * A container image is built on OpenShift containing the API Gateway uber-jar and JDK
 * All necessary objects are created within the OpenShift project to deploy the API Gateway service
 
