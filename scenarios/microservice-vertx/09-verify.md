@@ -1,4 +1,4 @@
-You can see the expose DNS url for the Catalog service in the OpenShift Web Console or using 
+You can see the expose DNS url for the API Gateway service in the OpenShift Web Console or using 
 OpenShift CLI.
 
 ```
