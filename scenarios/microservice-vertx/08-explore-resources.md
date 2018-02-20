@@ -1,11 +1,11 @@
-Let's take a moment and review the OpenShift resources that are created for the Catalog REST API:
+Let's take a moment and review the OpenShift resources that are created for the API Gateway:
 
-* Build Config: **gateway-s2i** build config is the configuration for building the Catalog 
+* Build Config: **gateway-s2i** build config is the configuration for building the Gateway 
 container image from the gateway source code or JAR archive
 * Image Stream: **gateway** image stream is the virtual view of all gateway container 
 images built and pushed to the OpenShift integrated registry.
-* Deployment Config: **gateway** deployment config deploys and redeploys the Catalog container 
-image whenever a new Catalog container image becomes available
+* Deployment Config: **gateway** deployment config deploys and redeploys the Gateway container 
+image whenever a new Gateway container image becomes available
 * Service: **gateway** service is an internal load balancer which identifies a set of 
 pods (containers) in order to proxy the connections it receives to them. Backing pods can be 
 added to or removed from a service arbitrarily while the service remains consistently available, 
