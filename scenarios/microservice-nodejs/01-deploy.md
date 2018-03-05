@@ -10,12 +10,12 @@ to obtain the application code directly from the source repository and build and
 container image of it.
 
 The source code for the the Node.js Web front-end is available in this Git repository: 
-<https://github.com/openshift-roadshow/cloud-native-labs/tree/master/web-nodejs>
+<https://github.com/openshift-labs/cloud-native-labs/tree/master/web-nodejs>
 
 Use the OpenShift CLI command to create a new build and deployment for the Web component:
 
 ```
-oc new-app nodejs~https://github.com/openshift-roadshow/cloud-native-labs.git \
+oc new-app nodejs~https://github.com/openshift-labs/cloud-native-labs.git \
         --context-dir=web-nodejs \
         --name=web
 ```{{execute}}
