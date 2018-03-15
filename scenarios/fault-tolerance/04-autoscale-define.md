@@ -27,7 +27,7 @@ deploy the `ab` container image from [Docker Hub](https://hub.docker.com/r/jordi
 generate some load on the Web UI:
 
 ```
-oc run web-load --restart='OnFailure' --image=jordi/ab -- ab -n 50000 -c 10 http://web:8080/
+oc run web-load --restart='OnFailure' --image=jordi/ab -- -n 50000 -c 10 http://web:8080/
 ```{{execute}}
 
 OpenShift will first looks in the internal image registry and then in defined upstream registries 
@@ -40,6 +40,6 @@ on the deployment config) to cope with the load.
 
 Depending on the resources available on the OpenShift cluster, the pod might scale 
 to fewer than 5 pods. to handle the extra load. You can increase the load by 
-specifying a higher number of requests e.g. `ab -n 80000`.
+specifying a higher number of requests e.g. `-n 80000`.
 
 ![Web UI Automatically Scaled](https://katacoda.com/openshift-roadshow/assets/fault-autoscale-web.png)
