@@ -22,7 +22,12 @@ run the following Maven command __in the first terminal window__:
 mvn fabric8:deploy
 ```{{execute T1}}
 
-This will cause the following to happen:
+During the deployment, you might see that Fabric8 Maven Plugin throws an `java.util.concurrent.RejectedExecutionException` 
+exception. This is due to [a bug](https://github.com/fabric8io/kubernetes-client/issues/1035) in one of Fabric8 Maven Plugin 
+dependencies which is being worked on right now and will be fixed soon. You can ignore this exception for now. The deployment 
+nevertheless succeeds.
+
+`fabric8:deploy` will cause the following to happen:
 
 * The API Gateway uber-jar is built using Vert.x 
 * A container image is built on OpenShift containing the API Gateway uber-jar and JDK
