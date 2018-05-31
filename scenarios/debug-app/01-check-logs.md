@@ -22,6 +22,7 @@ Inventory API for the product id **444436**
 ```
 ...
 WARNING: Inventory error for 444436: status code 204
+SEVERE: Inventory error for 444436: null
 ...
 ```
 
