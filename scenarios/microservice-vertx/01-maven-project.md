@@ -15,11 +15,4 @@ to easily scale and handle large amounts of throughput with few threads.All API 
 
 ![Vert.x Event Loop](https://katacoda.com/openshift-roadshow/assets/vertx-event-loop.jpg)
 
-Although you can have multiple, there is currently only one Verticle created in the **gateway-vertx** project. 
-
-Examine `GatewayVerticle.java`. Here is what happens in this verticle:
-
-1. A Verticle is created
-2. **Router** is used for mapping the REST endpoints
-3. A REST endpoint is created to return a static response
-3. An HTTP Server is created to listen on port 8080
+Although you can have multiple, there is currently only one empty Verticle created in the **gateway-vertx** project. 

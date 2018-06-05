@@ -21,8 +21,6 @@ oc new-app nodejs~https://github.com/openshift-labs/cloud-native-labs.git \
 ```{{execute}}
 
 The **--context-dir** option specifies the sub-directly of the Git repository which contains 
-the source code for the application to be built and deployed. The **--labels** allows 
-assigining arbitrary key-value labels to the application objects in order to make it easier to 
-find them later on when you have many applications in the same project.
+the source code for the application to be built and deployed. 
 
 A build gets created and starts building the Node.js Web UI container image. 

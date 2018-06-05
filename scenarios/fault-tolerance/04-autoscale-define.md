@@ -13,8 +13,7 @@ oc set resources dc/web --limits=cpu=400m,memory=512Mi --requests=cpu=200m,memor
 ```{{execute}}
 
 The pods get restarted automatically setting the new resource limits in effect. Now you can define an 
-autoscaler to scale the Web UI pods up to 5 instances whenever 
-the CPU consumption passes 50% utilization:
+autoscaler to scale the Web UI pods up to 5 instances whenever the CPU consumption passes 40% utilization:
 
 ```
 oc autoscale dc/web --min 1 --max 5 --cpu-percent=40

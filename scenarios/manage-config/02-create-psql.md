@@ -12,7 +12,8 @@ oc new-app postgresql-persistent \
 The `--param` parameter provides a value for the template parameters. The recommended approach is 
 not to provide any value for username and password and allow the template to generate a random value for 
 you due to security reasons. In this scenario in order to reduce typos, a fixed value is provided for username and 
-password.
+password. The **--labels** allows assigning arbitrary key-value labels to the application objects in order to make it easier to 
+find them later on when you have many applications in the same project.
 
 Deploy another PostgreSQL database for the Catalog service:
 
