@@ -1,4 +1,4 @@
-Go to **Terminal 2** and stop the port forwarding via 
+Go to the terminal that port forwarding is running in and stop it via 
 pressing **CTRL+C**.
 
 Commit the bug fix to the Git repository.
