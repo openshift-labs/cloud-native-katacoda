@@ -35,7 +35,7 @@ You should see a JSON response like:
 ...
 ```
 
-Note that the JSON response aggregates responses fro Catalog and Inventory services and 
+Note that the JSON response aggregates responses from Catalog and Inventory services and 
 the inventory info for each product is available within the same JSON object.
 
 Stop all services by pressing **CTRL-C** in all terminal windows.
