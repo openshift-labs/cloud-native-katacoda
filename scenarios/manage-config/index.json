@@ -50,7 +50,7 @@
     },
     "files": [
       "./application.properties",
-      "./project-stages.yml"
+      "./project-defaults.yml"
     ],
     "environment": {
         "uilayout": "editor-terminal",

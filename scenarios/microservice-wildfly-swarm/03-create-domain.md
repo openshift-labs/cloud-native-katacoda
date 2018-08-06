@@ -56,7 +56,7 @@ the following steps:
 
 1. Adding the `org.wildfly.swarm:jpa` dependency to **pom.xml**
 2. Adding the database driver (e.g. `org.postgresql:postgresql`) to ** pom.xml**
-3. Adding database connection details in **src/main/resources/project-stages.yml**
+3. Adding database connection details in **src/main/resources/project-defaults.yml**
 
 Examine **pom.xml** and note the `org.wildfly.swarm:jpa` that is already added to enable JPA:
 
@@ -71,7 +71,7 @@ Examine **src/main/resources/META-INF/persistence.xml** to see the JPA datasourc
 for this project. Also note that the configurations uses **META-INF/load.sql** to import
 initial data into the database.
 
-Examine **src/main/resources/project-stages.yml** to see the database connection details.
+Examine **src/main/resources/project-defaults.yml** to see the database connection details.
 An in-memory H2 database is used in this scenario for local development and in the following
 labs will be replaced with a PostgreSQL database. Be patient! More on that later.
 
