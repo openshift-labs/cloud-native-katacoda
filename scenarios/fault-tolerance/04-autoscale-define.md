@@ -21,7 +21,7 @@ oc autoscale dc/web --min 1 --max 5 --cpu-percent=40
 
 All set! Now the Web UI can scale automatically to multiple instances if the load on the CoolStore 
 online store increases. You can verify that using for example `siege` the 
-[http load testing and benchmarking utility.](https://www.joedog.org/siege-home/). Let's 
+[http load testing and benchmarking utility.](https://www.joedog.org/siege-manual/). Let's 
 deploy the `siege` container image from [Docker Hub](https://hub.docker.com/r/siamaksade/siege/) and 
 generate some load on the Web UI:
 
