@@ -1,0 +1,66 @@
+{
+  "title": "OpenShift Cloud-Native Roadshow",
+  "description": "",
+  "courses": [
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "getting-started",
+      "id": "getting-started",
+      "title": "Getting Started with OpenShift"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "microservice-wildfly-swarm",
+      "id": "microservice-wildfly-swarm",
+      "title": "Enterprise Microservices with WildFly Swarm"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "microservice-spring-boot",
+      "id": "microservice-spring-boot",
+      "title": "Microservices with Spring Boot"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "microservice-vertx",
+      "id": "microservice-vertx",
+      "title": "Reactive Microservices with Eclipse Vert.x"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "microservice-nodejs",
+      "id": "microservice-nodejs",
+      "title": "Web UI with Node.js and AngularJS"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "monitor-health",
+      "id": "monitor-health",
+      "title": "Monitoring Application Health"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "fault-tolerance",
+      "id": "fault-tolerance",
+      "title": "Service Resilience and Fault Tolerance"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "manage-config",
+      "id": "manage-config",
+      "title": "Managing Application Configuration"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "continuous-delivery",
+      "id": "continuous-delivery",
+      "title": "Continuous Delivery"
+    },
+    {
+      "pathway_id": "siamaksade/scenarios",
+      "course_id": "debug-app",
+      "id": "debug-app",
+      "title": "Debugging Applications"
+    }
+  ]
+}
