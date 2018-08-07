@@ -19,4 +19,7 @@ You should see a result like:
 
 The REST API returned a JSON object representing the product list. Congratulations!
 
-Stop the service by pressing **CTRL-C** in the first terminal window.
+Stop the service by pressing **CTRL-C** in the first terminal window or clicking on 
+the following:
+
+`clear`{{execute T1 interrupt}}

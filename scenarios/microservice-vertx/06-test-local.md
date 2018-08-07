@@ -38,4 +38,8 @@ You should see a JSON response like:
 Note that the JSON response aggregates responses fro Catalog and Inventory services and 
 the inventory info for each product is available within the same JSON object.
 
-Stop all services by pressing **CTRL-C** in all terminal windows.
+Stop all services by pressing **CTRL-C** in all terminal windows or click on the following commands:
+
+`clear`{{execute T1 interrupt}}
+`clear`{{execute T2 interrupt}}
+`clear`{{execute T3 interrupt}}

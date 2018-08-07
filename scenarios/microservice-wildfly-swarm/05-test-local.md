@@ -2,7 +2,7 @@ Using WildFly Swarm maven plugin, you can conveniently run the application local
 
 ```
 mvn wildfly-swarm:run
-```{{execute}}
+```{{execute T1}}
 
 Alternatively, you can run the application using the uber-jar produced 
 during the Maven build: 
@@ -27,4 +27,7 @@ You would see a JSON response like this:
 
 The REST API returned a JSON object representing the inventory count for this product. Congratulations!
 
-Stop the service by pressing **CTRL-C** in the first terminal window.
+Stop the service by pressing **CTRL-C** in the first terminal window or clicking on 
+the following:
+
+`clear`{{execute T1 interrupt}}
