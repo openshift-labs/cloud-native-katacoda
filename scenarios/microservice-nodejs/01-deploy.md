@@ -15,9 +15,10 @@ The source code for the the Node.js Web front-end is available in this Git repos
 Use the OpenShift CLI command to create a new build and deployment for the Web component:
 
 ```
-oc new-app nodejs~https://github.com/openshift-labs/cloud-native-labs.git \
-        --context-dir=web-nodejs \
-        --name=web
+oc new-app \
+   nodejs~https://github.com/openshift-labs/cloud-native-labs.git \
+   --context-dir=web-nodejs \
+   --name=web
 ```{{execute}}
 
 The **--context-dir** option specifies the sub-directly of the Git repository which contains 
