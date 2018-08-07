@@ -1,5 +1,7 @@
 Go to the terminal that port forwarding is running in and stop it via 
-pressing **CTRL+C**.
+pressing **CTRL+C** or click on the following:
+
+`clear`{{execute T2 interrupt}}
 
 Commit the bug fix to the Git repository.
 

@@ -9,7 +9,7 @@ execution.
 You can also see the webhooks in the OpenShift Web Console by going to **Build &rarr; Pipelines** , 
 clicking on the pipeline and going to the **Configurations** tab.
 
-Copy the Generic webhook url which you will need in the next steps.
+Copy the **Generic Webhook URL** which you will need in the next steps.
 
 Go to Gogs browser tab and then your **inventory-wildfly-swarm** Git repository, then click on **Settings**:
 

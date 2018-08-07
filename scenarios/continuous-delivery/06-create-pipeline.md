@@ -4,10 +4,11 @@ First, deploy a Jenkins server using the provided template and container image t
 comes out-of-the-box with OpenShift:
 
 ```
-oc new-app jenkins-ephemeral
+oc new-app jenkins-persistent
 ```{{execute}}
 
-After Jenkins is deployed and is running (verify in web console), then create a 
+It takes a few min the first time Jenkins starts since it upgrades itself and the installed plugins 
+to latest compatible versions. After Jenkins is deployed and is running (verify in web console), then create a 
 deployment pipeline by running the following command within the `inventory-widlfly-swarm` folder:
 
 ```
