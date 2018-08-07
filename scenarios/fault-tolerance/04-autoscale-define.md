@@ -21,12 +21,13 @@ oc autoscale dc/web --min 1 --max 5 --cpu-percent=40
 
 All set! Now the Web UI can scale automatically to multiple instances if the load on the CoolStore 
 online store increases. You can verify that using for example `siege` the 
-[http load testing and benchmarking utility.](https://www.joedog.org/siege-manual/). Let's 
-deploy the `siege` container image from [Docker Hub](https://hub.docker.com/r/siamaksade/siege/) and 
+[http load testing and benchmarking utility](https://www.joedog.org/siege-manual/). Let's 
+deploy the `siege` container image from [Docker Hub](https://hub.docker.com/r/siamaksade/siege/) 
+as a [Kubernetes job](https://docs.openshift.com/container-platform/3.10/dev_guide/jobs.html) and 
 generate some load on the Web UI:
 
 ```
-oc run web-load --restart='OnFailure' --image=siamaksade/siege -- -c50 -d2 -t120S  http://web:8080/
+oc run web-load --restart='OnFailure' --image=siamaksade/siege -- -c80 -d2 -t5M  http://web:8080/
 ```{{execute}}
 
 OpenShift will first looks in the internal image registry and then in defined upstream registries 
@@ -38,7 +39,8 @@ Web UI cpu usage and trigger the autoscaler to scale the Web UI container to 5 p
 on the deployment config) to cope with the load.
 
 Depending on the resources available on the OpenShift cluster, the pod might scale 
-to fewer than 5 pods. to handle the extra load. You can increase the load by 
-specifying a higher number of concurrent requests `-c80` flag.
+to fewer than 5 pods to handle the extra load. You can generate more load load by 
+specifying a higher number of concurrent requests `-c80` flag. Just make sure to remove the 
+existing `web-load` job first (see if you can find out how!). 
 
 ![Web UI Automatically Scaled](https://katacoda.com/openshift-roadshow/assets/fault-autoscale-web.png)
