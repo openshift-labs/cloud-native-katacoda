@@ -49,7 +49,7 @@
             },
             {
                 "title": "Deploy API Gateway",
-                "text": "05-deploy-gateway.md"
+                "text": "11-deploy-gateway.md"
             }
         ],
         "intro": {
