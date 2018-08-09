@@ -16,7 +16,7 @@ Use the OpenShift CLI command to create a new build and deployment for the Web c
 
 ```
 oc new-app \
-   nodejs~https://github.com/openshift-labs/cloud-native-labs.git#ocp-3.10 \
+   nodejs:8~https://github.com/openshift-labs/cloud-native-labs.git#ocp-3.10 \
    --context-dir=web-nodejs \
    --name=web
 ```{{execute}}
