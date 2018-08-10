@@ -43,4 +43,4 @@ to fewer than 5 pods to handle the extra load. You can generate more load load b
 specifying a higher number of concurrent requests `-c80` flag. Just make sure to remove the 
 existing `web-load` job first (see if you can find out how!). 
 
-![Web UI Automatically Scaled](https://katacoda.com/openshift-roadshow/assets/fault-autoscale-web.png)
+![Web UI Automatically Scaled](https://katacoda.com/openshift-roadshow/assets/fault-autoscale-web.gif)
