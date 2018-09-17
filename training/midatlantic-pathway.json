@@ -1,5 +1,5 @@
 {
-  "title": "OpenShift Cloud-Native Roadshow",
+  "title": "OpenShift Cloud-Native Workshop",
   "description": "",
   "courses": [
     {
@@ -37,18 +37,6 @@
       "course_id": "monitor-health",
       "id": "monitor-health",
       "title": "Monitoring Application Health"
-    },
-    {
-      "pathway_id": "openshift-roadshow/scenarios",
-      "course_id": "fault-tolerance",
-      "id": "fault-tolerance",
-      "title": "Service Resilience and Fault Tolerance"
-    },
-    {
-      "pathway_id": "openshift-roadshow/scenarios",
-      "course_id": "manage-config",
-      "id": "manage-config",
-      "title": "Managing Application Configuration"
     },
     {
       "pathway_id": "openshift-roadshow/scenarios",
