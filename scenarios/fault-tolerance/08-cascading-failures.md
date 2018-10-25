@@ -10,8 +10,8 @@ services.
 The idea behind the circuit breaker is that you wrap the API calls to downstream services in a circuit breaker
 object, which monitors for failures. Once the service invocation fails certain number of times, the circuit
 breaker flips open, and all further calls to the circuit breaker return with an error or a fallback logic
-without making the call to the unresponsive API. After a certain period, the circuit breaker for allow a call
-to the downstream service to test the waters. If the call success, the circuit breaker closes and would call
+without making the call to the unresponsive API. After a certain period, the circuit breaker allows for a call
+to the downstream service to test the waters. If the call is successful, the circuit breaker closes and would call
 the downstream service on consequent calls.
 
 ![Circuit Breaker](https://katacoda.com/openshift-roadshow/assets/fault-circuit-breaker.png)

@@ -4,7 +4,7 @@ even integration tests. Since it's strongly recommended to use the same technolo
 system, JVM, middleware, database, etc) that is used in production across all environments, you 
 should modify Inventory and Catalog services to use PostgreSQL instead of the H2 in-memory database.
 
-Fortunately, OpenShfit supports stateful applications such as databases which required access to 
+Fortunately, OpenShift supports stateful applications such as databases which required access to 
 a persistent storage that survives the container itself. You can deploy databases on OpenShift and 
 regardless of what happens to the container itself, the data is safe and can be used by the next 
 database container.

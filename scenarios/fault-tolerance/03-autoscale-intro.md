@@ -8,7 +8,7 @@ OpenShift automates this aspect of scaling as well via automatically scaling the
 and down within a specified min and max boundary based on the container metrics such as cpu and memory 
 consumption. In that case, if there is a surge of users visiting the CoolStore online shop due to 
 holiday season coming up or a good deal on a product, OpenShift would automatically add more pods to 
-handle the increase load on the application and after the load goes, the application is automatically 
+handle the increased load on the application and after the load goes, the application is automatically 
 scaled down to free up compute resources.
 
 In order the define auto-scaling for a pod, we should first define how much cpu and memory a pod is 

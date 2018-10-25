@@ -3,7 +3,7 @@ Maven properties, command-line arguments and more. The recommend approach for th
 configuration is however using a [YAML file](https://reference.wildfly-swarm.io/configuration.html#_using_yaml) 
 which you have already packaged within the Inventory Maven project.
 
-The YAML file can be packaged within the application JAR file and be overladed 
+The YAML file can be packaged within the application JAR file and be overloaded 
 [using command-line or system properties](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/configuration/project_stages.html#_command_line_switches_system_properties) which you will do in this scenario.
 
 Check out `project-stages.yml` in Inventory Maven project which contains the default configuration:

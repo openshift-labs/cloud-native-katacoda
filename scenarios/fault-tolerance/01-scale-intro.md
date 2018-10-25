@@ -13,7 +13,7 @@ between those instances (horizontal scaling).
 In previous scenarios, you learned how to build container images from your application code and 
 deploy them on OpenShift. Container images on OpenShift follow the 
 [immutable server](https://martinfowler.com/bliki/ImmutableServer.html) pattern which guarantees 
-your application instances will always starts from a known well-configured state and makes 
+your application instances will always start from a known well-configured state and makes 
 deploying instances a repeatable practice. Immutable server pattern simplifies scaling out 
 application instances to starting a new instance which is guaranteed to be identical to the 
 existing instances and adding it to the load-balancer.
