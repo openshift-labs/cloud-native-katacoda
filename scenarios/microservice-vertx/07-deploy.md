@@ -6,7 +6,7 @@ system (Vert.x in this case) to have sufficient permissions to do so. All contai
 OpenShift run with a **serviceaccount** (by default, the project **default** service account) which can 
 be used to grant permissions for operations like accessing the OpenShift REST API. You can read 
 more about service accounts in the [OpenShift Documentation](https://docs.openshift.com/container-platform/3.7/dev_guide/service_accounts.html) and this 
-[blog post](https://blog.openshift.com/understanding-service-accounts-sccs/#_service_accounts)
+[blog post](https://blog.openshift.com/understanding-service-accounts-sccs/#_service_accounts).
 
 Grant permission to the API Gateway to be able to access OpenShift REST API and discover services.
 

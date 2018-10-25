@@ -48,7 +48,7 @@ Review the **Inventory** domain model and note the JPA annotations on this class
 the class as a JPA entity, **@Table** customizes the table creation process by defining a table
 name and database constraint and **@Id** marks the primary key for the table.
 
-WildFly Swarm configuration is done to a large extend through detecting the intent of the
+WildFly Swarm configuration is done to a large extent through detecting the intent of the
 developer and automatically adding the required dependencies configurations to make sure it can
 get out of the way and developers can be productive with their code rather than Googling for
 configuration snippets. As an example, configuration database access with JPA is composed of

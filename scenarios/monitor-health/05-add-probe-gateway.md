@@ -7,5 +7,5 @@ oc set probe dc/gateway \
     --get-url=http://:8080/health
 ```{{execute}}
 
-OpenShift automatically restarts the Inventory pod and as soon as the health probes succeed, it is 
+OpenShift automatically restarts the Gateway pod and as soon as the health probes succeed, it is 
 ready to receive traffic. 

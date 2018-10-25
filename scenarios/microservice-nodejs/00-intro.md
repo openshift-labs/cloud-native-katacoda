@@ -12,5 +12,5 @@ non-blocking I/O. These design choices aim to optimize throughput and scalabilit
 Web applications with many input/output operations, as well as for real-time web applications.
 
 Node.js non-blocking architectures allows applications to process large number of 
-requests (tens of thousands) using a single thread which makes ia desirable choice for building 
+requests (tens of thousands) using a single thread which makes it a desirable choice for building 
 scalable web applications.

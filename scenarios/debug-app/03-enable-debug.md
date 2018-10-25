@@ -21,7 +21,7 @@ oc rollout latest inventory
 
 Wait till the Inventory pod is ready again. Since a pod is not directly accessible to 
 a remote debugger, run the following command to forward the local port 5005 to the Inventory 
-pod on port 5005. The the remote debugger can the connect to a local port and be redirected 
+pod on port 5005. Then the remote debugger can the connect to a local port and be redirected 
 to the Inventory pod.
 
 First, find the name of the Inventory pod.

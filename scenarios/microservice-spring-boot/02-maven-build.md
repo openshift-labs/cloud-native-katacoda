@@ -1,6 +1,6 @@
 You can use Maven to make sure the skeleton project builds successfully.
 
-> Make sure to run the **package** Maven goal and not **install** The latter would 
+> Make sure to run the **package** Maven goal and not **install**. The latter would 
 > download a lot more dependencies and do things you don't need yet!
 
 ```

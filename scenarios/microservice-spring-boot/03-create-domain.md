@@ -68,4 +68,4 @@ public class Product implements Serializable {
 
 Review the **Product** domain model and note the JPA annotations on this class. **@Entity** marks the
 class as a JPA entity, **@Table** customizes the table creation process by defining a table
-name and database constraint and **@Id** marks the primary key for the table
+name and database constraint and **@Id** marks the primary key for the table.

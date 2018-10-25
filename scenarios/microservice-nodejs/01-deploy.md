@@ -20,7 +20,7 @@ oc new-app nodejs~https://github.com/openshift-labs/cloud-native-labs.git \
         --name=web
 ```{{execute}}
 
-The **--context-dir** option specifies the sub-directly of the Git repository which contains 
+The **--context-dir** option specifies the sub-directory of the Git repository which contains 
 the source code for the application to be built and deployed. The **--labels** allows 
 assigining arbitrary key-value labels to the application objects in order to make it easier to 
 find them later on when you have many applications in the same project.

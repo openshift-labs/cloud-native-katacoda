@@ -7,7 +7,7 @@ mvn vertx:run
 
 You will see the following exception in the logs: 
 `java.io.FileNotFoundException: .../kubernetes.io/serviceaccount/token` which is 
-expected. It is the result of Vert.x trying to import services form OpenShift. Since you are 
+expected. It is the result of Vert.x trying to import services from OpenShift. Since you are 
 running the API Gateway on your local machine, the lookup fails and falls back to the local 
 service lookup.
 
@@ -35,7 +35,7 @@ You should see a JSON response like:
 ...
 ```
 
-Note that the JSON response aggregates responses fro Catalog and Inventory services and 
+Note that the JSON response aggregates responses from Catalog and Inventory services and 
 the inventory info for each product is available within the same JSON object.
 
 Stop all services by pressing **CTRL-C** in all terminal windows.
